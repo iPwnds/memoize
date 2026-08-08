@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { CardView } from "../components/CardView";
-import { ALL_CARDS, MODULES } from "../data";
-import type { CardType, Tier } from "../data/types";
+import { ALL_CARDS, COURSES, MODULES } from "../data";
+import type { CardType } from "../data/types";
+import { ALL_TRACK, courseTrack, matchesTrack } from "../lib/track";
 
 const TYPES: CardType[] = ["concept", "complexity", "code-trace", "compare", "implementation"];
 
 export function BrowsePage() {
-  const [tier, setTier] = useState<Tier | "all">("all");
+  const [track, setTrack] = useState<string>(ALL_TRACK);
   const [module, setModule] = useState<string>("all");
   const [type, setType] = useState<CardType | "all">("all");
   const [query, setQuery] = useState("");
@@ -16,21 +17,25 @@ export function BrowsePage() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return ALL_CARDS.filter((c) => {
-      if (tier !== "all" && c.tier !== tier) return false;
+      if (!matchesTrack(c, track)) return false;
       if (module !== "all" && c.module !== module) return false;
       if (type !== "all" && c.type !== type) return false;
       if (q && !c.front.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [tier, module, type, query]);
+  }, [track, module, type, query]);
 
   useEffect(() => {
     setIndex(0);
     setFlipped(false);
-  }, [tier, module, type, query]);
+  }, [track, module, type, query]);
 
   const current = filtered[index];
-  const availableModules = MODULES.filter((m) => tier === "all" || m.tier === tier);
+  const availableModules = MODULES.filter((m) => {
+    if (track === ALL_TRACK) return true;
+    if (track.startsWith("course:")) return m.course === track.slice("course:".length);
+    return String(m.tier) === track && !m.course;
+  });
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -55,17 +60,22 @@ export function BrowsePage() {
     <div className="flex flex-col gap-6">
       <div className="flex flex-wrap items-center gap-2">
         <select
-          value={tier}
+          value={track}
           onChange={(e) => {
-            setTier(e.target.value === "all" ? "all" : (Number(e.target.value) as Tier));
+            setTrack(e.target.value);
             setModule("all");
           }}
           className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900"
         >
-          <option value="all">All tiers</option>
-          <option value={1}>Tier 1</option>
-          <option value={2}>Tier 2</option>
-          <option value={3}>Tier 3</option>
+          <option value={ALL_TRACK}>Everything</option>
+          <option value="1">Tier 1</option>
+          <option value="2">Tier 2</option>
+          <option value="3">Tier 3</option>
+          {COURSES.map((c) => (
+            <option key={c.id} value={courseTrack(c.id)}>
+              {c.title}
+            </option>
+          ))}
         </select>
         <select
           value={module}

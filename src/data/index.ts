@@ -1,4 +1,5 @@
 import type { Card } from "./types";
+import { moduleBySlug } from "./modules";
 import { complexityAnalysisCards } from "./complexity-analysis";
 import { linearStructuresCards } from "./linear-structures";
 import { hashingCards } from "./hashing";
@@ -55,3 +56,9 @@ export const ALL_CARDS: Card[] = [
 
 export * from "./types";
 export * from "./modules";
+export * from "./courses";
+
+/** The `course` id of the module a card belongs to, or undefined for cards
+ *  in the generic tiered curriculum. */
+export const courseOfCard = (card: Card): string | undefined =>
+  moduleBySlug(card.module)?.course;

@@ -52,7 +52,7 @@ export function CramPage() {
         >
           {modulesWithCounts.map((m) => (
             <option key={m.slug} value={m.slug} disabled={m.count === 0}>
-              Tier {m.tier} — {m.title} ({m.count})
+              {m.course ? m.title : `Tier ${m.tier} — ${m.title}`} ({m.count})
             </option>
           ))}
         </select>

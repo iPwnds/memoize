@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ALL_CARDS, MODULES } from "../data";
+import { ALL_CARDS, COURSES, MODULES } from "../data";
 import type { Tier } from "../data/types";
 import { computeModuleProgress } from "../lib/progress";
 import { useSrsStore } from "../store/srsStore";
@@ -26,8 +26,31 @@ export function LearnIndexPage() {
         </p>
       </div>
 
+      {COURSES.map((course) => {
+        const courseModules = MODULES.filter((m) => m.course === course.id);
+        if (!courseModules.some((m) => ALL_CARDS.some((c) => c.module === m.slug))) {
+          return null;
+        }
+        return (
+          <div key={course.id}>
+            <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              Courses
+            </h2>
+            <Link
+              to={`/courses/${course.id}`}
+              className="flex flex-col gap-1 rounded-xl border border-indigo-200 bg-indigo-50/50 p-4 transition-colors hover:border-indigo-400 dark:border-indigo-800 dark:bg-indigo-500/5 dark:hover:border-indigo-600"
+            >
+              <span className="font-medium">{course.title}</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400">
+                {course.subtitle} — open the lecture-by-lecture syllabus tracker
+              </span>
+            </Link>
+          </div>
+        );
+      })}
+
       {tiers.map((tier) => {
-        const tierModules = MODULES.filter((m) => m.tier === tier).sort(
+        const tierModules = MODULES.filter((m) => m.tier === tier && !m.course).sort(
           (a, b) => a.order - b.order,
         );
         const withCards = tierModules.filter((m) =>

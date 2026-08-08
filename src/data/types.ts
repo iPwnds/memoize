@@ -69,4 +69,12 @@ export interface ModuleMeta {
   tier: Tier;
   /** Order within its tier, for stable display/navigation. */
   order: number;
+  /**
+   * Set when this module belongs to a specific external course (e.g.
+   * "mit6006") rather than the generic tiered curriculum. `tier` is still
+   * required for id/validator consistency but is not meaningful for course
+   * modules — every view that groups by tier must filter these out via
+   * `course` and present them through the course track UI instead.
+   */
+  course?: string;
 }

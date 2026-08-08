@@ -1,31 +1,31 @@
 import { useEffect, useMemo, useState } from "react";
 import { CardView } from "../components/CardView";
-import { ALL_CARDS } from "../data";
-import type { Tier } from "../data/types";
+import { ALL_CARDS, COURSES } from "../data";
 import { dueCards, sortByReviewPriority } from "../lib/progress";
 import type { Rating } from "../lib/srs";
+import { ALL_TRACK, courseTrack, matchesTrack } from "../lib/track";
 import { useSrsStore } from "../store/srsStore";
 
 export function ReviewPage() {
   const srsCards = useSrsStore((s) => s.cards);
   const rate = useSrsStore((s) => s.rate);
 
-  const [tier, setTier] = useState<Tier | "all">("all");
+  const [track, setTrack] = useState<string>(ALL_TRACK);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
 
-  // Snapshot the due queue once per tier selection so rating a card mid-session
-  // doesn't reshuffle the list out from under the user.
+  // Snapshot the due queue once per track selection so rating a card
+  // mid-session doesn't reshuffle the list out from under the user.
   const queue = useMemo(() => {
-    const cards = tier === "all" ? ALL_CARDS : ALL_CARDS.filter((c) => c.tier === tier);
+    const cards = ALL_CARDS.filter((c) => matchesTrack(c, track));
     return sortByReviewPriority(dueCards(cards, srsCards), srsCards);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tier]);
+  }, [track]);
 
   useEffect(() => {
     setIndex(0);
     setFlipped(false);
-  }, [tier]);
+  }, [track]);
 
   const current = queue[index];
 
@@ -62,18 +62,23 @@ export function ReviewPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flipped, current]);
 
-  const tierSelector = (
+  const trackSelector = (
     <div className="mx-auto flex w-full max-w-2xl items-center gap-2">
-      <label className="text-sm text-slate-500 dark:text-slate-400">Tier:</label>
+      <label className="text-sm text-slate-500 dark:text-slate-400">Track:</label>
       <select
-        value={tier}
-        onChange={(e) => setTier(e.target.value === "all" ? "all" : (Number(e.target.value) as Tier))}
+        value={track}
+        onChange={(e) => setTrack(e.target.value)}
         className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900"
       >
-        <option value="all">All tiers</option>
-        <option value={1}>Tier 1</option>
-        <option value={2}>Tier 2</option>
-        <option value={3}>Tier 3</option>
+        <option value={ALL_TRACK}>Everything</option>
+        <option value="1">Tier 1</option>
+        <option value="2">Tier 2</option>
+        <option value="3">Tier 3</option>
+        {COURSES.map((c) => (
+          <option key={c.id} value={courseTrack(c.id)}>
+            {c.title}
+          </option>
+        ))}
       </select>
     </div>
   );
@@ -81,12 +86,12 @@ export function ReviewPage() {
   if (queue.length === 0) {
     return (
       <div className="flex flex-col gap-6">
-        {tierSelector}
+        {trackSelector}
         <div className="mx-auto max-w-md py-24 text-center">
           <div className="text-2xl font-semibold">All caught up 🎉</div>
           <p className="mt-2 text-slate-500 dark:text-slate-400">
-            No cards are due right now{tier !== "all" ? ` in Tier ${tier}` : ""}. Try
-            Browse or Cram to keep studying, or switch tiers above.
+            No cards are due right now{track !== ALL_TRACK ? " in this track" : ""}. Try
+            Browse or Cram to keep studying, or switch tracks above.
           </p>
         </div>
       </div>
@@ -96,12 +101,12 @@ export function ReviewPage() {
   if (!current) {
     return (
       <div className="flex flex-col gap-6">
-        {tierSelector}
+        {trackSelector}
         <div className="mx-auto max-w-md py-24 text-center">
           <div className="text-2xl font-semibold">Session complete 🎉</div>
           <p className="mt-2 text-slate-500 dark:text-slate-400">
             You reviewed {queue.length} card{queue.length === 1 ? "" : "s"}. Come back
-            tomorrow for the next batch, or switch tiers above.
+            tomorrow for the next batch, or switch tracks above.
           </p>
         </div>
       </div>
@@ -110,7 +115,7 @@ export function ReviewPage() {
 
   return (
     <div className="flex flex-col gap-6">
-      {tierSelector}
+      {trackSelector}
       <div className="mx-auto w-full max-w-2xl">
         <div className="mb-2 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
           <span>

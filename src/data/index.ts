@@ -11,6 +11,12 @@ import { shortestPathsMstCards } from "./shortest-paths-mst";
 import { recursionDcCards } from "./recursion-dc";
 import { dynamicProgrammingCards } from "./dynamic-programming";
 import { greedyCards } from "./greedy";
+import { specializedTreesCards } from "./specialized-trees";
+import { advancedGraphsCards } from "./advanced-graphs";
+import { stringAlgorithmsCards } from "./string-algorithms";
+import { twoPointersWindowCards } from "./two-pointers-window";
+import { backtrackingCards } from "./backtracking";
+import { bitManipulationCards } from "./bit-manipulation";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -27,6 +33,12 @@ export const ALL_CARDS: Card[] = [
   ...recursionDcCards,
   ...dynamicProgrammingCards,
   ...greedyCards,
+  ...specializedTreesCards,
+  ...advancedGraphsCards,
+  ...stringAlgorithmsCards,
+  ...twoPointersWindowCards,
+  ...backtrackingCards,
+  ...bitManipulationCards,
 ];
 
 export * from "./types";

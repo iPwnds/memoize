@@ -39,7 +39,12 @@ npx tsx scripts/validate-content.ts  # verify card id/related-link integrity
 Tier 1 (Modules 1–12: Complexity & Analysis, Core Linear Structures, Hashing,
 Binary Trees & BSTs, Heaps & Priority Queues, Sorting, Searching, Graph
 Traversal, Shortest Paths & MST, Recursion & Divide-and-Conquer, Dynamic
-Programming, Greedy Algorithms) is complete. Tiers 2–3 are not yet built.
+Programming, Greedy Algorithms) and Tier 2 (Modules 13–18: Specialized Trees,
+Advanced Graph Algorithms, String Algorithms, Two Pointers/Sliding
+Window/Prefix Sums, Backtracking, Bit Manipulation) are complete — 280 cards.
+Tier 3 (Modules 19–24: Persistent Structures, Probabilistic Data Structures,
+Computational Geometry, NP-Completeness, Number Theory, Systems-Adjacent) is
+not yet built.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

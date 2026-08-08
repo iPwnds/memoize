@@ -298,3 +298,13 @@ export const MIT6006_LECTURES: CourseLecture[] = [
   { number: 20, title: "Course Review", cardIds: [], noCardContent: "A review session — no new material. Use this slot to revisit weak spots from Lectures 1–19 via Browse or Cram." },
   { number: 21, title: "Algorithms — Next Steps", cardIds: [], noCardContent: "A closing talk pointing toward 6.046/6.854 (design & analysis) and other follow-on courses — no new testable material." },
 ];
+
+/**
+ * Single source of truth mapping a course id to its lecture map. Every
+ * entry in `COURSES` must have a corresponding entry here — enforced by
+ * scripts/validate-content.ts — or /courses/<id> silently renders as if
+ * the course id itself were invalid.
+ */
+export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
+  mit6006: MIT6006_LECTURES,
+};

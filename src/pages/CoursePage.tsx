@@ -1,14 +1,8 @@
 import { Link, useParams } from "react-router-dom";
-import { ALL_CARDS, COURSES, MIT6006_LECTURES } from "../data";
+import { ALL_CARDS, COURSES, COURSE_LECTURE_MAPS } from "../data";
 import type { CourseLecture } from "../data/courses";
 import { computeCardsProgress } from "../lib/progress";
 import { useSrsStore } from "../store/srsStore";
-
-// Only one course's lecture map exists today; extend this lookup if more
-// courses are added.
-const LECTURE_MAPS: Record<string, CourseLecture[]> = {
-  mit6006: MIT6006_LECTURES,
-};
 
 export function CoursePage() {
   const { courseId } = useParams<{ courseId: string }>();
@@ -16,7 +10,7 @@ export function CoursePage() {
   const idToCard = new Map(ALL_CARDS.map((c) => [c.id, c]));
 
   const course = COURSES.find((c) => c.id === courseId);
-  const lectures = courseId ? LECTURE_MAPS[courseId] : undefined;
+  const lectures = courseId ? COURSE_LECTURE_MAPS[courseId] : undefined;
 
   if (!course || !lectures) {
     return (

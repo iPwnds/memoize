@@ -6,9 +6,12 @@
 //   - every card.module matches a known module slug
 //   - every id in `related` resolves to a real card
 //   - id naming convention: "<module-slug>-<topic-slug>"
+//   - every course has a lecture map, every lecture's cardIds resolve,
+//     and every course-module card is reachable from its course's map
 
 import { ALL_CARDS } from "../src/data";
 import { MODULES } from "../src/data/modules";
+import { COURSES, COURSE_LECTURE_MAPS } from "../src/data/courses";
 
 let errors = 0;
 
@@ -50,6 +53,37 @@ for (const c of ALL_CARDS) {
     if (rel === c.id) {
       fail(`Card "${c.id}" lists itself in related`);
     }
+  }
+}
+
+const courseModuleSlugs = new Set(
+  MODULES.filter((m) => m.course).map((m) => m.slug),
+);
+const cardIdsInLectureMaps = new Set<string>();
+
+for (const course of COURSES) {
+  const lectures = COURSE_LECTURE_MAPS[course.id];
+  if (!lectures) {
+    fail(`Course "${course.id}" has no entry in COURSE_LECTURE_MAPS`);
+    continue;
+  }
+  for (const lecture of lectures) {
+    for (const cardId of lecture.cardIds) {
+      cardIdsInLectureMaps.add(cardId);
+      if (!idSet.has(cardId)) {
+        fail(
+          `Course "${course.id}" Lecture ${lecture.number} references unknown card id "${cardId}"`,
+        );
+      }
+    }
+  }
+}
+
+for (const c of ALL_CARDS) {
+  if (courseModuleSlugs.has(c.module) && !cardIdsInLectureMaps.has(c.id)) {
+    fail(
+      `Card "${c.id}" belongs to a course module ("${c.module}") but isn't referenced by any lecture in that course's map`,
+    );
   }
 }
 

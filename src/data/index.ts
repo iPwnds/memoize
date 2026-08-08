@@ -25,6 +25,7 @@ import { npCompletenessCards } from "./np-completeness";
 import { numberTheoryCards } from "./number-theory";
 import { systemsAdjacentCards } from "./systems-adjacent";
 import { mit6006FoundationsCards } from "./mit6006-foundations";
+import { mit6006SortingHashingCards } from "./mit6006-sorting-hashing";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -54,6 +55,7 @@ export const ALL_CARDS: Card[] = [
   ...numberTheoryCards,
   ...systemsAdjacentCards,
   ...mit6006FoundationsCards,
+  ...mit6006SortingHashingCards,
 ];
 
 export * from "./types";

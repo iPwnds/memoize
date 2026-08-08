@@ -16,6 +16,10 @@ persistence (no backend, single-user). Content lives as typed data in
 
 ## Study modes
 
+The landing page is a dashboard: due-today count, streak, overall mastery, a
+one-click jump into Review, and — if you have one in progress — a course
+progress spotlight, plus a grid linking into every mode below.
+
 - **Review** — spaced-repetition queue (simplified SM-2), only cards due today,
   filterable by Track (Tier 1/2/3, or a specific course like MIT 6.006 — isolating
   a course's cards from the rest of the deck for focused exam prep).

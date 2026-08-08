@@ -1,5 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
+import { HomePage } from "./pages/HomePage";
 import { ReviewPage } from "./pages/ReviewPage";
 import { BrowsePage } from "./pages/BrowsePage";
 import { CramPage } from "./pages/CramPage";
@@ -15,7 +16,8 @@ function App() {
     <HashRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<ReviewPage />} />
+          <Route index element={<HomePage />} />
+          <Route path="review" element={<ReviewPage />} />
           <Route path="browse" element={<BrowsePage />} />
           <Route path="cram" element={<CramPage />} />
           <Route path="learn" element={<LearnIndexPage />} />

@@ -1,9 +1,10 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { useUiStore } from "../store/uiStore";
 
 const NAV = [
-  { to: "/", label: "Review", end: true },
+  { to: "/", label: "Home", end: true },
+  { to: "/review", label: "Review" },
   { to: "/browse", label: "Browse" },
   { to: "/cram", label: "Cram" },
   { to: "/learn", label: "Learn" },
@@ -24,7 +25,9 @@ export function Layout() {
     <div className="flex min-h-full flex-col">
       <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-3">
-          <span className="text-lg font-semibold tracking-tight">Memoize</span>
+          <Link to="/" className="text-lg font-semibold tracking-tight">
+            Memoize
+          </Link>
           <nav className="flex flex-wrap items-center gap-1 text-sm">
             {NAV.map((item) => (
               <NavLink

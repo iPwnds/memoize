@@ -26,6 +26,7 @@ import { numberTheoryCards } from "./number-theory";
 import { systemsAdjacentCards } from "./systems-adjacent";
 import { mit6006FoundationsCards } from "./mit6006-foundations";
 import { mit6006SortingHashingCards } from "./mit6006-sorting-hashing";
+import { mit6006TreesHeapsCards } from "./mit6006-trees-heaps";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -56,6 +57,7 @@ export const ALL_CARDS: Card[] = [
   ...systemsAdjacentCards,
   ...mit6006FoundationsCards,
   ...mit6006SortingHashingCards,
+  ...mit6006TreesHeapsCards,
 ];
 
 export * from "./types";

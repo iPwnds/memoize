@@ -24,6 +24,7 @@ import { computationalGeometryCards } from "./computational-geometry";
 import { npCompletenessCards } from "./np-completeness";
 import { numberTheoryCards } from "./number-theory";
 import { systemsAdjacentCards } from "./systems-adjacent";
+import { mit6006FoundationsCards } from "./mit6006-foundations";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -52,6 +53,7 @@ export const ALL_CARDS: Card[] = [
   ...npCompletenessCards,
   ...numberTheoryCards,
   ...systemsAdjacentCards,
+  ...mit6006FoundationsCards,
 ];
 
 export * from "./types";

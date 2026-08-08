@@ -42,8 +42,35 @@ export const COURSES: CourseMeta[] = [
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
-  { number: 1, title: "Algorithms and Computation", cardIds: [], recitation: "Recitation 1", problemSet: "Problem Set 0", problemSession: "Problem Session 1" },
-  { number: 2, title: "Data Structures", cardIds: [], recitation: "Recitation 2", problemSet: "Problem Set 0", problemSession: "Problem Session 1" },
+  {
+    number: 1,
+    title: "Algorithms and Computation",
+    cardIds: [
+      "mit6006-foundations-problem-vs-algorithm",
+      "mit6006-foundations-induction-correctness",
+      "mit6006-foundations-word-ram",
+      "mit6006-foundations-how-to-solve",
+    ],
+    recitation: "Recitation 1",
+    problemSet: "Problem Set 0",
+    problemSession: "Problem Session 1",
+  },
+  {
+    number: 2,
+    title: "Data Structures",
+    cardIds: [
+      "mit6006-foundations-sequence-interface",
+      "mit6006-foundations-set-interface",
+      "mit6006-foundations-array-sequence",
+      "mit6006-foundations-linked-list-sequence",
+      "mit6006-foundations-dynamic-array-doubling",
+      "mit6006-foundations-amortized-definition",
+      "mit6006-foundations-set-from-sequence",
+    ],
+    recitation: "Recitation 2",
+    problemSet: "Problem Set 0",
+    problemSession: "Problem Session 1",
+  },
   { number: 3, title: "Sets and Sorting", cardIds: [], recitation: "Recitation 3", problemSet: "Problem Set 1", problemSession: "Problem Session 2" },
   { number: 4, title: "Hashing", cardIds: [], recitation: "Recitation 4", problemSet: "Problem Set 1", problemSession: "Problem Session 2" },
   { number: 5, title: "Linear Sorting", cardIds: [], recitation: "Recitation 5", problemSet: "Problem Set 2", problemSession: "Problem Session 3" },

@@ -34,6 +34,8 @@ export function ReviewPage() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === "INPUT" || target.tagName === "TEXTAREA") return;
       if (!current) return;
       if (!flipped && (e.key === " " || e.key === "Enter")) {
         e.preventDefault();

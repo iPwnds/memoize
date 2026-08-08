@@ -1,22 +1,20 @@
 import { useMemo, useState } from "react";
 import { ALL_CARDS } from "../data";
 import { ComplexityTable } from "../components/ComplexityTable";
-import type { Complexity } from "../data/types";
+import { mergeComplexityByStructure } from "../lib/complexity";
 
 export function CheatSheetPage() {
   const [query, setQuery] = useState("");
 
-  const structures = useMemo(() => {
-    const map = new Map<string, Complexity>();
-    for (const card of ALL_CARDS) {
-      if (card.complexity && !map.has(card.complexity.structure)) {
-        map.set(card.complexity.structure, card.complexity);
-      }
-    }
-    return [...map.values()]
-      .filter((c) => c.structure.toLowerCase().includes(query.toLowerCase()))
-      .sort((a, b) => a.structure.localeCompare(b.structure));
-  }, [query]);
+  const allStructures = useMemo(() => mergeComplexityByStructure(ALL_CARDS), []);
+
+  const structures = useMemo(
+    () =>
+      allStructures
+        .filter((c) => c.structure.toLowerCase().includes(query.toLowerCase()))
+        .sort((a, b) => a.structure.localeCompare(b.structure)),
+    [allStructures, query],
+  );
 
   return (
     <div className="flex flex-col gap-6">

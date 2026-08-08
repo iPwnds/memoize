@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import {
   INITIAL_SRS_STATE,
+  addDays,
   nextSrsState,
   todayIso,
   type CardSrsState,
@@ -28,7 +29,7 @@ interface SrsStoreState {
 function bumpStreak(streak: StreakState, now: Date): StreakState {
   const today = todayIso(now);
   if (streak.lastStudyDate === today) return streak; // already studied today
-  const yesterday = todayIso(new Date(now.getTime() - 86400000));
+  const yesterday = todayIso(addDays(now, -1));
   const current = streak.lastStudyDate === yesterday ? streak.current + 1 : 1;
   return {
     current,

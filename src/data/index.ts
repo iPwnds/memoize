@@ -29,6 +29,7 @@ import { mit6006SortingHashingCards } from "./mit6006-sorting-hashing";
 import { mit6006TreesHeapsCards } from "./mit6006-trees-heaps";
 import { mit6006GraphsCards } from "./mit6006-graphs";
 import { mit6006DynamicProgrammingCards } from "./mit6006-dynamic-programming";
+import { mit6006ComplexityCards } from "./mit6006-complexity";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -62,6 +63,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6006TreesHeapsCards,
   ...mit6006GraphsCards,
   ...mit6006DynamicProgrammingCards,
+  ...mit6006ComplexityCards,
 ];
 
 export * from "./types";

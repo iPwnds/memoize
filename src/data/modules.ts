@@ -38,7 +38,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6006-sorting-hashing", title: "6.006: Sorting & Hashing", tier: 1, order: 101, course: "mit6006" },
   { slug: "mit6006-trees-heaps", title: "6.006: Trees & Heaps", tier: 1, order: 102, course: "mit6006" },
   { slug: "mit6006-graphs", title: "6.006: Graphs", tier: 1, order: 103, course: "mit6006" },
-  { slug: "mit6006-dynamic-programming", title: "6.006: Dynamic Programming", tier: 1, order: 104, course: "mit6006" },
+  { slug: "mit6006-dp", title: "6.006: Dynamic Programming", tier: 1, order: 104, course: "mit6006" },
   { slug: "mit6006-complexity", title: "6.006: Complexity", tier: 1, order: 105, course: "mit6006" },
 ];
 

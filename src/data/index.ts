@@ -17,6 +17,12 @@ import { stringAlgorithmsCards } from "./string-algorithms";
 import { twoPointersWindowCards } from "./two-pointers-window";
 import { backtrackingCards } from "./backtracking";
 import { bitManipulationCards } from "./bit-manipulation";
+import { persistentStructuresCards } from "./persistent-structures";
+import { probabilisticStructuresCards } from "./probabilistic-structures";
+import { computationalGeometryCards } from "./computational-geometry";
+import { npCompletenessCards } from "./np-completeness";
+import { numberTheoryCards } from "./number-theory";
+import { systemsAdjacentCards } from "./systems-adjacent";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -39,6 +45,12 @@ export const ALL_CARDS: Card[] = [
   ...twoPointersWindowCards,
   ...backtrackingCards,
   ...bitManipulationCards,
+  ...persistentStructuresCards,
+  ...probabilisticStructuresCards,
+  ...computationalGeometryCards,
+  ...npCompletenessCards,
+  ...numberTheoryCards,
+  ...systemsAdjacentCards,
 ];
 
 export * from "./types";

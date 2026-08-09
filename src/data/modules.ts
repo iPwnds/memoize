@@ -43,6 +43,11 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6006-graphs", title: "6.006: Graphs", tier: 1, order: 103, course: "mit6006" },
   { slug: "mit6006-dp", title: "6.006: Dynamic Programming", tier: 1, order: 104, course: "mit6006" },
   { slug: "mit6006-complexity", title: "6.006: Complexity", tier: 1, order: 105, course: "mit6006" },
+
+  // MIT 6.045J course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as mit6006 above: lecture-numbered, not
+  // tier-grouped, so `tier`/`order` are only for id/validator consistency.
+  { slug: "mit6045-automata", title: "6.045: Automata & Regular Languages", tier: 1, order: 200, course: "mit6045" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

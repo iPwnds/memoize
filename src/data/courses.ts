@@ -49,6 +49,15 @@ export const COURSES: CourseMeta[] = [
       { label: "Final (all, emphasis on 19–21)", lectures: [19, 21] },
     ],
   },
+  {
+    id: "mit6045",
+    title: "MIT 6.045J / 18.400J — Automata, Computability, and Complexity",
+    subtitle: "Spring 2011 · Nancy Lynch · MIT OpenCourseWare",
+    quizScopes: [
+      { label: "Midterm (Lec 1–12)", lectures: [1, 12] },
+      { label: "Final (Lec 13–23)", lectures: [13, 23] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -309,6 +318,45 @@ export const MIT6006_LECTURES: CourseLecture[] = [
   { number: 21, title: "Algorithms — Next Steps", cardIds: [], noCardContent: "A closing talk pointing toward 6.046/6.854 (design & analysis) and other follow-on courses — no new testable material." },
 ];
 
+export const MIT6045_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction",
+    cardIds: ["mit6045-automata-rules-based-framing"],
+  },
+  {
+    number: 2,
+    title: "Logic, Circuits, and Gates",
+    cardIds: ["mit6045-automata-boolean-circuits", "mit6045-automata-circuit-limitations"],
+  },
+  {
+    number: 3,
+    title: "Deterministic and Nondeterministic Finite Automata",
+    cardIds: ["mit6045-automata-dfa-formal-definition", "mit6045-automata-nfa-formal-definition"],
+  },
+  {
+    number: 4,
+    title: "NFAs and Regular Expressions",
+    cardIds: [
+      "mit6045-automata-nfa-to-dfa-subset-construction",
+      "mit6045-automata-regular-expressions",
+      "mit6045-automata-closure-properties",
+    ],
+  },
+  {
+    number: 5,
+    title: "Non-Regular Languages and the Pumping Lemma",
+    cardIds: [
+      "mit6045-automata-pigeonhole-non-regularity",
+      "mit6045-automata-palindrome-non-regular",
+      "mit6045-automata-countable-vs-uncountable-languages",
+      "mit6045-automata-pumping-lemma-statement",
+      "mit6045-automata-pumping-lemma-application",
+    ],
+    problemSet: "Problem Set 1",
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -317,4 +365,5 @@ export const MIT6006_LECTURES: CourseLecture[] = [
  */
 export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6006: MIT6006_LECTURES,
+  mit6045: MIT6045_LECTURES,
 };

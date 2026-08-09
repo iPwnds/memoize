@@ -1,14 +1,17 @@
 # Memoize
 
-A flashcard app for mastering algorithms and data structures, organized entirely
-by course — every module belongs to exactly one course, there's no undifferentiated
-generic pile. Built for depth and correctness over quiz-app polish — 389 cards
-across 30 modules and 2 courses:
+A flashcard app for mastering algorithms, data structures, and theoretical CS,
+organized entirely by course — every module belongs to exactly one course,
+there's no undifferentiated generic pile. Built for depth and correctness over
+quiz-app polish — 463 cards across 35 modules and 3 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
 - **MIT 6.006 — Introduction to Algorithms** — 67 cards, 6 modules, mapped
   lecture-by-lecture against the actual Spring 2020 OCW syllabus.
+- **MIT 6.045J / 18.400J — Automata, Computability, and Complexity** — 74 cards,
+  5 modules, mapped lecture-by-lecture against the actual Spring 2011 OCW
+  syllabus (all 23 lectures).
 
 More MIT OpenCourseWare courses are intended to follow the same pattern.
 
@@ -106,6 +109,20 @@ across 6 modules, mapped against all 21 lectures:
   was checked against the card set, and the course's own Quiz 1/2/3 review
   sheets (the staff's topic checklists) were cross-referenced against the
   finished lecture map.
+
+**MIT 6.045J / 18.400J** (Automata, Computability, and Complexity, Spring 2011)
+is complete — 74 cards across 5 modules, mapped against all 23 lectures:
+
+- **Automata & Regular Languages** (Lec 1–5), **Turing Machines & Computability**
+  (Lec 6–10), **Complexity Theory & NP-Completeness** (Lec 12, 15–17),
+  **Cryptography** (Lec 11, 13, 14, 18), **Learning Theory & Quantum Computing**
+  (Lec 19–23).
+- Sourced directly from the course's own Spring 2011 lecture slides/notes
+  (fetched from OCW and read page-by-page), not summarized from lecture
+  titles alone. Where a topic already exists in Complexity Class at an
+  applied level (P vs NP, reductions, SAT, classic NP-complete problems,
+  modular exponentiation), these cards cover it at 6.045's formal/
+  proof-driven level and cross-link via `related` rather than duplicating.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

@@ -355,6 +355,54 @@ export const MIT6045_LECTURES: CourseLecture[] = [
     ],
     problemSet: "Problem Set 1",
   },
+  {
+    number: 6,
+    title: "Turing Machines",
+    cardIds: [
+      "mit6045-computability-tm-informal-model",
+      "mit6045-computability-universal-tm-church-turing",
+      "mit6045-computability-diagonalization-uncomputable-problems",
+    ],
+  },
+  {
+    number: 7,
+    title: "Decidability",
+    cardIds: [
+      "mit6045-computability-decide-vs-recognize",
+      "mit6045-computability-recursively-enumerable",
+      "mit6045-computability-encoding-machines-as-strings",
+      "mit6045-computability-acc-tm-undecidable",
+      "mit6045-computability-halt-tm-reduction",
+    ],
+    problemSet: "Problem Set 2",
+  },
+  {
+    number: 8,
+    title: "Undecidable Problems and the Post Correspondence Problem",
+    cardIds: [
+      "mit6045-computability-reduction-template",
+      "mit6045-computability-post-correspondence-problem",
+    ],
+  },
+  {
+    number: 9,
+    title: "Mapping Reducibility and Rice's Theorem",
+    cardIds: [
+      "mit6045-computability-mapping-reducibility-formal",
+      "mit6045-computability-mapping-reducibility-non-recognizability",
+      "mit6045-computability-rices-theorem",
+    ],
+  },
+  {
+    number: 10,
+    title: "Self-Reference and the Recursion Theorem",
+    cardIds: [
+      "mit6045-computability-self-referencing-programs",
+      "mit6045-computability-recursion-theorem",
+      "mit6045-computability-recursion-theorem-application",
+    ],
+    problemSet: "Problem Set 3",
+  },
 ];
 
 /**

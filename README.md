@@ -1,11 +1,16 @@
 # Memoize
 
-A flashcard app for mastering algorithms and data structures, from first-principles
-complexity analysis through advanced/specialized topics. Built for depth and
-correctness over quiz-app polish — 389 cards across 30 modules: the full
-undergraduate-to-early-graduate algorithms & data structures curriculum (322 cards,
-24 modules, three tiers), plus a course-specific track for MIT 6.006 (67 cards,
-6 modules) mapped lecture-by-lecture against the course's own syllabus.
+A flashcard app for mastering algorithms and data structures, organized entirely
+by course — every module belongs to exactly one course, there's no undifferentiated
+generic pile. Built for depth and correctness over quiz-app polish — 389 cards
+across 30 modules and 2 courses:
+
+- **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
+  algorithms & data structures curriculum, independent of any external syllabus.
+- **MIT 6.006 — Introduction to Algorithms** — 67 cards, 6 modules, mapped
+  lecture-by-lecture against the actual Spring 2020 OCW syllabus.
+
+More MIT OpenCourseWare courses are intended to follow the same pattern.
 
 ## Stack
 
@@ -21,36 +26,46 @@ one-click jump into Review, and — if you have one in progress — a course
 progress spotlight, plus a grid linking into every mode below.
 
 - **Review** — spaced-repetition queue (simplified SM-2), only cards due today,
-  filterable by Track (Tier 1/2/3, or a specific course like MIT 6.006 — isolating
-  a course's cards from the rest of the deck for focused exam prep).
+  filterable by Track (Everything, or a specific course — isolating a course's
+  cards from the rest of the deck for focused study).
 - **Browse** — free exploration by track/module/type, with search.
-- **Cram** — every card in a chosen module, no effect on SRS state.
+- **Cram** — every card in a chosen module (grouped by course), no effect on SRS state.
 - **Learn** — a structured, textbook-style read through each module: cards in
   curated order as one continuous page, with a sticky table of contents and
   clickable cross-links between related cards (including across modules).
   Read-only, like Browse/Cram.
-- **Courses** — a lecture-by-lecture syllabus tracker for a specific course
-  (currently MIT 6.006), grouping every lecture by which exam it's scoped to,
-  with recitation/problem-set cross-references and per-lecture mastery,
-  linking each lecture straight into Learn mode for the cards that cover it.
+- **Courses** — a per-course tracker. For a lecture-numbered course (MIT 6.006),
+  it's a lecture-by-lecture syllabus grouped by which exam it's scoped to, with
+  recitation/problem-set cross-references and per-lecture mastery. For a
+  module-grouped course (Complexity Class), it's the module list grouped by
+  tier. Either way it links straight into Learn mode for the cards that cover it.
 - **Cheat Sheet** — complexity reference generated directly from card data.
 - **Stats** — per-module mastery, streak, cards due.
 
 Keyboard-driven: space/enter to flip, 1–4 to rate in Review, arrow keys to
 navigate in Browse.
 
-## Course tracks
+## Courses
 
-Course tracks (`src/data/courses.ts`) sit alongside the generic tiered
-curriculum: a `ModuleMeta.course` tag marks which modules belong to a course
-instead of a tier, and a lecture map (`{ number, title, cardIds, ... }`)
-points each lecture at the card ids that cover it — mixing course-specific
-cards with cross-links into the generic curriculum's existing deep cards
-where topics overlap, rather than duplicating content. MIT 6.006 (Spring
-2020, MIT OpenCourseWare) is the first course covered; its 6 modules follow
-the course's own vocabulary and framing (e.g. the Sequence/Set interfaces,
-SRT BOT for dynamic programming, the Word-RAM model) even where a topic is
-also covered generically elsewhere in the deck.
+Every module (`src/data/modules.ts`) has a required `course` tag
+(`ModuleMeta.course`) pointing at an entry in `COURSES`
+(`src/data/courses.ts`). A course is one of two shapes:
+
+- **Module-grouped** — no external lecture numbering; the course is just its
+  modules, grouped by `tier` for display. Complexity Class is this shape:
+  `tier`/`order` are meaningful here (they control display grouping/ordering
+  within the course), unlike in a lecture-numbered course where they're inert.
+- **Lecture-numbered** — has an entry in `COURSE_LECTURE_MAPS`, an array of
+  `{ number, title, cardIds, recitation?, problemSet?, ... }` mapping each
+  lecture of the real course to the card ids that cover it. MIT 6.006 is this
+  shape. Its 6 modules follow the course's own vocabulary and framing (e.g.
+  the Sequence/Set interfaces, SRT BOT for dynamic programming, the Word-RAM
+  model) even where a topic is also covered in Complexity Class — cross-linked
+  via `related` rather than duplicated, where the overlap is substantial.
+
+`CoursePage` picks the rendering based on whether `COURSE_LECTURE_MAPS[courseId]`
+exists; `validate-content.ts` checks both shapes (lecture cardIds resolve and
+every course-tagged card is reachable from its course, one way or the other).
 
 ## Development
 
@@ -65,8 +80,8 @@ npx tsx scripts/validate-content.ts  # verify card id/related-link integrity
 
 ## Content status
 
-All three tiers of the generic curriculum are complete — 322 cards across 24
-modules:
+**Complexity Class** is complete — 322 cards across 24 modules, grouped into
+three internal tiers (foundations → intermediate/competitive → advanced/specialized):
 
 - **Tier 1** (Modules 1–12): Complexity & Analysis, Core Linear Structures,
   Hashing, Binary Trees & BSTs, Heaps & Priority Queues, Sorting, Searching,

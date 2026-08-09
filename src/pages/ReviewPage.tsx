@@ -71,9 +71,6 @@ export function ReviewPage() {
         className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900"
       >
         <option value={ALL_TRACK}>Everything</option>
-        <option value="1">Tier 1</option>
-        <option value="2">Tier 2</option>
-        <option value="3">Tier 3</option>
         {COURSES.map((c) => (
           <option key={c.id} value={courseTrack(c.id)}>
             {c.title}
@@ -117,11 +114,8 @@ export function ReviewPage() {
     <div className="flex flex-col gap-6">
       {trackSelector}
       <div className="mx-auto w-full max-w-2xl">
-        <div className="mb-2 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
-          <span>
-            Card {index + 1} of {queue.length}
-          </span>
-          <span>{current.module}</span>
+        <div className="mb-2 text-sm text-slate-500 dark:text-slate-400">
+          Card {index + 1} of {queue.length}
         </div>
         <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
           <div

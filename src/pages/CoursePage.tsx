@@ -1,8 +1,15 @@
 import { Link, useParams } from "react-router-dom";
-import { ALL_CARDS, COURSES, COURSE_LECTURE_MAPS } from "../data";
+import { ALL_CARDS, COURSES, COURSE_LECTURE_MAPS, MODULES } from "../data";
 import type { CourseLecture } from "../data/courses";
-import { computeCardsProgress } from "../lib/progress";
+import type { Tier } from "../data/types";
+import { computeCardsProgress, computeModuleProgress } from "../lib/progress";
 import { useSrsStore } from "../store/srsStore";
+
+const TIER_LABEL: Record<Tier, string> = {
+  1: "Tier 1 — Foundations",
+  2: "Tier 2 — Intermediate",
+  3: "Tier 3 — Advanced",
+};
 
 export function CoursePage() {
   const { courseId } = useParams<{ courseId: string }>();
@@ -11,8 +18,9 @@ export function CoursePage() {
 
   const course = COURSES.find((c) => c.id === courseId);
   const lectures = courseId ? COURSE_LECTURE_MAPS[courseId] : undefined;
+  const courseModules = courseId ? MODULES.filter((m) => m.course === courseId) : [];
 
-  if (!course || !lectures) {
+  if (!course || (!lectures && courseModules.length === 0)) {
     return (
       <div className="py-16 text-center text-slate-500 dark:text-slate-400">
         <p>This course isn't available yet.</p>
@@ -23,7 +31,9 @@ export function CoursePage() {
     );
   }
 
-  const allCourseCards = lectures.flatMap((l) => l.cardIds.map((id) => idToCard.get(id)).filter((c): c is NonNullable<typeof c> => c !== undefined));
+  const allCourseCards = lectures
+    ? lectures.flatMap((l) => l.cardIds.map((id) => idToCard.get(id)).filter((c): c is NonNullable<typeof c> => c !== undefined))
+    : ALL_CARDS.filter((c) => courseModules.some((m) => m.slug === c.module));
   const overall = computeCardsProgress(allCourseCards, srsCards);
 
   return (
@@ -44,7 +54,32 @@ export function CoursePage() {
         </div>
       </div>
 
-      {course.quizScopes.map((scope) => {
+      {lectures ? (
+        <LectureTrackerView course={course} lectures={lectures} idToCard={idToCard} srsCards={srsCards} />
+      ) : (
+        <ModuleGroupedView modules={courseModules} srsCards={srsCards} />
+      )}
+    </div>
+  );
+}
+
+function LectureTrackerView({
+  course,
+  lectures,
+  idToCard,
+  srsCards,
+}: {
+  course: (typeof COURSES)[number];
+  lectures: CourseLecture[];
+  idToCard: Map<string, (typeof ALL_CARDS)[number]>;
+  srsCards: Record<string, import("../lib/srs").CardSrsState>;
+}) {
+  const scopes = course.quizScopes ?? [
+    { label: "All lectures", lectures: [lectures[0]?.number ?? 1, lectures[lectures.length - 1]?.number ?? 1] as [number, number] },
+  ];
+  return (
+    <>
+      {scopes.map((scope) => {
         const scopeLectures = lectures.filter(
           (l) => l.number >= scope.lectures[0] && l.number <= scope.lectures[1],
         );
@@ -62,7 +97,54 @@ export function CoursePage() {
           </div>
         );
       })}
-    </div>
+    </>
+  );
+}
+
+function ModuleGroupedView({
+  modules,
+  srsCards,
+}: {
+  modules: (typeof MODULES)[number][];
+  srsCards: Record<string, import("../lib/srs").CardSrsState>;
+}) {
+  const tiers: Tier[] = [1, 2, 3];
+  return (
+    <>
+      {tiers.map((tier) => {
+        const tierModules = modules.filter((m) => m.tier === tier).sort((a, b) => a.order - b.order);
+        const withCards = tierModules.filter((m) => ALL_CARDS.some((c) => c.module === m.slug));
+        if (withCards.length === 0) return null;
+        return (
+          <div key={tier}>
+            <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              {TIER_LABEL[tier]}
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {withCards.map((m) => {
+                const cardCount = ALL_CARDS.filter((c) => c.module === m.slug).length;
+                const progress = computeModuleProgress(ALL_CARDS, srsCards, m.slug);
+                return (
+                  <Link
+                    key={m.slug}
+                    to={`/learn/${m.slug}`}
+                    className="flex flex-col gap-2 rounded-xl border border-slate-200 bg-white p-4 transition-colors hover:border-indigo-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-indigo-700"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium">{m.title}</span>
+                      <span className="text-xs text-slate-400">{cardCount} cards</span>
+                    </div>
+                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+                      <div className="h-full bg-indigo-600" style={{ width: `${progress.masteryPct}%` }} />
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </>
   );
 }
 

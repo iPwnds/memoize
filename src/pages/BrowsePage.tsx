@@ -33,8 +33,7 @@ export function BrowsePage() {
   const current = filtered[index];
   const availableModules = MODULES.filter((m) => {
     if (track === ALL_TRACK) return true;
-    if (track.startsWith("course:")) return m.course === track.slice("course:".length);
-    return String(m.tier) === track && !m.course;
+    return m.course === track.slice("course:".length);
   });
 
   useEffect(() => {
@@ -68,9 +67,6 @@ export function BrowsePage() {
           className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900"
         >
           <option value={ALL_TRACK}>Everything</option>
-          <option value="1">Tier 1</option>
-          <option value="2">Tier 2</option>
-          <option value="3">Tier 3</option>
           {COURSES.map((c) => (
             <option key={c.id} value={courseTrack(c.id)}>
               {c.title}

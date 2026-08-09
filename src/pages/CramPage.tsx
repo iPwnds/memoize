@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { CardView } from "../components/CardView";
-import { ALL_CARDS, MODULES } from "../data";
+import { ALL_CARDS, COURSES, MODULES } from "../data";
 
 export function CramPage() {
   const [module, setModule] = useState<string>(MODULES[0]?.slug ?? "");
@@ -50,11 +50,19 @@ export function CramPage() {
           onChange={(e) => setModule(e.target.value)}
           className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm dark:border-slate-700 dark:bg-slate-900"
         >
-          {modulesWithCounts.map((m) => (
-            <option key={m.slug} value={m.slug} disabled={m.count === 0}>
-              {m.course ? m.title : `Tier ${m.tier} — ${m.title}`} ({m.count})
-            </option>
-          ))}
+          {COURSES.map((course) => {
+            const courseModules = modulesWithCounts.filter((m) => m.course === course.id);
+            if (courseModules.length === 0) return null;
+            return (
+              <optgroup key={course.id} label={course.title}>
+                {courseModules.map((m) => (
+                  <option key={m.slug} value={m.slug} disabled={m.count === 0}>
+                    {m.title} ({m.count})
+                  </option>
+                ))}
+              </optgroup>
+            );
+          })}
         </select>
         <span className="text-xs text-slate-400">
           Cram mode doesn't affect your review schedule.

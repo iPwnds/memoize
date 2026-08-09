@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { moduleBySlug } from "../data";
 import type { Card } from "../data/types";
 import { Markdown } from "./Markdown";
 import { ComplexityTable } from "./ComplexityTable";
@@ -30,6 +31,7 @@ export function CardView({
 }) {
   const [attempt, setAttempt] = useState("");
   const isImplementation = card.type === "implementation";
+  const moduleTitle = moduleBySlug(card.module)?.title ?? card.module;
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-4">
@@ -39,7 +41,7 @@ export function CardView({
         >
           {TYPE_LABEL[card.type]}
         </span>
-        <span className="text-xs text-slate-400">Tier {card.tier}</span>
+        <span className="text-xs text-slate-400">{moduleTitle}</span>
       </div>
 
       <div

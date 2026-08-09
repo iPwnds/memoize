@@ -80,7 +80,7 @@ export function HomePage() {
               : "All caught up — review anyway"}
           </div>
           <p className="mt-0.5 text-sm text-indigo-100">
-            Spaced-repetition queue, filterable by tier or course.
+            Spaced-repetition queue, filterable by course.
           </p>
         </div>
         <span aria-hidden className="text-2xl">→</span>

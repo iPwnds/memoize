@@ -34,7 +34,6 @@ export function LearnCardSection({
         <span className="rounded-full bg-slate-100 px-2 py-0.5 font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300">
           {TYPE_LABEL[card.type]}
         </span>
-        <span>Tier {card.tier}</span>
       </div>
 
       <h3 className="text-lg font-semibold leading-snug">{card.front}</h3>

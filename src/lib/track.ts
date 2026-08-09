@@ -1,6 +1,7 @@
-// Shared "track" filter for Review/Browse: either a generic tier (1/2/3),
-// "all" (everything, tiers and courses alike), or a specific course. Encoded
-// as a plain string so it can live directly in a <select> value.
+// Shared "track" filter for Review/Browse: "all" (everything) or a specific
+// course — every module belongs to exactly one course, so filtering by
+// course is the only scoping dimension below "all". Encoded as a plain
+// string so it can live directly in a <select> value.
 import { courseOfCard } from "../data";
 import type { Card } from "../data/types";
 
@@ -12,6 +13,5 @@ export function matchesTrack(card: Card, track: string): boolean {
   if (track.startsWith("course:")) {
     return courseOfCard(card) === track.slice("course:".length);
   }
-  const tierNum = Number(track);
-  return card.tier === tierNum && !courseOfCard(card);
+  return false;
 }

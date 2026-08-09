@@ -6,8 +6,12 @@
 //   - every card.module matches a known module slug
 //   - every id in `related` resolves to a real card
 //   - id naming convention: "<module-slug>-<topic-slug>"
-//   - every course has a lecture map, every lecture's cardIds resolve,
-//     and every course-module card is reachable from its course's map
+//   - every module belongs to a real COURSES entry
+//   - for lecture-numbered courses (has a COURSE_LECTURE_MAPS entry): every
+//     lecture's cardIds resolve, and every card in that course's modules is
+//     reachable from some lecture
+//   - for module-grouped courses (no COURSE_LECTURE_MAPS entry): at least
+//     one module is tagged with that course id
 
 import { ALL_CARDS } from "../src/data";
 import { MODULES } from "../src/data/modules";
@@ -56,20 +60,34 @@ for (const c of ALL_CARDS) {
   }
 }
 
-const courseModuleSlugs = new Set(
-  MODULES.filter((m) => m.course).map((m) => m.slug),
-);
-const cardIdsInLectureMaps = new Set<string>();
+const courseIds = new Set(COURSES.map((c) => c.id));
+for (const m of MODULES) {
+  if (!m.course) {
+    fail(`Module "${m.slug}" has no \`course\` — every module must belong to a course`);
+  } else if (!courseIds.has(m.course)) {
+    fail(`Module "${m.slug}" has unknown course "${m.course}"`);
+  }
+}
 
 for (const course of COURSES) {
   const lectures = COURSE_LECTURE_MAPS[course.id];
+  const courseModuleSlugs = new Set(
+    MODULES.filter((m) => m.course === course.id).map((m) => m.slug),
+  );
+
   if (!lectures) {
-    fail(`Course "${course.id}" has no entry in COURSE_LECTURE_MAPS`);
+    // Module-grouped course: no external lecture numbering to check
+    // against — just make sure it actually has content.
+    if (courseModuleSlugs.size === 0) {
+      fail(`Course "${course.id}" has no lecture map and no modules — it has no content at all`);
+    }
     continue;
   }
+
+  const cardIdsInLectureMap = new Set<string>();
   for (const lecture of lectures) {
     for (const cardId of lecture.cardIds) {
-      cardIdsInLectureMaps.add(cardId);
+      cardIdsInLectureMap.add(cardId);
       if (!idSet.has(cardId)) {
         fail(
           `Course "${course.id}" Lecture ${lecture.number} references unknown card id "${cardId}"`,
@@ -77,13 +95,12 @@ for (const course of COURSES) {
       }
     }
   }
-}
-
-for (const c of ALL_CARDS) {
-  if (courseModuleSlugs.has(c.module) && !cardIdsInLectureMaps.has(c.id)) {
-    fail(
-      `Card "${c.id}" belongs to a course module ("${c.module}") but isn't referenced by any lecture in that course's map`,
-    );
+  for (const c of ALL_CARDS) {
+    if (courseModuleSlugs.has(c.module) && !cardIdsInLectureMap.has(c.id)) {
+      fail(
+        `Card "${c.id}" belongs to a course module ("${c.module}") but isn't referenced by any lecture in "${course.id}"'s map`,
+      );
+    }
   }
 }
 

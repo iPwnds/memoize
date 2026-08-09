@@ -1,17 +1,21 @@
-// Course syllabus maps. These sit alongside the tiered curriculum and give
-// a course-scoped reading order: each lecture points at the card ids that
-// cover it, mixing course-specific cards (module slug prefixed `mit6006-`)
-// with existing generic-curriculum cards via cross-reference. `cardIds` is
-// filled in as each module is written — see src/data/index.ts for the
-// modules that back this course.
+// Course syllabus maps. Every module belongs to exactly one course
+// (ModuleMeta.course) — there is no more "courseless" generic content.
+// Two shapes of course exist:
+//   - Lecture-numbered (e.g. MIT 6.006): has an entry in
+//     COURSE_LECTURE_MAPS below, each lecture pointing at the card ids that
+//     cover it. Rendered by CoursePage as a lecture-by-lecture tracker.
+//   - Module-grouped (e.g. Complexity Class): has no lecture map — CoursePage
+//     falls back to grouping that course's MODULES by tier instead, since
+//     there's no external lecture numbering to track against.
 
 export interface CourseMeta {
   id: string;
   title: string;
   subtitle: string;
   /** Which Quiz (or the Final) this course's own review sheets scope each
-   *  lecture range to — lets the tracker group lectures by exam. */
-  quizScopes: { label: string; lectures: [number, number] }[];
+   *  lecture range to — lets the tracker group lectures by exam. Only
+   *  meaningful for lecture-numbered courses; omit for module-grouped ones. */
+  quizScopes?: { label: string; lectures: [number, number] }[];
 }
 
 export interface CourseLecture {
@@ -28,6 +32,12 @@ export interface CourseLecture {
 }
 
 export const COURSES: CourseMeta[] = [
+  {
+    id: "complexity-class",
+    title: "Complexity Class",
+    subtitle:
+      "The original Memoize curriculum — algorithms & data structures from first-principles complexity analysis through advanced/specialized topics, independent of any single external course.",
+  },
   {
     id: "mit6006",
     title: "MIT 6.006 — Introduction to Algorithms",

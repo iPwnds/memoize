@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { ALL_CARDS, moduleBySlug } from "../data";
+import { ALL_CARDS, COURSES, moduleBySlug } from "../data";
 import { LearnCardSection } from "../components/LearnCardSection";
 
 export function LearnModulePage() {
@@ -110,7 +110,8 @@ export function LearnModulePage() {
         <div>
           <h1 className="text-2xl font-semibold">{meta.title}</h1>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            Tier {meta.tier} · {cards.length} cards, in curated reading order.
+            {COURSES.find((c) => c.id === meta.course)?.title ?? meta.course} ·{" "}
+            {cards.length} cards, in curated reading order.
           </p>
         </div>
         {cards.map((card) => (

@@ -51,6 +51,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6045-computability", title: "6.045: Turing Machines & Computability", tier: 1, order: 201, course: "mit6045" },
   { slug: "mit6045-complexity", title: "6.045: Complexity Theory & NP-Completeness", tier: 1, order: 202, course: "mit6045" },
   { slug: "mit6045-crypto", title: "6.045: Cryptography", tier: 1, order: 203, course: "mit6045" },
+  { slug: "mit6045-learning-quantum", title: "6.045: Learning Theory & Quantum Computing", tier: 1, order: 204, course: "mit6045" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

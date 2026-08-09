@@ -483,6 +483,50 @@ export const MIT6045_LECTURES: CourseLecture[] = [
       "mit6045-crypto-3-coloring-zero-knowledge",
     ],
   },
+  {
+    number: 19,
+    title: "Probably Approximately Correct (PAC) Learning",
+    cardIds: [
+      "mit6045-learning-quantum-problem-of-induction",
+      "mit6045-learning-quantum-pac-framework",
+      "mit6045-learning-quantum-sample-complexity-finite",
+    ],
+  },
+  {
+    number: 20,
+    title: "More PAC Learning",
+    cardIds: [
+      "mit6045-learning-quantum-vc-dimension",
+      "mit6045-learning-quantum-learning-computational-hardness",
+      "mit6045-learning-quantum-rsa-learning-connection",
+    ],
+    problemSet: "Problem Set 6",
+  },
+  {
+    number: 21,
+    title: "Introduction to Quantum",
+    cardIds: ["mit6045-learning-quantum-physical-basis-of-computation"],
+  },
+  {
+    number: 22,
+    title: "Quantum Mechanics and BQP",
+    cardIds: [
+      "mit6045-learning-quantum-qubits-and-measurement",
+      "mit6045-learning-quantum-unitary-transformations",
+      "mit6045-learning-quantum-entanglement",
+      "mit6045-learning-quantum-no-cloning-and-no-communication",
+      "mit6045-learning-quantum-universal-gate-sets-and-bqp",
+    ],
+  },
+  {
+    number: 23,
+    title: "Quantum Algorithms",
+    cardIds: [
+      "mit6045-learning-quantum-deutsch-jozsa",
+      "mit6045-learning-quantum-simons-algorithm",
+      "mit6045-learning-quantum-shors-algorithm",
+    ],
+  },
 ];
 
 /**

@@ -34,6 +34,7 @@ import { mit6045AutomataCards } from "./mit6045-automata";
 import { mit6045ComputabilityCards } from "./mit6045-computability";
 import { mit6045ComplexityCards } from "./mit6045-complexity";
 import { mit6045CryptographyCards } from "./mit6045-cryptography";
+import { mit6045LearningQuantumCards } from "./mit6045-learning-quantum";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -72,6 +73,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6045ComputabilityCards,
   ...mit6045ComplexityCards,
   ...mit6045CryptographyCards,
+  ...mit6045LearningQuantumCards,
 ];
 
 export * from "./types";

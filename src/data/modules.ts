@@ -49,6 +49,7 @@ export const MODULES: ModuleMeta[] = [
   // tier-grouped, so `tier`/`order` are only for id/validator consistency.
   { slug: "mit6045-automata", title: "6.045: Automata & Regular Languages", tier: 1, order: 200, course: "mit6045" },
   { slug: "mit6045-computability", title: "6.045: Turing Machines & Computability", tier: 1, order: 201, course: "mit6045" },
+  { slug: "mit6045-complexity", title: "6.045: Complexity Theory & NP-Completeness", tier: 1, order: 202, course: "mit6045" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

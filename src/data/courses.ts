@@ -403,6 +403,44 @@ export const MIT6045_LECTURES: CourseLecture[] = [
     ],
     problemSet: "Problem Set 3",
   },
+  {
+    number: 12,
+    title: "Complexity Theory",
+    cardIds: [
+      "mit6045-complexity-time-class-and-model-independence",
+      "mit6045-complexity-p-definition",
+      "mit6045-complexity-language-not-in-p-and-hierarchy",
+    ],
+    problemSet: "Problem Set 4",
+  },
+  {
+    number: 15,
+    title: "More Complexity Theory",
+    cardIds: [
+      "mit6045-complexity-np-two-definitions",
+      "mit6045-complexity-poly-time-reducibility",
+      "mit6045-complexity-np-completeness-definitions",
+    ],
+  },
+  {
+    number: 16,
+    title: "More NP-Completeness",
+    cardIds: [
+      "mit6045-complexity-sat-is-np-complete",
+      "mit6045-complexity-3sat-and-cnf-conversion",
+      "mit6045-complexity-clique-is-np-complete",
+    ],
+    problemSet: "Problem Set 5",
+  },
+  {
+    number: 17,
+    title: "Probabilistic Turing Machines and Complexity Classes",
+    cardIds: [
+      "mit6045-complexity-probabilistic-tm-model",
+      "mit6045-complexity-bpp-and-rp-definitions",
+      "mit6045-complexity-amplification-lemmas",
+    ],
+  },
 ];
 
 /**

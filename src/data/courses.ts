@@ -404,6 +404,16 @@ export const MIT6045_LECTURES: CourseLecture[] = [
     problemSet: "Problem Set 3",
   },
   {
+    number: 11,
+    title: "Introduction to Cryptography",
+    cardIds: [
+      "mit6045-crypto-classical-ciphers-and-weaknesses",
+      "mit6045-crypto-one-time-pad",
+      "mit6045-crypto-shannons-theorem",
+      "mit6045-crypto-key-reuse-vulnerability",
+    ],
+  },
+  {
     number: 12,
     title: "Complexity Theory",
     cardIds: [
@@ -412,6 +422,28 @@ export const MIT6045_LECTURES: CourseLecture[] = [
       "mit6045-complexity-language-not-in-p-and-hierarchy",
     ],
     problemSet: "Problem Set 4",
+  },
+  {
+    number: 13,
+    title: "Pseudorandom Generators and One-Way Functions",
+    cardIds: [
+      "mit6045-crypto-pseudorandom-generators",
+      "mit6045-crypto-prg-stretching",
+      "mit6045-crypto-enhanced-one-time-pad",
+      "mit6045-crypto-one-way-functions",
+      "mit6045-crypto-owf-cprg-equivalence",
+      "mit6045-crypto-worst-case-vs-average-case",
+    ],
+  },
+  {
+    number: 14,
+    title: "Public-Key Cryptography",
+    cardIds: [
+      "mit6045-crypto-yaos-minimax-principle",
+      "mit6045-crypto-public-key-motivation",
+      "mit6045-crypto-diffie-hellman",
+      "mit6045-crypto-rsa",
+    ],
   },
   {
     number: 15,
@@ -439,6 +471,16 @@ export const MIT6045_LECTURES: CourseLecture[] = [
       "mit6045-complexity-probabilistic-tm-model",
       "mit6045-complexity-bpp-and-rp-definitions",
       "mit6045-complexity-amplification-lemmas",
+    ],
+  },
+  {
+    number: 18,
+    title: "Trapdoor One-Way Functions and Zero-Knowledge Proofs",
+    cardIds: [
+      "mit6045-crypto-trapdoor-owf",
+      "mit6045-crypto-impagliazzos-five-worlds",
+      "mit6045-crypto-zero-knowledge-graph-nonisomorphism",
+      "mit6045-crypto-3-coloring-zero-knowledge",
     ],
   },
 ];

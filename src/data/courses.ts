@@ -58,6 +58,16 @@ export const COURSES: CourseMeta[] = [
       { label: "Final (Lec 13–23)", lectures: [13, 23] },
     ],
   },
+  {
+    id: "mit6046",
+    title: "MIT 6.046J — Design and Analysis of Algorithms",
+    subtitle: "Spring 2015 · MIT OpenCourseWare",
+    quizScopes: [
+      { label: "Quiz 1 (Lec 1–10)", lectures: [1, 10] },
+      { label: "Quiz 2 (Lec 11–17)", lectures: [11, 17] },
+      { label: "Final (Lec 18–24, emphasis on remainder)", lectures: [18, 24] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -535,7 +545,45 @@ export const MIT6045_LECTURES: CourseLecture[] = [
  * scripts/validate-content.ts — or /courses/<id> silently renders as if
  * the course id itself were invalid.
  */
+export const MIT6046_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Overview, Interval Scheduling",
+    cardIds: ["mit6046-dc-greedy-interval-scheduling", "mit6046-dc-weighted-interval-scheduling-dp"],
+  },
+  {
+    number: 2,
+    title: "Divide & Conquer: Convex Hull, Median Finding",
+    cardIds: ["mit6046-dc-paradigm", "mit6046-dc-convex-hull-merge", "mit6046-dc-median-of-medians"],
+  },
+  {
+    number: 3,
+    title: "Divide & Conquer: FFT",
+    cardIds: [
+      "mit6046-dc-polynomial-representations",
+      "mit6046-dc-fft-collapsing-sets",
+      "mit6046-dc-fft-algorithm",
+    ],
+  },
+  {
+    number: 4,
+    title: "Divide & Conquer: Van Emde Boas Trees",
+    cardIds: [
+      "mit6046-dc-veb-clustering",
+      "mit6046-dc-veb-recursive-refinement",
+      "mit6046-dc-veb-space",
+    ],
+  },
+];
+
+/**
+ * Single source of truth mapping a course id to its lecture map. Every
+ * entry in `COURSES` must have a corresponding entry here — enforced by
+ * scripts/validate-content.ts — or /courses/<id> silently renders as if
+ * the course id itself were invalid.
+ */
 export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6006: MIT6006_LECTURES,
   mit6045: MIT6045_LECTURES,
+  mit6046: MIT6046_LECTURES,
 };

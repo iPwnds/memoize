@@ -52,6 +52,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6045-complexity", title: "6.045: Complexity Theory & NP-Completeness", tier: 1, order: 202, course: "mit6045" },
   { slug: "mit6045-crypto", title: "6.045: Cryptography", tier: 1, order: 203, course: "mit6045" },
   { slug: "mit6045-learning-quantum", title: "6.045: Learning Theory & Quantum Computing", tier: 1, order: 204, course: "mit6045" },
+
+  // MIT 6.046J course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as mit6006/mit6045 above.
+  { slug: "mit6046-dc", title: "6.046: Foundations & Divide-and-Conquer", tier: 1, order: 300, course: "mit6046" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

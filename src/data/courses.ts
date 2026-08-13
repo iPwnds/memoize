@@ -624,6 +624,26 @@ export const MIT6046_LECTURES: CourseLecture[] = [
     title: "Greedy Algorithms: Minimum Spanning Tree",
     cardIds: ["mit6046-augdp-mst-formal-proofs"],
   },
+  {
+    number: 13,
+    title: "Incremental Improvement: Max Flow, Min Cut",
+    cardIds: ["mit6046-flowlp-formal-flow-cut-algebra"],
+  },
+  {
+    number: 14,
+    title: "Incremental Improvement: Matching",
+    cardIds: ["mit6046-flowlp-adversarial-slow-example"],
+    problemSet: "Problem Set 7",
+  },
+  {
+    number: 15,
+    title: "Linear Programming: LP, Reductions, Simplex",
+    cardIds: [
+      "mit6046-flowlp-standard-form-and-duality",
+      "mit6046-flowlp-formulating-known-problems",
+      "mit6046-flowlp-simplex-algorithm",
+    ],
+  },
 ];
 
 /**

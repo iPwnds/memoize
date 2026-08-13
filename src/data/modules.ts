@@ -58,6 +58,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6046-dc", title: "6.046: Foundations & Divide-and-Conquer", tier: 1, order: 300, course: "mit6046" },
   { slug: "mit6046-am", title: "6.046: Amortization & Randomization", tier: 1, order: 301, course: "mit6046" },
   { slug: "mit6046-augdp", title: "6.046: Augmentation, DP & Greedy", tier: 1, order: 302, course: "mit6046" },
+  { slug: "mit6046-flowlp", title: "6.046: Flow, Matching & Linear Programming", tier: 1, order: 303, course: "mit6046" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

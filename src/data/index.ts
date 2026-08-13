@@ -38,6 +38,7 @@ import { mit6045LearningQuantumCards } from "./mit6045-learning-quantum";
 import { mit6046DivideConquerCards } from "./mit6046-divide-conquer";
 import { mit6046AmortizationRandomizationCards } from "./mit6046-amortization-randomization";
 import { mit6046AugmentationDpGreedyCards } from "./mit6046-augmentation-dp-greedy";
+import { mit6046FlowLpCards } from "./mit6046-flow-lp";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -80,6 +81,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6046DivideConquerCards,
   ...mit6046AmortizationRandomizationCards,
   ...mit6046AugmentationDpGreedyCards,
+  ...mit6046FlowLpCards,
 ];
 
 export * from "./types";

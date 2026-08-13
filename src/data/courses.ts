@@ -644,6 +644,31 @@ export const MIT6046_LECTURES: CourseLecture[] = [
       "mit6046-flowlp-simplex-algorithm",
     ],
   },
+  {
+    number: 16,
+    title: "Complexity: P, NP, NP-completeness, Reductions",
+    cardIds: ["mit6046-cx-reduction-chain-gadgets", "mit6046-cx-weak-vs-strong-nphard"],
+    problemSet: "Problem Set 7",
+  },
+  {
+    number: 17,
+    title: "Complexity: Approximation Algorithms",
+    cardIds: [
+      "mit6046-cx-approximation-ratio-ptas-fptas",
+      "mit6046-cx-vertex-cover-natural-vs-edge-picking",
+      "mit6046-cx-set-cover-greedy-approx",
+      "mit6046-cx-partition-ptas",
+    ],
+  },
+  {
+    number: 18,
+    title: "Complexity: Fixed-Parameter Algorithms",
+    cardIds: [
+      "mit6046-cx-fixed-parameter-tractability",
+      "mit6046-cx-bounded-search-kernelization",
+      "mit6046-cx-eptas-fpt-connection",
+    ],
+  },
 ];
 
 /**

@@ -603,6 +603,27 @@ export const MIT6046_LECTURES: CourseLecture[] = [
       "mit6046-am-perfect-hashing-fks",
     ],
   },
+  {
+    number: 9,
+    title: "Augmentation: Range Trees",
+    cardIds: ["mit6046-augdp-finger-search-trees", "mit6046-augdp-range-trees"],
+  },
+  {
+    number: 10,
+    title: "Dynamic Programming: Advanced DP",
+    cardIds: ["mit6046-augdp-longest-palindromic-subsequence", "mit6046-augdp-optimal-bst"],
+    problemSet: "Problem Set 5",
+  },
+  {
+    number: 11,
+    title: "Dynamic Programming: All-Pairs Shortest Paths",
+    cardIds: ["mit6046-augdp-apsp-matrix-multiplication", "mit6046-augdp-difference-constraints"],
+  },
+  {
+    number: 12,
+    title: "Greedy Algorithms: Minimum Spanning Tree",
+    cardIds: ["mit6046-augdp-mst-formal-proofs"],
+  },
 ];
 
 /**

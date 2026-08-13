@@ -574,6 +574,35 @@ export const MIT6046_LECTURES: CourseLecture[] = [
       "mit6046-dc-veb-space",
     ],
   },
+  {
+    number: 5,
+    title: "Amortization: Amortized Analysis",
+    cardIds: [
+      "mit6046-am-four-methods-overview",
+      "mit6046-am-accounting-vs-charging",
+      "mit6046-am-potential-method",
+      "mit6046-am-tree-splits-merges",
+    ],
+  },
+  {
+    number: 6,
+    title: "Randomization: Matrix Multiply, Quicksort",
+    cardIds: ["mit6046-am-freivalds-algorithm", "mit6046-am-randomized-quicksort-paranoid"],
+  },
+  {
+    number: 7,
+    title: "Randomization: Skip Lists",
+    cardIds: ["mit6046-am-skip-list-motivation", "mit6046-am-skip-list-whp-analysis"],
+  },
+  {
+    number: 8,
+    title: "Randomization: Universal & Perfect Hashing",
+    cardIds: [
+      "mit6046-am-universal-hashing-theorem",
+      "mit6046-am-dot-product-hash-family",
+      "mit6046-am-perfect-hashing-fks",
+    ],
+  },
 ];
 
 /**

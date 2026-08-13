@@ -40,6 +40,7 @@ import { mit6046AmortizationRandomizationCards } from "./mit6046-amortization-ra
 import { mit6046AugmentationDpGreedyCards } from "./mit6046-augmentation-dp-greedy";
 import { mit6046FlowLpCards } from "./mit6046-flow-lp";
 import { mit6046ComplexityApproxCards } from "./mit6046-complexity-approx";
+import { mit6046DistributedCards } from "./mit6046-distributed";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -84,6 +85,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6046AugmentationDpGreedyCards,
   ...mit6046FlowLpCards,
   ...mit6046ComplexityApproxCards,
+  ...mit6046DistributedCards,
 ];
 
 export * from "./types";

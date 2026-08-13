@@ -669,6 +669,24 @@ export const MIT6046_LECTURES: CourseLecture[] = [
       "mit6046-cx-eptas-fpt-connection",
     ],
   },
+  {
+    number: 19,
+    title: "Synchronous Distributed Algorithms: Symmetry-Breaking, Shortest-Paths Spanning Trees",
+    cardIds: [
+      "mit6046-dist-synchronous-model",
+      "mit6046-dist-leader-election-impossibility",
+      "mit6046-dist-leader-election-uid-and-random",
+      "mit6046-dist-mis-lubys-algorithm",
+      "mit6046-dist-mis-termination",
+      "mit6046-dist-sync-bfs-spanning-tree",
+    ],
+  },
+  {
+    number: 20,
+    title: "Asynchronous Distributed Algorithms: Shortest-Paths Spanning Trees",
+    cardIds: ["mit6046-dist-asynchronous-model"],
+    problemSet: "Problem Set 9",
+  },
 ];
 
 /**

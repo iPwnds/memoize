@@ -687,6 +687,40 @@ export const MIT6046_LECTURES: CourseLecture[] = [
     cardIds: ["mit6046-dist-asynchronous-model"],
     problemSet: "Problem Set 9",
   },
+  {
+    number: 21,
+    title: "Cryptography: Hash Functions",
+    cardIds: ["mit6046-final-hash-function-properties", "mit6046-final-hash-applications"],
+  },
+  {
+    number: 22,
+    title: "Cryptography: Encryption",
+    cardIds: [
+      "mit6046-final-mitm-diffie-hellman",
+      "mit6046-final-np-completeness-average-case-crypto",
+      "mit6046-final-merkle-hellman-knapsack",
+    ],
+    problemSet: "Problem Set 10",
+  },
+  {
+    number: 23,
+    title: "Cache-Oblivious Algorithms: Medians & Matrices",
+    cardIds: [
+      "mit6046-final-cache-models",
+      "mit6046-final-cache-scanning",
+      "mit6046-final-cache-median-finding",
+      "mit6046-final-cache-blocked-matrix-multiply",
+    ],
+  },
+  {
+    number: 24,
+    title: "Cache-Oblivious Algorithms: Searching & Sorting",
+    cardIds: [
+      "mit6046-final-lru-competitiveness",
+      "mit6046-final-veb-layout-cache-oblivious-search",
+      "mit6046-final-cache-oblivious-sorting",
+    ],
+  },
 ];
 
 /**

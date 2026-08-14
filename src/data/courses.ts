@@ -68,6 +68,18 @@ export const COURSES: CourseMeta[] = [
       { label: "Final (Lec 18–24, emphasis on remainder)", lectures: [18, 24] },
     ],
   },
+  {
+    id: "mit6004",
+    title: "MIT 6.004 — Computation Structures",
+    subtitle: "Spring 2009 · Steve Ward · MIT OpenCourseWare",
+    quizScopes: [
+      { label: "Quiz 1 (Lec 1–5)", lectures: [1, 5] },
+      { label: "Quiz 2 (Lec 6–10)", lectures: [6, 10] },
+      { label: "Quiz 3 (Lec 11–15)", lectures: [11, 15] },
+      { label: "Quiz 4 (Lec 16–20)", lectures: [16, 20] },
+      { label: "Quiz 5 (Lec 21–25)", lectures: [21, 25] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -729,8 +741,49 @@ export const MIT6046_LECTURES: CourseLecture[] = [
  * scripts/validate-content.ts — or /courses/<id> silently renders as if
  * the course id itself were invalid.
  */
+export const MIT6004_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Course Overview and Mechanics, Basics of Information",
+    cardIds: [
+      "mit6004-basics-shannon-information",
+      "mit6004-basics-encoding-schemes",
+      "mit6004-basics-twos-complement",
+      "mit6004-basics-hamming-error-correction",
+    ],
+  },
+  {
+    number: 2,
+    title: "Digital Abstraction, Combinational Logic, Voltage-Based Encoding",
+    cardIds: [
+      "mit6004-basics-digital-contracts-and-abstraction",
+      "mit6004-basics-digital-combinational-device",
+      "mit6004-basics-digital-noise-sources",
+      "mit6004-basics-digital-vtc-noise-margins",
+    ],
+  },
+  {
+    number: 3,
+    title: "CMOS Technology, Gate Design, Timing",
+    cardIds: [
+      "mit6004-basics-cmos-mosfet-switch-model",
+      "mit6004-basics-cmos-design-rules",
+      "mit6004-basics-cmos-gate-synthesis",
+      "mit6004-basics-cmos-timing-contract",
+      "mit6004-basics-cmos-power-and-reversible-computing",
+    ],
+  },
+];
+
+/**
+ * Single source of truth mapping a course id to its lecture map. Every
+ * entry in `COURSES` must have a corresponding entry here — enforced by
+ * scripts/validate-content.ts — or /courses/<id> silently renders as if
+ * the course id itself were invalid.
+ */
 export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6006: MIT6006_LECTURES,
   mit6045: MIT6045_LECTURES,
   mit6046: MIT6046_LECTURES,
+  mit6004: MIT6004_LECTURES,
 };

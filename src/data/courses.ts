@@ -812,6 +812,28 @@ export const MIT6004_LECTURES: CourseLecture[] = [
       "mit6004-logic-sync-practical-synchronizers",
     ],
   },
+  {
+    number: 8,
+    title: "Pipelining; Throughput and Latency",
+    cardIds: [
+      "mit6004-pipe-latency-throughput",
+      "mit6004-pipe-formal-definition",
+      "mit6004-pipe-design-methodology",
+      "mit6004-pipe-bottleneck-and-interleaving",
+      "mit6004-pipe-control-structures",
+    ],
+  },
+  {
+    number: 9,
+    title: "Case Study: Multipliers",
+    cardIds: [
+      "mit6004-pipe-mult-recursive-construction",
+      "mit6004-pipe-mult-latency-insight",
+      "mit6004-pipe-mult-pipelining-diagonal-slices",
+      "mit6004-pipe-mult-slice-bit-serial",
+      "mit6004-pipe-mult-cost-performance-summary",
+    ],
+  },
 ];
 
 /**

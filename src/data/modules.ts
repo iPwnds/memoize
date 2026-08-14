@@ -67,6 +67,7 @@ export const MODULES: ModuleMeta[] = [
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit6004-basics", title: "6.004: Information, Digital Abstraction & CMOS", tier: 1, order: 400, course: "mit6004" },
   { slug: "mit6004-logic", title: "6.004: Logic Synthesis, Sequential Logic & FSMs", tier: 1, order: 401, course: "mit6004" },
+  { slug: "mit6004-pipe", title: "6.004: Pipelining & the Multiplier Case Study", tier: 1, order: 402, course: "mit6004" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

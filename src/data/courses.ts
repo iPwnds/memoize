@@ -773,6 +773,45 @@ export const MIT6004_LECTURES: CourseLecture[] = [
       "mit6004-basics-cmos-power-and-reversible-computing",
     ],
   },
+  {
+    number: 4,
+    title: "Canonical Forms; Synthesis, Simplification",
+    cardIds: [
+      "mit6004-logic-sum-of-products",
+      "mit6004-logic-tree-vs-fanin",
+      "mit6004-logic-boolean-minimization",
+      "mit6004-logic-mux-rom-synthesis",
+    ],
+  },
+  {
+    number: 5,
+    title: "Sequential Logic",
+    cardIds: [
+      "mit6004-logic-seq-storage-and-feedback",
+      "mit6004-logic-seq-d-latch",
+      "mit6004-logic-seq-combinational-cycle-problem",
+      "mit6004-logic-seq-edge-triggered-flipflop",
+    ],
+  },
+  {
+    number: 6,
+    title: "Storage Elements, Finite State Machines",
+    cardIds: [
+      "mit6004-logic-fsm-formal-definition",
+      "mit6004-logic-fsm-hardware-implementation",
+      "mit6004-logic-fsm-equivalence-minimization",
+    ],
+  },
+  {
+    number: 7,
+    title: "Synchronization, Metastability",
+    cardIds: [
+      "mit6004-logic-sync-arbiter-unsolvability",
+      "mit6004-logic-sync-metastable-state",
+      "mit6004-logic-sync-metastability-probability",
+      "mit6004-logic-sync-practical-synchronizers",
+    ],
+  },
 ];
 
 /**

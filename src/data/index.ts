@@ -43,6 +43,7 @@ import { mit6046ComplexityApproxCards } from "./mit6046-complexity-approx";
 import { mit6046DistributedCards } from "./mit6046-distributed";
 import { mit6046CryptoCacheObliviousCards } from "./mit6046-crypto-cache-oblivious";
 import { mit6004InfoDigitalCmosCards } from "./mit6004-info-digital-cmos";
+import { mit6004LogicSequentialFsmCards } from "./mit6004-logic-sequential-fsm";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -90,6 +91,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6046DistributedCards,
   ...mit6046CryptoCacheObliviousCards,
   ...mit6004InfoDigitalCmosCards,
+  ...mit6004LogicSequentialFsmCards,
 ];
 
 export * from "./types";

@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 463 cards across 35 modules and 3 courses:
+quiz-app polish — 525 cards across 42 modules and 4 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -12,6 +12,9 @@ quiz-app polish — 463 cards across 35 modules and 3 courses:
 - **MIT 6.045J / 18.400J — Automata, Computability, and Complexity** — 74 cards,
   5 modules, mapped lecture-by-lecture against the actual Spring 2011 OCW
   syllabus (all 23 lectures).
+- **MIT 6.046J / 18.410J — Design and Analysis of Algorithms** — 62 cards,
+  7 modules, mapped lecture-by-lecture against the actual Spring 2015 OCW
+  syllabus (all 24 lectures).
 
 More MIT OpenCourseWare courses are intended to follow the same pattern.
 
@@ -123,6 +126,28 @@ is complete — 74 cards across 5 modules, mapped against all 23 lectures:
   applied level (P vs NP, reductions, SAT, classic NP-complete problems,
   modular exponentiation), these cards cover it at 6.045's formal/
   proof-driven level and cross-link via `related` rather than duplicating.
+
+**MIT 6.046J / 18.410J** (Design and Analysis of Algorithms, Spring 2015) is
+complete — 62 cards across 7 modules, mapped against all 24 lectures:
+
+- **Foundations & Divide-and-Conquer** (Lec 1–4), **Amortization &
+  Randomization** (Lec 5–8), **Augmentation, DP & Greedy** (Lec 9–12), **Flow,
+  Matching & Linear Programming** (Lec 13–15), **Complexity & Approximation**
+  (Lec 16–18), **Distributed Algorithms** (Lec 19–20), **Cryptography &
+  Cache-Oblivious Algorithms** (Lec 21–24).
+- Sourced from the course's own written lecture notes and slide decks, read
+  page-by-page. This is the most overlap-heavy of the MIT tracks — several
+  lectures (order-statistics trees, the alternating coin game, Bellman-Ford,
+  Floyd-Warshall, Kruskal's/Prim's/Union-Find, basic Vertex Cover
+  approximation, RSA, Diffie-Hellman) already have deep coverage elsewhere in
+  the app (mainly MIT 6.006 and MIT 6.045J), so those modules stay
+  intentionally lean and cross-link via `related` rather than duplicating;
+  cards were only written where the material is genuinely new or the
+  treatment is meaningfully more rigorous (e.g. the four amortized-analysis
+  techniques in full generality, van Emde Boas trees, FFT, universal/perfect
+  hashing, the formal max-flow min-cut proof, linear programming, fixed-
+  parameter tractability, distributed leader election/MIS, and
+  cache-oblivious algorithms — none of which exist anywhere else in the app).
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

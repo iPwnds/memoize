@@ -880,6 +880,62 @@ export const MIT6004_LECTURES: CourseLecture[] = [
       "mit6004-beta-stack-dangling-references",
     ],
   },
+  {
+    number: 14,
+    title: "Non-pipelined Beta Implementation",
+    cardIds: [
+      "mit6004-arch-impl-cpu-tradeoffs",
+      "mit6004-arch-impl-incremental-featurism",
+      "mit6004-arch-impl-register-file-timing",
+      "mit6004-arch-impl-fetch-decode-datapath",
+      "mit6004-arch-impl-instruction-class-datapaths",
+      "mit6004-arch-impl-exceptions",
+    ],
+  },
+  {
+    number: 15,
+    title: "Multilevel Memories: Locality, Performance, Caches",
+    cardIds: [
+      "mit6004-arch-mem-hierarchy-tradeoff",
+      "mit6004-arch-mem-locality-of-reference",
+      "mit6004-arch-mem-expose-vs-hide",
+      "mit6004-arch-mem-cache-basic-algorithm",
+      "mit6004-arch-mem-associativity-tradeoff",
+    ],
+  },
+  {
+    number: 16,
+    title: "Cache Design Issues",
+    cardIds: [
+      "mit6004-arch-cache-set-associative",
+      "mit6004-arch-cache-replacement-strategies",
+      "mit6004-arch-cache-block-size",
+      "mit6004-arch-cache-valid-bits",
+      "mit6004-arch-cache-write-strategies",
+    ],
+  },
+  {
+    number: 22,
+    title: "Pipelined Beta Implementation, Bypassing",
+    cardIds: [
+      "mit6004-arch-pipe-why-hard",
+      "mit6004-arch-pipe-5-stage-structure",
+      "mit6004-arch-pipe-branch-delay-slots",
+      "mit6004-arch-pipe-data-hazards-and-solutions",
+      "mit6004-arch-pipe-bypass-mechanics",
+    ],
+  },
+  {
+    number: 23,
+    title: "Pipeline Issues: Delay Slots, Annulment, Exceptions",
+    cardIds: [
+      "mit6004-arch-pipe-load-hazards",
+      "mit6004-arch-pipe-stall-logic",
+      "mit6004-arch-pipe-exceptions-in-pipeline",
+      "mit6004-arch-pipe-async-interrupts",
+      "mit6004-arch-pipe-risc-complexity-irony",
+    ],
+  },
 ];
 
 /**

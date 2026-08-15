@@ -46,6 +46,7 @@ import { mit6004InfoDigitalCmosCards } from "./mit6004-info-digital-cmos";
 import { mit6004LogicSequentialFsmCards } from "./mit6004-logic-sequential-fsm";
 import { mit6004PipeliningMultipliersCards } from "./mit6004-pipelining-multipliers";
 import { mit6004BetaIsaAssemblyCards } from "./mit6004-beta-isa-assembly";
+import { mit6004ArchImplMemPipeCards } from "./mit6004-arch-impl-mem-pipe";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -96,6 +97,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6004LogicSequentialFsmCards,
   ...mit6004PipeliningMultipliersCards,
   ...mit6004BetaIsaAssemblyCards,
+  ...mit6004ArchImplMemPipeCards,
 ];
 
 export * from "./types";

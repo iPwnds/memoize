@@ -80,6 +80,15 @@ export const COURSES: CourseMeta[] = [
       { label: "Quiz 5 (Lec 21–25)", lectures: [21, 25] },
     ],
   },
+  {
+    id: "mit6828",
+    title: "MIT 6.828 — Operating System Engineering",
+    subtitle: "Fall 2012 · Frans Kaashoek, Robert Morris · MIT OpenCourseWare",
+    quizScopes: [
+      { label: "Quiz (Lec 1–13)", lectures: [1, 13] },
+      { label: "Post-Quiz (Lec 14–25)", lectures: [14, 25] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -1019,6 +1028,45 @@ export const MIT6004_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT6828_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Operating Systems",
+    cardIds: [
+      "mit6828-intro-os-goals-and-abstraction",
+      "mit6828-intro-os-fork-exec-split",
+      "mit6828-intro-file-descriptors",
+      "mit6828-intro-pipes",
+    ],
+  },
+  {
+    number: 2,
+    title: "PC Hardware and x86 Programming",
+    cardIds: [
+      "mit6828-intro-x86-registers-and-io",
+      "mit6828-intro-x86-segmentation",
+      "mit6828-intro-x86-physical-memory-map",
+      "mit6828-intro-x86-syntax-addressing",
+      "mit6828-intro-gcc-calling-convention",
+      "mit6828-intro-pc-emulation",
+    ],
+  },
+  {
+    number: 3,
+    title: "Overview of Major Internals, System Call Interface",
+    cardIds: [
+      "mit6828-intro-isolation-why-have-os",
+      "mit6828-intro-monolithic-vs-microkernel",
+      "mit6828-intro-isolation-mechanisms",
+      "mit6828-intro-cpl-mechanism",
+      "mit6828-intro-syscall-entry",
+      "mit6828-intro-address-space-isolation",
+      "mit6828-intro-preemptive-context-switch",
+      "mit6828-intro-syscall-interface-design",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -1030,4 +1078,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6045: MIT6045_LECTURES,
   mit6046: MIT6046_LECTURES,
   mit6004: MIT6004_LECTURES,
+  mit6828: MIT6828_LECTURES,
 };

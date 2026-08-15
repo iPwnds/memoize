@@ -72,6 +72,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6004-arch", title: "6.004: Beta Implementation, Caches & Pipelining", tier: 1, order: 404, course: "mit6004" },
   { slug: "mit6004-vm", title: "6.004: Virtual Memory, OS Kernels & Devices", tier: 1, order: 405, course: "mit6004" },
   { slug: "mit6004-comm", title: "6.004: Communication, Synchronization & Parallel Processing", tier: 1, order: 406, course: "mit6004" },
+
+  // MIT 6.828 course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit6828-intro", title: "6.828: OS Overview, x86/PC Hardware & Kernel Internals", tier: 1, order: 500, course: "mit6828" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

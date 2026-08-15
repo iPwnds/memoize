@@ -834,6 +834,52 @@ export const MIT6004_LECTURES: CourseLecture[] = [
       "mit6004-pipe-mult-cost-performance-summary",
     ],
   },
+  {
+    number: 10,
+    title: "Designing an Instruction Set",
+    cardIds: [
+      "mit6004-beta-isa-von-neumann",
+      "mit6004-beta-isa-tradeoffs",
+      "mit6004-beta-isa-programming-model",
+      "mit6004-beta-isa-formats",
+      "mit6004-beta-isa-alu-ops-and-constants",
+      "mit6004-beta-isa-loads-stores",
+      "mit6004-beta-isa-addressing-modes",
+      "mit6004-beta-isa-branches",
+    ],
+  },
+  {
+    number: 11,
+    title: "Machine Language, Assemblers, and Compilers",
+    cardIds: [
+      "mit6004-beta-asm-interpretation-vs-compilation",
+      "mit6004-beta-asm-uasm-two-stage-translation",
+      "mit6004-beta-asm-macros-and-instruction-assembly",
+      "mit6004-beta-asm-compiling-data",
+      "mit6004-beta-asm-compiling-control-flow",
+    ],
+  },
+  {
+    number: 12,
+    title: "Models of Computation",
+    cardIds: [
+      "mit6004-beta-models-fsm-enumeration",
+      "mit6004-beta-models-fsm-limitations-and-turing-machines",
+      "mit6004-beta-models-universal-tm-and-interpretation",
+    ],
+  },
+  {
+    number: 13,
+    title: "Stacks and Procedures",
+    cardIds: [
+      "mit6004-beta-stack-activation-records",
+      "mit6004-beta-stack-discipline",
+      "mit6004-beta-stack-linkage-contract",
+      "mit6004-beta-stack-frame-layout",
+      "mit6004-beta-stack-recursion-and-crawling",
+      "mit6004-beta-stack-dangling-references",
+    ],
+  },
 ];
 
 /**

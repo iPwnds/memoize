@@ -1065,6 +1065,31 @@ export const MIT6828_LECTURES: CourseLecture[] = [
       "mit6828-intro-syscall-interface-design",
     ],
   },
+  {
+    number: 4,
+    title: "Virtual Memory",
+    cardIds: [
+      "mit6828-vm-paging-indirection",
+      "mit6828-vm-pte-structure",
+      "mit6828-vm-two-level-page-table",
+      "mit6828-vm-page-fault",
+      "mit6828-vm-xv6-address-space-layout",
+      "mit6828-vm-sbrk-implementation",
+    ],
+  },
+  {
+    number: 5,
+    title: "Interrupts, Exceptions",
+    cardIds: [
+      "mit6828-vm-execution-state-transitions",
+      "mit6828-vm-int-instruction-mechanics",
+      "mit6828-vm-idt-and-vectors",
+      "mit6828-vm-trapframe",
+      "mit6828-vm-syscall-handling",
+      "mit6828-vm-kernel-mode-interrupts",
+      "mit6828-vm-fork-kernel-stack-setup",
+    ],
+  },
 ];
 
 /**

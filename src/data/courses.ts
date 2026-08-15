@@ -915,6 +915,42 @@ export const MIT6004_LECTURES: CourseLecture[] = [
     ],
   },
   {
+    number: 17,
+    title: "Virtual Memory: Mapping, Protection, Contexts",
+    cardIds: [
+      "mit6004-vm-address-space-lessons",
+      "mit6004-vm-illusion-and-demand-paging",
+      "mit6004-vm-page-map-design",
+      "mit6004-vm-page-map-arithmetic",
+      "mit6004-vm-tlb",
+      "mit6004-vm-contexts",
+      "mit6004-vm-cache-interactions",
+    ],
+  },
+  {
+    number: 18,
+    title: "Virtual Machines: Timesharing, OS Kernels, Supervisor Calls",
+    cardIds: [
+      "mit6004-vm-os-process-abstraction",
+      "mit6004-vm-os-multiplexing-cpu",
+      "mit6004-vm-os-interrupt-handling-beta",
+      "mit6004-vm-os-kernel-user-mode",
+      "mit6004-vm-os-supervisor-calls",
+      "mit6004-vm-os-illop-dispatch",
+    ],
+  },
+  {
+    number: 19,
+    title: "Devices and Interrupt Handlers",
+    cardIds: [
+      "mit6004-vm-io-readkey-evolution",
+      "mit6004-vm-io-sleep-wakeup",
+      "mit6004-vm-io-interrupt-latency",
+      "mit6004-vm-io-weak-vs-strong-priorities",
+      "mit6004-vm-io-real-time-worked-example",
+    ],
+  },
+  {
     number: 22,
     title: "Pipelined Beta Implementation, Bypassing",
     cardIds: [

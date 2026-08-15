@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 525 cards across 42 modules and 4 courses:
+quiz-app polish — 650 cards across 49 modules and 5 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -15,6 +15,10 @@ quiz-app polish — 525 cards across 42 modules and 4 courses:
 - **MIT 6.046J / 18.410J — Design and Analysis of Algorithms** — 62 cards,
   7 modules, mapped lecture-by-lecture against the actual Spring 2015 OCW
   syllabus (all 24 lectures).
+- **MIT 6.004 — Computation Structures** — 125 cards, 7 modules, mapped
+  lecture-by-lecture against the actual Spring 2009 OCW syllabus (all 25
+  lectures) — digital logic, CPU architecture, and operating systems, the
+  hardware/systems counterpart to the app's other, algorithms-focused tracks.
 
 More MIT OpenCourseWare courses are intended to follow the same pattern.
 
@@ -148,6 +152,28 @@ complete — 62 cards across 7 modules, mapped against all 24 lectures:
   hashing, the formal max-flow min-cut proof, linear programming, fixed-
   parameter tractability, distributed leader election/MIS, and
   cache-oblivious algorithms — none of which exist anywhere else in the app).
+
+**MIT 6.004** (Computation Structures, Spring 2009, Steve Ward) is complete —
+125 cards across 7 modules, mapped against all 25 lectures:
+
+- **Information, Digital Abstraction & CMOS** (Lec 1–3), **Logic Synthesis,
+  Sequential Logic & FSMs** (Lec 4–7), **Pipelining & the Multiplier Case
+  Study** (Lec 8–9), **The Beta ISA, Assembly & Models of Computation**
+  (Lec 10–13), **Beta Implementation, Caches & Pipelining** (Lec 14–16,
+  22–23), **Virtual Memory, OS Kernels & Devices** (Lec 17–19),
+  **Communication, Synchronization & Parallel Processing** (Lec 20–21, 24).
+  Lecture 25 (a closing design-project talk) carries no new material and is
+  noted as such in the syllabus tracker rather than left looking incomplete.
+- Sourced from the course's own Spring 2009 lecture slides (fetched from OCW
+  and read page-by-page), not summarized from lecture titles alone. Unlike
+  the algorithms-focused tracks, 6.004 is genuinely all-new hardware/systems
+  territory — digital logic, the Beta teaching ISA, caches, pipelining,
+  virtual memory, and OS/concurrency fundamentals — with essentially zero
+  overlap against the rest of the app, so nearly every card here is original
+  rather than cross-linked. The one exception is the Models of Computation
+  lecture (Lec 12), which bridges into formal computability theory already
+  covered in depth by MIT 6.045J — those cards stay deliberately lean and
+  cross-link via `related` instead of re-deriving the same proofs.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

@@ -951,6 +951,31 @@ export const MIT6004_LECTURES: CourseLecture[] = [
     ],
   },
   {
+    number: 20,
+    title: "Communication Issues: Busses, Networks, Protocols",
+    cardIds: [
+      "mit6004-comm-bus-interfaces-vs-technology",
+      "mit6004-comm-bus-basics",
+      "mit6004-comm-bus-transmission-lines",
+      "mit6004-comm-bus-synchronous-transaction",
+      "mit6004-comm-bus-arbitration",
+      "mit6004-comm-bus-topologies-latency",
+    ],
+  },
+  {
+    number: 21,
+    title: "Communicating Processes: Semaphores, Synchronization, Deadlock",
+    cardIds: [
+      "mit6004-comm-sync-precedence-constraints",
+      "mit6004-comm-sync-fifo-buffering",
+      "mit6004-comm-sync-semaphores",
+      "mit6004-comm-sync-semaphores-bounded-buffer",
+      "mit6004-comm-sync-mutual-exclusion",
+      "mit6004-comm-sync-semaphore-implementation",
+      "mit6004-comm-sync-deadlock",
+    ],
+  },
+  {
     number: 22,
     title: "Pipelined Beta Implementation, Bypassing",
     cardIds: [
@@ -971,6 +996,26 @@ export const MIT6004_LECTURES: CourseLecture[] = [
       "mit6004-arch-pipe-async-interrupts",
       "mit6004-arch-pipe-risc-complexity-irony",
     ],
+  },
+  {
+    number: 24,
+    title: "Parallel Processing, Shared Memory, Cache Coherence",
+    cardIds: [
+      "mit6004-comm-par-ilp-vs-tlp",
+      "mit6004-comm-par-superscalar-simd",
+      "mit6004-comm-par-simd-coprocessing",
+      "mit6004-comm-par-vliw",
+      "mit6004-comm-par-mimd-smp",
+      "mit6004-comm-par-sequential-consistency",
+      "mit6004-comm-par-cache-coherence-snooping",
+      "mit6004-comm-par-weak-consistency",
+    ],
+  },
+  {
+    number: 25,
+    title: "Wrapup Lecture: Building a Better Beta",
+    cardIds: [],
+    noCardContent: "A closing design-tips talk for the course's optional final design project — no new testable material. Use this slot to revisit weak spots from Lectures 1–24 via Browse or Cram.",
   },
 ];
 

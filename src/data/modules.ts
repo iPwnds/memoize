@@ -71,6 +71,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6004-beta", title: "6.004: The Beta ISA, Assembly & Models of Computation", tier: 1, order: 403, course: "mit6004" },
   { slug: "mit6004-arch", title: "6.004: Beta Implementation, Caches & Pipelining", tier: 1, order: 404, course: "mit6004" },
   { slug: "mit6004-vm", title: "6.004: Virtual Memory, OS Kernels & Devices", tier: 1, order: 405, course: "mit6004" },
+  { slug: "mit6004-comm", title: "6.004: Communication, Synchronization & Parallel Processing", tier: 1, order: 406, course: "mit6004" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

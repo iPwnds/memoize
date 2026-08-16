@@ -1090,6 +1090,40 @@ export const MIT6828_LECTURES: CourseLecture[] = [
       "mit6828-vm-fork-kernel-stack-setup",
     ],
   },
+  {
+    number: 6,
+    title: "Multiprocessors and Locking",
+    cardIds: [
+      "mit6828-conc-race-condition",
+      "mit6828-conc-locks-and-critical-sections",
+      "mit6828-conc-atomic-instructions",
+      "mit6828-conc-locks-and-interrupts",
+      "mit6828-conc-lock-granularity-modularity",
+      "mit6828-conc-lock-ordering",
+    ],
+  },
+  {
+    number: 7,
+    title: "Processes and Switching",
+    cardIds: [
+      "mit6828-conc-process-thread-terms",
+      "mit6828-conc-switch-transparency-goals",
+      "mit6828-conc-user-thread-switch-overview",
+      "mit6828-conc-xv6-scheduler-design",
+      "mit6828-conc-yield-swtch-concurrency",
+      "mit6828-conc-thread-cleanup",
+    ],
+  },
+  {
+    number: 8,
+    title: "Sleep & Wakeup",
+    cardIds: [
+      "mit6828-conc-spin-vs-sleep",
+      "mit6828-conc-lost-wakeup-problem",
+      "mit6828-conc-sleep-atomicity-mechanism",
+      "mit6828-conc-signals-during-sleep",
+    ],
+  },
 ];
 
 /**

@@ -51,6 +51,7 @@ import { mit6004VmOsDevicesCards } from "./mit6004-vm-os-devices";
 import { mit6004CommSyncParallelCards } from "./mit6004-comm-sync-parallel";
 import { mit6828IntroX86IsolationCards } from "./mit6828-intro-x86-isolation";
 import { mit6828VmInterruptsCards } from "./mit6828-vm-interrupts";
+import { mit6828ConcProcessesSleepCards } from "./mit6828-conc-processes-sleep";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -106,6 +107,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6004CommSyncParallelCards,
   ...mit6828IntroX86IsolationCards,
   ...mit6828VmInterruptsCards,
+  ...mit6828ConcProcessesSleepCards,
 ];
 
 export * from "./types";

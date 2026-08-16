@@ -77,6 +77,7 @@ export const MODULES: ModuleMeta[] = [
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit6828-intro", title: "6.828: OS Overview, x86/PC Hardware & Kernel Internals", tier: 1, order: 500, course: "mit6828" },
   { slug: "mit6828-vm", title: "6.828: Virtual Memory & Interrupts/Exceptions", tier: 1, order: 501, course: "mit6828" },
+  { slug: "mit6828-conc", title: "6.828: Multiprocessors, Locking, Processes & Scheduling", tier: 1, order: 502, course: "mit6828" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

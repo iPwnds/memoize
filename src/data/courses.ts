@@ -1124,6 +1124,46 @@ export const MIT6828_LECTURES: CourseLecture[] = [
       "mit6828-conc-signals-during-sleep",
     ],
   },
+  {
+    number: 9,
+    title: "File Systems",
+    cardIds: [
+      "mit6828-fs-goals-and-api-choices",
+      "mit6828-fs-inode-and-links",
+      "mit6828-fs-ondisk-layout",
+      "mit6828-fs-create-trace",
+      "mit6828-fs-write-and-delete-trace",
+      "mit6828-fs-buffer-cache-and-scheduling",
+    ],
+  },
+  {
+    number: 10,
+    title: "Crash Recovery",
+    cardIds: [
+      "mit6828-fs-crash-recovery-problem",
+      "mit6828-fs-recovery-goals-and-fail-stop",
+      "mit6828-fs-synchronous-metadata-update",
+      "mit6828-fs-sync-update-recovery-and-cost",
+      "mit6828-fs-writeback-cache-problem",
+      "mit6828-fs-logging-basic-idea",
+      "mit6828-fs-xv6-log-implementation",
+      "mit6828-fs-xv6-logging-problems",
+    ],
+  },
+  {
+    number: 11,
+    title: "File System Performance and Fast Crash Recovery",
+    cardIds: [
+      "mit6828-fs-ext3-goals-and-structures",
+      "mit6828-fs-write-absorption",
+      "mit6828-fs-ext3-transaction-commit",
+      "mit6828-fs-ext3-concurrency-correctness",
+      "mit6828-fs-ext3-recovery-and-log-space",
+      "mit6828-fs-ext3-reservations-and-durability",
+      "mit6828-fs-ext3-ordering-hazards",
+      "mit6828-fs-ext3-orphan-inodes",
+    ],
+  },
 ];
 
 /**

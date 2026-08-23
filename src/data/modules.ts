@@ -79,6 +79,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6828-vm", title: "6.828: Virtual Memory & Interrupts/Exceptions", tier: 1, order: 501, course: "mit6828" },
   { slug: "mit6828-conc", title: "6.828: Multiprocessors, Locking, Processes & Scheduling", tier: 1, order: 502, course: "mit6828" },
   { slug: "mit6828-fs", title: "6.828: File Systems & Crash Recovery", tier: 1, order: 503, course: "mit6828" },
+  { slug: "mit6828-adv", title: "6.828: OS Organization, Scalable & Lock-Free Concurrency, Virtual Machines", tier: 1, order: 504, course: "mit6828" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

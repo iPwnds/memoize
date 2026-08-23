@@ -53,6 +53,7 @@ import { mit6828IntroX86IsolationCards } from "./mit6828-intro-x86-isolation";
 import { mit6828VmInterruptsCards } from "./mit6828-vm-interrupts";
 import { mit6828ConcProcessesSleepCards } from "./mit6828-conc-processes-sleep";
 import { mit6828FsCrashRecoveryCards } from "./mit6828-fs-crash-recovery";
+import { mit6828AdvOsVmCards } from "./mit6828-adv-os-vm";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -110,6 +111,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6828VmInterruptsCards,
   ...mit6828ConcProcessesSleepCards,
   ...mit6828FsCrashRecoveryCards,
+  ...mit6828AdvOsVmCards,
 ];
 
 export * from "./types";

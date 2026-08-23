@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 650 cards across 49 modules and 5 courses:
+quiz-app polish — 749 cards across 54 modules and 6 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -19,6 +19,12 @@ quiz-app polish — 650 cards across 49 modules and 5 courses:
   lecture-by-lecture against the actual Spring 2009 OCW syllabus (all 25
   lectures) — digital logic, CPU architecture, and operating systems, the
   hardware/systems counterpart to the app's other, algorithms-focused tracks.
+- **MIT 6.828 — Operating System Engineering** — 99 cards, 5 modules, mapped
+  lecture-by-lecture against the actual Fall 2012 OCW syllabus (all 15
+  lectures with real lecture-notes content) — building a real, if small,
+  Unix-like kernel from the ground up: x86/PC architecture, virtual memory,
+  multiprocessor locking, file systems and crash recovery, and OS/language
+  co-design, scalable/lock-free concurrency, and virtual machines.
 
 More MIT OpenCourseWare courses are intended to follow the same pattern.
 
@@ -174,6 +180,29 @@ complete — 62 cards across 7 modules, mapped against all 24 lectures:
   lecture (Lec 12), which bridges into formal computability theory already
   covered in depth by MIT 6.045J — those cards stay deliberately lean and
   cross-link via `related` instead of re-deriving the same proofs.
+
+**MIT 6.828** (Operating System Engineering, Fall 2012, Frans Kaashoek &
+Robert Morris) is complete — 99 cards across 5 modules, mapped against all 15
+lectures that carry real lecture-notes content (the syllabus's remaining
+lecture slots — project introduction/conferences, an in-class hacking
+session, and final demos — carry no lecture material and are noted as such
+in the tracker):
+
+- **OS Overview, x86/PC Hardware & Kernel Internals** (Lec 1–3), **Virtual
+  Memory & Interrupts/Exceptions** (Lec 4–5), **Multiprocessors, Locking,
+  Processes & Scheduling** (Lec 6–8), **File Systems & Crash Recovery**
+  (Lec 9–11), **OS Organization, Scalable & Lock-Free Concurrency, Virtual
+  Machines** (Lec 13, 17, 18, 21, 22).
+- Sourced from the course's own Fall 2012 lecture notes — dense prose
+  outlines (not slide decks), read page-by-page. This is a lab-driven course
+  built around students constructing JOS, a small x86 kernel in an exokernel
+  style, and xv6, a teaching Unix; like 6.004, it's genuinely new
+  hardware/systems territory with essentially no overlap against the rest of
+  the app — the one deliberate exception is cross-linking a couple of cards
+  to MIT 6.004's own OS-multiplexing/scheduling material (Lec 17–19) and MIT
+  6.004's sequential-consistency/dining-philosophers material, since 6.828
+  covers the same underlying mechanisms from the kernel-implementation side
+  rather than the hardware side.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

@@ -80,6 +80,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6828-conc", title: "6.828: Multiprocessors, Locking, Processes & Scheduling", tier: 1, order: 502, course: "mit6828" },
   { slug: "mit6828-fs", title: "6.828: File Systems & Crash Recovery", tier: 1, order: 503, course: "mit6828" },
   { slug: "mit6828-adv", title: "6.828: OS Organization, Scalable & Lock-Free Concurrency, Virtual Machines", tier: 1, order: 504, course: "mit6828" },
+
+  // MIT 6.035 course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit6035-parse", title: "6.035: Language Specification & Parsing", tier: 1, order: 600, course: "mit6035" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

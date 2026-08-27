@@ -89,6 +89,15 @@ export const COURSES: CourseMeta[] = [
       { label: "Post-Quiz (Lec 14–25)", lectures: [14, 25] },
     ],
   },
+  {
+    id: "mit6035",
+    title: "MIT 6.035 — Computer Language Engineering",
+    subtitle: "Spring 2010 · Martin Rinard · MIT OpenCourseWare",
+    quizScopes: [
+      { label: "Front End (Lec 1–9)", lectures: [1, 9] },
+      { label: "Optimization & Back End (Lec 10–20)", lectures: [10, 20] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -1280,6 +1289,63 @@ export const MIT6828_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT6035_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction",
+    cardIds: [
+      "mit6035-parse-compiler-pipeline",
+      "mit6035-parse-optimization-passes-worked",
+    ],
+  },
+  {
+    number: 2,
+    title: "Specifying Languages with Regular Expressions and Context-Free Grammars",
+    cardIds: [
+      "mit6035-parse-language-definition-layers",
+      "mit6035-parse-thompson-construction",
+      "mit6035-parse-nfa-to-dfa-subset-construction",
+      "mit6035-parse-why-cfg-needed",
+      "mit6035-parse-cfg-basics",
+      "mit6035-parse-ambiguity-and-precedence-hack",
+      "mit6035-parse-ast-vs-cst-dangling-else",
+      "mit6035-parse-chomsky-hierarchy-correspondence",
+    ],
+  },
+  {
+    number: 3,
+    title: "Introduction to Shift-Reduce Parsing",
+    cardIds: [
+      "mit6035-parse-pushdown-automaton",
+      "mit6035-parse-shift-reduce-mechanics",
+      "mit6035-parse-conflicts",
+    ],
+  },
+  {
+    number: 3.5,
+    title: "Parse Table Construction",
+    cardIds: [
+      "mit6035-parse-lr0-items-closure-goto",
+      "mit6035-parse-table-construction-and-slr",
+      "mit6035-parse-lr1-and-lalr",
+    ],
+  },
+  {
+    number: 4,
+    title: "Top-Down Parsing",
+    cardIds: [
+      "mit6035-parse-topdown-basic-approach",
+      "mit6035-parse-backtracking-and-left-recursion-problem",
+      "mit6035-parse-eliminating-left-recursion",
+      "mit6035-parse-predictive-parsing-and-first-sets",
+      "mit6035-parse-recursive-descent-implementation",
+      "mit6035-parse-left-factoring",
+      "mit6035-parse-concrete-vs-abstract-tree-reconstruction",
+      "mit6035-parse-recursive-descent-vs-generator-tradeoff",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -1292,4 +1358,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6046: MIT6046_LECTURES,
   mit6004: MIT6004_LECTURES,
   mit6828: MIT6828_LECTURES,
+  mit6035: MIT6035_LECTURES,
 };

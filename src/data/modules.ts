@@ -84,6 +84,7 @@ export const MODULES: ModuleMeta[] = [
   // MIT 6.035 course track — see src/data/courses.ts for the lecture map.
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit6035-parse", title: "6.035: Language Specification & Parsing", tier: 1, order: 600, course: "mit6035" },
+  { slug: "mit6035-gen", title: "6.035: IR, Semantic Analysis & Code Generation", tier: 1, order: 601, course: "mit6035" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

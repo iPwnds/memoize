@@ -1344,6 +1344,49 @@ export const MIT6035_LECTURES: CourseLecture[] = [
       "mit6035-parse-recursive-descent-vs-generator-tradeoff",
     ],
   },
+  {
+    number: 5,
+    title: "Intermediate Formats",
+    cardIds: [
+      "mit6035-gen-ir-levels",
+      "mit6035-gen-symbol-tables-and-scoping",
+      "mit6035-gen-inheritance-symbol-tables",
+      "mit6035-gen-virtual-dispatch-vtables",
+    ],
+  },
+  {
+    number: 6,
+    title: "Semantic Analysis",
+    cardIds: [
+      "mit6035-gen-type-expressions-and-equivalence",
+      "mit6035-gen-type-coercion-and-casting",
+      "mit6035-gen-semantic-checks-by-node-type",
+    ],
+  },
+  {
+    number: 7,
+    title: "Unoptimized Code Generation",
+    cardIds: [
+      "mit6035-gen-x86-64-overview",
+      "mit6035-gen-parameter-passing-disciplines",
+      "mit6035-gen-caller-vs-callee-saved-registers",
+      "mit6035-gen-stack-frame-layout",
+      "mit6035-gen-prolog-epilog-precall-postreturn",
+      "mit6035-gen-assembly-vs-machine-code",
+      "mit6035-gen-memory-layout-and-data-allocation",
+    ],
+  },
+  {
+    number: 8,
+    title: "Unoptimized Code Generation (continued)",
+    cardIds: [
+      "mit6035-gen-expression-lowering-flat-list",
+      "mit6035-gen-control-flow-templates",
+      "mit6035-gen-cfg-and-short-circuit",
+      "mit6035-gen-destruct-shortcircuit-algorithm",
+      "mit6035-gen-codegen-guidelines",
+    ],
+  },
 ];
 
 /**

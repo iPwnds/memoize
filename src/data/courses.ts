@@ -1387,6 +1387,42 @@ export const MIT6035_LECTURES: CourseLecture[] = [
       "mit6035-gen-codegen-guidelines",
     ],
   },
+  {
+    number: 9,
+    title: "Introduction to Program Analysis and Optimization",
+    cardIds: [
+      "mit6035-flow-cfg-construction",
+      "mit6035-flow-value-numbering-cse",
+      "mit6035-flow-copy-propagation-local",
+      "mit6035-flow-dead-code-elimination-local",
+      "mit6035-flow-algebraic-simplification",
+    ],
+  },
+  {
+    number: 10,
+    title: "Introduction to Dataflow Analysis",
+    cardIds: [
+      "mit6035-flow-reaching-definitions",
+      "mit6035-flow-splitting-and-merge-loss",
+      "mit6035-flow-available-expressions-and-global-cse",
+      "mit6035-flow-liveness-analysis",
+      "mit6035-flow-duality-and-optimistic-pessimistic",
+    ],
+  },
+  {
+    number: 11,
+    title: "Foundations of Dataflow Analysis",
+    cardIds: [
+      "mit6035-flow-lattices-and-partial-orders",
+      "mit6035-flow-ascending-chains-and-termination",
+      "mit6035-flow-transfer-functions-monotone-distributive",
+      "mit6035-flow-generalized-worklist-algorithm",
+      "mit6035-flow-mop-and-soundness",
+      "mit6035-flow-mop-vs-mfp-distributivity",
+      "mit6035-flow-abstraction-function-soundness",
+      "mit6035-flow-multiple-fixed-points",
+    ],
+  },
 ];
 
 /**

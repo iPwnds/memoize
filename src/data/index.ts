@@ -56,6 +56,7 @@ import { mit6828FsCrashRecoveryCards } from "./mit6828-fs-crash-recovery";
 import { mit6828AdvOsVmCards } from "./mit6828-adv-os-vm";
 import { mit6035ParseLangSpecCards } from "./mit6035-parse-lang-spec";
 import { mit6035GenIrSemanticsCodegenCards } from "./mit6035-gen-ir-semantics-codegen";
+import { mit6035FlowDataflowFoundationsCards } from "./mit6035-flow-dataflow-foundations";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -116,6 +117,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6828AdvOsVmCards,
   ...mit6035ParseLangSpecCards,
   ...mit6035GenIrSemanticsCodegenCards,
+  ...mit6035FlowDataflowFoundationsCards,
 ];
 
 export * from "./types";

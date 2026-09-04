@@ -1462,6 +1462,45 @@ export const MIT6035_LECTURES: CourseLecture[] = [
       "mit6035-sched-conditions-for-simdization",
     ],
   },
+  {
+    number: 16,
+    title: "Register Allocation",
+    cardIds: [
+      "mit6035-alloc-webs-and-interference",
+      "mit6035-alloc-graph-coloring-algorithm",
+      "mit6035-alloc-coloring-worked-example",
+      "mit6035-alloc-spill-cost-heuristic",
+      "mit6035-alloc-splitting-vs-spilling",
+      "mit6035-alloc-splitting-heuristic-cost-benefit",
+      "mit6035-alloc-register-coalescing",
+      "mit6035-alloc-precoloring-presplitting-interprocedural",
+    ],
+  },
+  {
+    number: 17,
+    title: "Parallelization",
+    cardIds: [
+      "mit6035-alloc-amdahls-law-and-issues",
+      "mit6035-alloc-execution-models",
+      "mit6035-alloc-dependence-types-and-distance-vectors",
+      "mit6035-alloc-distance-vector-parallelizability-test",
+      "mit6035-alloc-integer-programming-dependence-test",
+      "mit6035-alloc-privatization",
+      "mit6035-alloc-loop-transformations-for-parallelism",
+    ],
+  },
+  {
+    number: 18,
+    title: "Memory Optimization",
+    cardIds: [
+      "mit6035-alloc-hierarchy-and-miss-types",
+      "mit6035-alloc-loop-transformations-tiling",
+      "mit6035-alloc-data-transformations",
+      "mit6035-alloc-false-sharing-and-conflict-misses",
+      "mit6035-alloc-prefetching",
+      "mit6035-alloc-alias-analysis-points-to",
+    ],
+  },
 ];
 
 /**

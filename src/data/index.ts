@@ -58,6 +58,7 @@ import { mit6035ParseLangSpecCards } from "./mit6035-parse-lang-spec";
 import { mit6035GenIrSemanticsCodegenCards } from "./mit6035-gen-ir-semantics-codegen";
 import { mit6035FlowDataflowFoundationsCards } from "./mit6035-flow-dataflow-foundations";
 import { mit6035SchedInstructionLoopSchedulingCards } from "./mit6035-sched-instruction-loop-scheduling";
+import { mit6035AllocParallelMemoryCards } from "./mit6035-alloc-parallel-memory";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -120,6 +121,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6035GenIrSemanticsCodegenCards,
   ...mit6035FlowDataflowFoundationsCards,
   ...mit6035SchedInstructionLoopSchedulingCards,
+  ...mit6035AllocParallelMemoryCards,
 ];
 
 export * from "./types";

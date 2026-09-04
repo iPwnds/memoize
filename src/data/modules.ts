@@ -87,6 +87,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6035-gen", title: "6.035: IR, Semantic Analysis & Code Generation", tier: 1, order: 601, course: "mit6035" },
   { slug: "mit6035-flow", title: "6.035: Program Analysis & Dataflow Foundations", tier: 1, order: 602, course: "mit6035" },
   { slug: "mit6035-sched", title: "6.035: Instruction Scheduling & Loop Optimization", tier: 1, order: 603, course: "mit6035" },
+  { slug: "mit6035-alloc", title: "6.035: Register Allocation, Parallelization & Memory Optimization", tier: 1, order: 604, course: "mit6035" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

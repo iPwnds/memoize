@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 749 cards across 54 modules and 6 courses:
+quiz-app polish — 852 cards across 59 modules and 7 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -25,6 +25,12 @@ quiz-app polish — 749 cards across 54 modules and 6 courses:
   Unix-like kernel from the ground up: x86/PC architecture, virtual memory,
   multiprocessor locking, file systems and crash recovery, and OS/language
   co-design, scalable/lock-free concurrency, and virtual machines.
+- **MIT 6.035 — Computer Language Engineering** — 103 cards, 5 modules, mapped
+  lecture-by-lecture against the actual Spring 2010 OCW syllabus (all 18
+  lecture-note-bearing lectures) — building a real compiler front-to-back:
+  parsing, semantic analysis and unoptimized codegen, dataflow analysis,
+  instruction scheduling and loop optimization, and register allocation,
+  parallelization and memory optimization.
 
 More MIT OpenCourseWare courses are intended to follow the same pattern.
 
@@ -203,6 +209,30 @@ in the tracker):
   6.004's sequential-consistency/dining-philosophers material, since 6.828
   covers the same underlying mechanisms from the kernel-implementation side
   rather than the hardware side.
+
+**MIT 6.035** (Computer Language Engineering, Spring 2010, Martin Rinard) is
+complete — 103 cards across 5 modules, mapped against all 18 lectures that
+carry real lecture-notes content (the syllabus's remaining lecture slots —
+project introductions, guest lectures, and demo days — carry no lecture
+material and are not tracked as separate entries):
+
+- **Language Specification & Parsing** (Lec 1–4), **IR, Semantic Analysis &
+  Code Generation** (Lec 5–8), **Program Analysis & Dataflow Foundations**
+  (Lec 9–11), **Instruction Scheduling & Loop Optimization** (Lec 13–15),
+  **Register Allocation, Parallelization & Memory Optimization** (Lec 16–18).
+- Sourced from the course's own Spring 2010 lecture slides (fetched from OCW
+  and read page-by-page), not summarized from lecture titles alone. This is
+  the app's compiler-construction track — building a real compiler front to
+  back, from regular-expression/CFG language specification through LR/LL
+  parsing, IR design and unoptimized codegen, classical dataflow analysis
+  (reaching definitions, available expressions, liveness) and its lattice-
+  theoretic foundations, instruction scheduling and loop transformations
+  (strength reduction, software pipelining, SIMDization), and finally
+  graph-coloring register allocation, automatic parallelization (dependence
+  analysis, privatization, legality-constrained loop transformations), and
+  memory-system optimization (locality, tiling, prefetching, alias analysis).
+  Essentially no overlap with the rest of the app — every card here is
+  original, cross-linked only internally via `related`.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

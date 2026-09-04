@@ -1423,6 +1423,45 @@ export const MIT6035_LECTURES: CourseLecture[] = [
       "mit6035-flow-multiple-fixed-points",
     ],
   },
+  {
+    number: 13,
+    title: "Introduction to Code Optimization: Instruction Scheduling",
+    cardIds: [
+      "mit6035-sched-dependence-types",
+      "mit6035-sched-dependence-dag",
+      "mit6035-sched-list-scheduling-algorithm",
+      "mit6035-sched-ready-list-heuristics",
+      "mit6035-sched-np-completeness",
+      "mit6035-sched-resource-constrained-scheduling",
+      "mit6035-sched-cross-block-scheduling-safety",
+      "mit6035-sched-trace-scheduling-superblocks",
+    ],
+  },
+  {
+    number: 14,
+    title: "Loop Optimizations: Instruction Scheduling",
+    cardIds: [
+      "mit6035-sched-loop-unrolling-renaming",
+      "mit6035-sched-software-pipelining",
+      "mit6035-sched-regalloc-vs-scheduling-tension",
+      "mit6035-sched-hardware-vs-compiler-scheduling",
+      "mit6035-sched-induction-variable-classes",
+      "mit6035-sched-finding-induction-variables",
+    ],
+  },
+  {
+    number: 15,
+    title: "More Loop Optimizations",
+    cardIds: [
+      "mit6035-sched-loop-invariant-code-motion",
+      "mit6035-sched-strength-reduction",
+      "mit6035-sched-loop-test-replacement",
+      "mit6035-sched-simd-sse-registers-and-data-transfer",
+      "mit6035-sched-simd-arithmetic-and-data-reordering",
+      "mit6035-sched-simd-worked-example",
+      "mit6035-sched-conditions-for-simdization",
+    ],
+  },
 ];
 
 /**

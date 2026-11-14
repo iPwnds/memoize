@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 1047 cards across 73 modules and 10 courses:
+quiz-app polish — 1058 cards across 74 modules and 10 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -42,16 +42,15 @@ quiz-app polish — 1047 cards across 73 modules and 10 courses:
   (Fall 2011, Gilbert Strang) per-lecture summaries, mapped against all 34 of
   Strang's video lectures.
 
-- **MIT 18.05 — Introduction to Probability and Statistics** (in progress) —
-  24 cards, 2 of 3 modules so far, from the Spring 2022 per-class reading
-  notes, numbered by class.
+- **MIT 18.05 — Introduction to Probability and Statistics** — 35 cards,
+  3 modules, from the Spring 2022 per-class reading notes, numbered by class.
 
 The goal going forward: bring a graduate of an applied-CS (professional)
 bachelor up to the level of a university CS bachelor — benchmarked against
 KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
 only. MIT 6.1200J now covers proofs, relations, counting and discrete
-probability, MIT 18.06 linear algebra, and MIT 18.05 (in progress) continuous probability
-and statistics; the biggest remaining gaps are logic (natural deduction,
+probability, MIT 18.06 linear algebra, and MIT 18.05 continuous probability and
+statistics; the biggest remaining gaps are logic (natural deduction,
 first-order logic), calculus, numerical math,
 infinite cardinality, and declarative programming — systems and algorithms
 are already well covered.
@@ -368,7 +367,7 @@ Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
   partial gaps.
 
 **MIT 18.05** (Introduction to Probability and Statistics, Spring 2022,
-Jeremy Orloff & Jennifer French) is in progress — 24 cards in 2 of 3 planned
+Jeremy Orloff & Jennifer French) is complete — 35 cards across 3
 modules, following the course's own arc (probability → Bayesian inference →
 frequentist inference), sourced from its per-class reading notes with every
 numeric example recomputed.
@@ -389,8 +388,12 @@ numeric example recomputed.
   continuous priors, conjugate priors (beta–binomial with proof,
   normal–normal precision weighting), choosing priors, and credible
   intervals.
-- Still to come: Frequentist Inference — significance tests, confidence intervals, the
-  bootstrap and linear regression (Classes 17–26).
+- **Frequentist Inference** (Classes 17–26) is done: NHST ingredients,
+  type I/II errors, significance and power, p-values (and what they are
+  not), z- and t-tests, choosing a test (ANOVA, chi-square), the
+  frequentist-vs-Bayesian comparison, confidence intervals for normal data
+  and what "95% confidence" really means, polling and large-sample
+  intervals, the bootstrap, and least-squares linear regression.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

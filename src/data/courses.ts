@@ -2158,6 +2158,65 @@ export const MIT1805_LECTURES: CourseLecture[] = [
       "mit1805-bayes-probability-intervals",
     ],
   },
+  {
+    number: 17,
+    title: "The Frequentist School; Null Hypothesis Significance Testing I",
+    cardIds: [
+      "mit1805-freq-nhst-ingredients",
+      "mit1805-freq-errors-significance-power",
+      "mit1805-freq-p-values",
+    ],
+  },
+  {
+    number: 18,
+    title: "Null Hypothesis Significance Testing II",
+    cardIds: [
+      "mit1805-freq-z-and-t-tests",
+    ],
+  },
+  {
+    number: 19,
+    title: "Null Hypothesis Significance Testing III",
+    cardIds: [
+      "mit1805-freq-choosing-a-test",
+    ],
+  },
+  {
+    number: 20,
+    title: "Comparison of Frequentist and Bayesian Inference",
+    cardIds: [
+      "mit1805-freq-frequentist-vs-bayesian",
+    ],
+  },
+  {
+    number: 22,
+    title: "Confidence Intervals Based on Normal Data",
+    cardIds: [
+      "mit1805-freq-confidence-intervals-normal",
+    ],
+  },
+  {
+    number: 23,
+    title: "Confidence Intervals: Three Views; Non-normal Data",
+    cardIds: [
+      "mit1805-freq-confidence-interval-meaning",
+      "mit1805-freq-polling-large-sample-ci",
+    ],
+  },
+  {
+    number: 24,
+    title: "Bootstrap Confidence Intervals",
+    cardIds: [
+      "mit1805-freq-bootstrap",
+    ],
+  },
+  {
+    number: 26,
+    title: "Linear Regression",
+    cardIds: [
+      "mit1805-freq-linear-regression",
+    ],
+  },
 ];
 
 /**

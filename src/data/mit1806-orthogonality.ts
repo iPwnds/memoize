@@ -152,7 +152,7 @@ Best line: $b = \\frac23 + \\frac12 t$. (Calculus — setting the partial deriva
 - In $\\mathbb{R}^3$: $p$ is the projection of $b$ onto $C(A)$, and $e$ lies in $N(A^T)$. Check: $p^Te = 0$ and $A^Te = 0$ — the errors are orthogonal to both columns (so they sum to zero, and their dot product with $t$ is zero).`,
     pitfall:
       "Least squares weights every squared error equally, so a single outlier can drag the line badly. It's the right tool for noisy data without gross outliers.",
-    related: ["mit1806-orthogonality-projection-onto-subspace", "mit6120-probability-variance"],
+    related: ["mit1806-orthogonality-projection-onto-subspace", "mit6120-probability-variance", "mit1805-freq-linear-regression"],
   },
 
   // --- Lecture 17: Orthogonal matrices and Gram-Schmidt ---

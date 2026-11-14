@@ -272,7 +272,7 @@ This is the core of the **Kalman filter**: fuse a prediction (prior) with a nois
 - **Frequentist**: refuse to put probabilities on hypotheses; reason only with likelihoods $P(D \\mid H)$, i.e. how often procedures would succeed in repeated experiments (significance tests, confidence intervals).
 
 Both are widely used; understanding what each statement means is the point.`,
-    related: ["mit1805-bayes-probability-intervals", "mit1805-bayes-prior-likelihood-posterior"],
+    related: ["mit1805-bayes-probability-intervals", "mit1805-bayes-prior-likelihood-posterior", "mit1805-freq-frequentist-vs-bayesian"],
   },
   {
     id: "mit1805-bayes-probability-intervals",
@@ -293,6 +293,6 @@ They're also called **credible intervals** (to contrast with frequentist **confi
 **Building a prior**: when you have no formula for your beliefs, estimate **subjective quantiles** systematically ("I'm 50/50 the value is below…", "90% sure it's between…"), then pick a distribution (e.g. a beta or normal) matching those intervals. Wider intervals = a less informative prior.`,
     pitfall:
       "Don't read a frequentist 95% confidence interval as '95% probability the parameter is inside' — that's the meaning of a Bayesian credible interval, which requires a prior.",
-    related: ["mit1805-bayes-choosing-priors", "mit1805-probability-quantiles"],
+    related: ["mit1805-bayes-choosing-priors", "mit1805-probability-quantiles", "mit1805-freq-confidence-interval-meaning"],
   },
 ];

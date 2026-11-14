@@ -111,6 +111,7 @@ export const MODULES: ModuleMeta[] = [
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit1805-probability", title: "18.05: Continuous Probability & Limit Theorems", tier: 1, order: 900, course: "mit1805" },
   { slug: "mit1805-bayes", title: "18.05: Maximum Likelihood & Bayesian Inference", tier: 1, order: 901, course: "mit1805" },
+  { slug: "mit1805-freq", title: "18.05: Frequentist Inference", tier: 1, order: 902, course: "mit1805" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

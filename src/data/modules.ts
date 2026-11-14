@@ -106,6 +106,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit1806-determinants", title: "18.06: Determinants", tier: 1, order: 803, course: "mit1806" },
   { slug: "mit1806-eigenvalues", title: "18.06: Eigenvalues & Eigenvectors", tier: 1, order: 804, course: "mit1806" },
   { slug: "mit1806-pd-svd", title: "18.06: Positive Definite Matrices, SVD & Linear Transformations", tier: 1, order: 805, course: "mit1806" },
+
+  // MIT 18.05 course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit1805-probability", title: "18.05: Continuous Probability & Limit Theorems", tier: 1, order: 900, course: "mit1805" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

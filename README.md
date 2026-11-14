@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 1023 cards across 71 modules and 9 courses:
+quiz-app polish — 1035 cards across 72 modules and 10 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -42,12 +42,17 @@ quiz-app polish — 1023 cards across 71 modules and 9 courses:
   (Fall 2011, Gilbert Strang) per-lecture summaries, mapped against all 34 of
   Strang's video lectures.
 
+- **MIT 18.05 — Introduction to Probability and Statistics** (in progress) —
+  12 cards, 1 of 3 modules so far, from the Spring 2022 per-class reading
+  notes, numbered by class.
+
 The goal going forward: bring a graduate of an applied-CS (professional)
 bachelor up to the level of a university CS bachelor — benchmarked against
 KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
 only. MIT 6.1200J now covers proofs, relations, counting and discrete
-probability, and MIT 18.06 linear algebra; the biggest remaining
-gaps are logic (natural deduction, first-order logic), statistics, calculus, numerical math,
+probability, MIT 18.06 linear algebra, and MIT 18.05 (in progress) continuous probability
+and statistics; the biggest remaining gaps are logic (natural deduction,
+first-order logic), calculus, numerical math,
 infinite cardinality, and declarative programming — systems and algorithms
 are already well covered.
 
@@ -361,6 +366,25 @@ Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
   linear-map/spectral-theorem rigour and numerical conditioning/stability
   (KU Leuven's *Lineaire algebra* proofs and *Numerieke wiskunde*) remain
   partial gaps.
+
+**MIT 18.05** (Introduction to Probability and Statistics, Spring 2022,
+Jeremy Orloff & Jennifer French) is in progress — 12 cards in 1 of 3 planned
+modules, following the course's own arc (probability → Bayesian inference →
+frequentist inference), sourced from its per-class reading notes with every
+numeric example recomputed.
+
+- **Continuous Probability & Limit Theorems** (Classes 1–7) is done, lean
+  where 6.1200J already covers counting, conditional probability and
+  discrete expectation (Classes 1–3 point there in the tracker): the
+  Bernoulli/binomial/geometric distributions, pdfs and cdfs, the uniform/
+  exponential/normal gallery, memorylessness (with proof), transforming
+  random variables, continuous expectation/variance, quantiles,
+  standardization, the law of large numbers, the central limit theorem
+  (with a continuity-correction example), joint distributions, and
+  covariance/correlation.
+- Still to come: Maximum Likelihood & Bayesian Inference (Classes 10–16),
+  Frequentist Inference — significance tests, confidence intervals, the
+  bootstrap and linear regression (Classes 17–26).
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

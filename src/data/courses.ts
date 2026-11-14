@@ -125,6 +125,18 @@ export const COURSES: CourseMeta[] = [
       { label: "Unit III: Positive Definite Matrices and Applications", lectures: [25, 34] },
     ],
   },
+  {
+    id: "mit1805",
+    title: "MIT 18.05 — Introduction to Probability and Statistics",
+    subtitle:
+      "Spring 2022 · Jeremy Orloff, Jennifer French · MIT OpenCourseWare (numbered by class)",
+    // The course's own three-part arc (syllabus "Course Arc").
+    quizScopes: [
+      { label: "Probability", lectures: [1, 9] },
+      { label: "Statistics I: Bayesian Inference", lectures: [10, 16] },
+      { label: "Statistics II: Frequentist Inference", lectures: [17, 26] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2043,6 +2055,63 @@ export const MIT1806_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT1805_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction; Counting and Sets",
+    cardIds: [],
+    noCardContent: "Covered by MIT 6.1200J — see its Relations & Counting module (product/sum rules, binomial coefficients, inclusion–exclusion).",
+  },
+  {
+    number: 2,
+    title: "Probability: Terminology and Examples",
+    cardIds: [],
+    noCardContent: "Covered by MIT 6.1200J — see its Probability module (probability spaces, events, the tree method).",
+  },
+  {
+    number: 3,
+    title: "Conditional Probability, Independence and Bayes' Theorem",
+    cardIds: [],
+    noCardContent: "Covered by MIT 6.1200J — see its Probability module (conditional probability, Bayes' rule and base rates, independence).",
+  },
+  {
+    number: 4,
+    title: "Discrete Random Variables and Expected Value",
+    cardIds: [
+      "mit1805-probability-discrete-distributions",
+    ],
+  },
+  {
+    number: 5,
+    title: "Variance; Continuous Random Variables",
+    cardIds: [
+      "mit1805-probability-continuous-random-variables",
+      "mit1805-probability-gallery-continuous",
+      "mit1805-probability-exponential-memoryless",
+      "mit1805-probability-transforming-rvs",
+    ],
+  },
+  {
+    number: 6,
+    title: "Expectation and Variance; Law of Large Numbers and CLT",
+    cardIds: [
+      "mit1805-probability-continuous-expectation",
+      "mit1805-probability-quantiles",
+      "mit1805-probability-standardization-normal",
+      "mit1805-probability-law-of-large-numbers",
+      "mit1805-probability-central-limit-theorem",
+    ],
+  },
+  {
+    number: 7,
+    title: "Joint Distributions, Independence, Covariance and Correlation",
+    cardIds: [
+      "mit1805-probability-joint-distributions",
+      "mit1805-probability-covariance-correlation",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2058,4 +2127,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6035: MIT6035_LECTURES,
   mit6120: MIT6120_LECTURES,
   mit1806: MIT1806_LECTURES,
+  mit1805: MIT1805_LECTURES,
 };

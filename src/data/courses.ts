@@ -137,6 +137,20 @@ export const COURSES: CourseMeta[] = [
       { label: "Statistics II: Frequentist Inference", lectures: [17, 26] },
     ],
   },
+  {
+    id: "mit1801",
+    title: "MIT 18.01 — Single Variable Calculus",
+    subtitle:
+      "18.01SC Fall 2010 · David Jerison · MIT OpenCourseWare (numbered by OCW Scholar session)",
+    // The course's own five units, each closed by an exam (Unit 5 by the final).
+    quizScopes: [
+      { label: "Unit 1: Differentiation", lectures: [1, 22] },
+      { label: "Unit 2: Applications of Differentiation", lectures: [23, 42] },
+      { label: "Unit 3: The Definite Integral and its Applications", lectures: [43, 67] },
+      { label: "Unit 4: Techniques of Integration", lectures: [68, 86] },
+      { label: "Unit 5: Exploring the Infinite", lectures: [87, 101] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2225,6 +2239,160 @@ export const MIT1805_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT1801_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction to Derivatives",
+    cardIds: [
+      "mit1801-differentiation-derivative-definition",
+    ],
+  },
+  {
+    number: 2,
+    title: "Examples of Derivatives",
+    cardIds: [
+      "mit1801-differentiation-derivatives-from-definition",
+    ],
+  },
+  {
+    number: 3,
+    title: "Derivative as Rate of Change",
+    cardIds: [],
+    noCardContent: "Folded into the Session 1 card: average vs instantaneous rate of change and the pumpkin-drop example.",
+  },
+  {
+    number: 4,
+    title: "Limits and Continuity",
+    cardIds: [
+      "mit1801-differentiation-limits-continuity",
+    ],
+  },
+  {
+    number: 5,
+    title: "Discontinuity",
+    cardIds: [
+      "mit1801-differentiation-discontinuities",
+      "mit1801-differentiation-differentiable-implies-continuous",
+    ],
+  },
+  {
+    number: 6,
+    title: "Calculating Derivatives",
+    cardIds: [],
+    noCardContent: "The sum and constant-multiple rules are proved on the Session 9 product-rule card.",
+  },
+  {
+    number: 7,
+    title: "Derivatives of Sine and Cosine",
+    cardIds: [
+      "mit1801-differentiation-sin-cos-derivatives",
+    ],
+  },
+  {
+    number: 8,
+    title: "Limits of Sine and Cosine",
+    cardIds: [
+      "mit1801-differentiation-trig-limits",
+    ],
+  },
+  {
+    number: 9,
+    title: "Product Rule",
+    cardIds: [
+      "mit1801-differentiation-product-rule",
+    ],
+  },
+  {
+    number: 10,
+    title: "Quotient Rule",
+    cardIds: [
+      "mit1801-differentiation-quotient-rule",
+    ],
+  },
+  {
+    number: 11,
+    title: "Chain Rule",
+    cardIds: [
+      "mit1801-differentiation-chain-rule",
+    ],
+  },
+  {
+    number: 12,
+    title: "Higher Derivatives",
+    cardIds: [
+      "mit1801-differentiation-higher-derivatives",
+    ],
+  },
+  {
+    number: 13,
+    title: "Implicit Differentiation",
+    cardIds: [
+      "mit1801-differentiation-rational-exponents",
+    ],
+  },
+  {
+    number: 14,
+    title: "Examples of Implicit Differentiation",
+    cardIds: [
+      "mit1801-differentiation-implicit-differentiation",
+    ],
+  },
+  {
+    number: 15,
+    title: "Implicit Differentiation and Inverse Functions",
+    cardIds: [
+      "mit1801-differentiation-inverse-functions",
+    ],
+  },
+  {
+    number: 16,
+    title: "The Derivative of a^x",
+    cardIds: [
+      "mit1801-differentiation-exponential-m-of-a",
+    ],
+  },
+  {
+    number: 17,
+    title: "The Exponential Function, its Derivative, and its Inverse",
+    cardIds: [
+      "mit1801-differentiation-e-and-ln",
+    ],
+  },
+  {
+    number: 18,
+    title: "Derivatives of Other Exponential Functions",
+    cardIds: [
+      "mit1801-differentiation-logarithmic-differentiation",
+    ],
+  },
+  {
+    number: 19,
+    title: "An Interesting Limit Involving e",
+    cardIds: [
+      "mit1801-differentiation-e-as-limit",
+    ],
+  },
+  {
+    number: 20,
+    title: "Hyperbolic Trig Functions",
+    cardIds: [
+      "mit1801-differentiation-hyperbolic-functions",
+    ],
+  },
+  {
+    number: 21,
+    title: "Review for Exam 1",
+    cardIds: [],
+    noCardContent: "Exam 1 review. Its formula list, the chain rule revisited (rates multiply), sec x and the quotient rule via (uv⁻¹)′ are folded into the Unit 1 cards.",
+  },
+  {
+    number: 22,
+    title: "Materials for Exam 1",
+    cardIds: [],
+    noCardContent: "Exam 1 (Unit 1: Differentiation).",
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2241,4 +2409,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6120: MIT6120_LECTURES,
   mit1806: MIT1806_LECTURES,
   mit1805: MIT1805_LECTURES,
+  mit1801: MIT1801_LECTURES,
 };

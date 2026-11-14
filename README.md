@@ -303,7 +303,7 @@ across 6 modules, one per unit of the course, mapped against all 24 lectures:
   readings page), §20.2–20.3. Units 2–4 overlap heavily with existing tracks
   and stay lean (supplying proofs, cross-linked both ways); Units 1, 5 and 6
   are the real gap and get full depth. A few slips in the notes are corrected
-  in the cards (noted in each module's header comment). Known
+  in the cards (noted in the affected modules' header comments). Known
   residual gap: Spring 2024 doesn't teach infinite cardinality /
   diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
 

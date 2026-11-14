@@ -14,7 +14,10 @@
 // Science" (CC BY-SA, linked from the OCW readings page), Sections 20.2-20.3.
 // Lecture 24 covers Markov, Chebyshev and Chernoff bounds. Probability is a
 // core gap against KU Leuven's "Kansrekenen I" — it barely exists elsewhere in
-// the app. See src/data/courses.ts for the full lecture map.
+// the app. Correction to the notes: their infinite-expectation example
+// ("latency i with probability 1/i") isn't a valid distribution; the card
+// uses probability proportional to 1/i² instead. See src/data/courses.ts for
+// the full lecture map.
 import type { Card } from "./types";
 
 const MODULE = "mit6120-probability";
@@ -89,7 +92,7 @@ Takeaway: intuitions borrowed from ordinary orders ($a > b$, $b > c$ ⇒ $a > c$
     tier: 1,
     module: MODULE,
     type: "concept",
-    front: "List the basic probability rules that follow from the definition Pr[A] = Σ_{ω∈A} Pr[ω].",
+    front: "List the basic probability rules that follow from defining Pr[A] as the sum of Pr[ω] over all outcomes ω ∈ A.",
     back: `All follow directly from summing outcome probabilities — they mirror the counting rules for set sizes.
 
 - **Sum rule**: $A, B$ disjoint ⇒ $\\Pr[A \\cup B] = \\Pr[A] + \\Pr[B]$ (also for countably many pairwise disjoint events).

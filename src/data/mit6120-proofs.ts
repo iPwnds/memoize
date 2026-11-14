@@ -11,7 +11,12 @@
 // via derived variables (potential functions). This is the first module of
 // the app's discrete-math/proofs track — the foundation the KU Leuven
 // bachelor's "Bewijzen en redeneren" and "Fundamenten voor de informatica"
-// courses assume. See src/data/courses.ts for the full lecture map.
+// courses assume. Corrections to the notes: the Euler-conjecture solution
+// they credit to Elkies (95800, 217519, 414560, 422481) is Roger Frye's
+// smallest counterexample (Elkies' 1988 disproof used a larger one), and
+// Gödel's theorem is stated with its precise conditions (effectively
+// listable axioms strong enough for arithmetic). See src/data/courses.ts
+// for the full lecture map.
 import type { Card } from "./types";
 
 const MODULE = "mit6120-proofs";
@@ -115,7 +120,7 @@ The lecture's examples: "<4" is a *weaker* statement than "<3", since $x < 3 \\R
     tier: 1,
     module: MODULE,
     type: "concept",
-    front: "What is a set? Explain ∈ vs ⊆, set-builder notation, ∩/∪/\\, and how sets differ from tuples.",
+    front: "What is a set? Explain ∈ vs ⊆, set-builder notation, ∩/∪/set difference, and how sets differ from tuples.",
     back: `A **set** is (roughly) an unordered collection of objects without duplicates. Sets can be finite ($A = \\{6, 1, 2, 0\\}$), infinite ($\\mathbb{N}$, $\\mathbb{Z}$), empty ($\\emptyset = \\{\\}$), or contain other sets ($B = \\{2, \\{3, 4\\}, \\emptyset\\}$).
 
 **No duplicates, no order**: $\\{1, 2, 2, 3\\} = \\{2, 3, 1\\} = \\{3, 1, 2\\}$. (A collection with duplicates is a *multiset*.)

@@ -11,7 +11,11 @@
 // exponentiation, Miller-Rabin) already lives in Complexity Class, and the
 // one-time pad, Diffie-Hellman and RSA mechanics in MIT 6.045J — so this
 // module supplies the proofs behind them and cross-links rather than
-// repeating. See src/data/courses.ts for the full lecture map.
+// repeating. Correction to the notes: they say computing d from (n, e) is as
+// hard as factoring only under ERH; in fact that equivalence is unconditional
+// (probabilistic: RSA paper/Miller; deterministic: Coron-May 2007) — ERH was
+// only needed for Miller's older deterministic reduction. See
+// src/data/courses.ts for the full lecture map.
 import type { Card } from "./types";
 
 const MODULE = "mit6120-number-theory";
@@ -241,7 +245,7 @@ By the same argument mod $q$, $m^{ed} \\equiv_q m$. So both $p$ and $q$ divide $
     front: "What does RSA's security actually rest on, and how do you find the large primes p and q efficiently?",
     back: `**Security is assumed, not proved.** RSA relies on:
 - **Factoring being hard**: from $n = pq$ alone, recovering $p, q$ has no known efficient classical algorithm. (Shor's algorithm would do it on a large quantum computer.) Nobody has *proved* factoring is hard — an efficient method might exist, possibly known privately.
-- **More than factoring**: computing $d$ from $(n, e)$ is essentially as hard as factoring only under the **Extended Riemann Hypothesis**; and decrypting a single message might not require $d$ at all. So security also assumes the **RSA assumption**: computing $e$-th roots mod $pq$ is hard.
+- **More than factoring**: recovering the secret key $d$ from $(n, e)$ is provably **equivalent** to factoring $n$ — probabilistically since the original RSA paper (building on Miller), and deterministically since Coron–May (2007); only Miller's older deterministic reduction needed the Extended Riemann Hypothesis. The genuinely open question is whether **decrypting** a message requires $d$ at all. So security also rests on the **RSA assumption**: computing $e$-th roots mod $pq$ is hard.
 
 Why trust it anyway? These assumptions have been attacked by experts for decades, with prizes for incremental progress — far more scrutiny than "security by obscurity" (Caesar) or "security by hubris" (Enigma).
 

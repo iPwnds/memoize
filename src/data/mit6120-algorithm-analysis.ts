@@ -89,7 +89,7 @@ $$\\sum_{k=1}^{n} k^2 = \\frac{n^3}{3} + \\frac{n^2}{2} + \\frac{n}{6} = \\frac{
     tier: 1,
     module: MODULE,
     type: "proof",
-    front: "Evaluate Σ_{j=1}^{n} j·2ʲ by rewriting it as a double sum and exchanging the order of summation.",
+    front: "Evaluate Σ j·2ʲ (for j = 1 to n) by rewriting it as a double sum and exchanging the order of summation.",
     back: `**Double sums**: evaluate the inner sum to a closed form first, then the outer one. When that's hard, **exchange the order**: describe the set of index pairs both ways. E.g. $\\sum_{i=1}^{n} \\sum_{j=i}^{n}$ ranges over $1 \\leq i \\leq j \\leq n$, which is also $\\sum_{j=1}^{n} \\sum_{i=1}^{j}$. So $\\sum_{i=1}^{n} \\sum_{j=i}^{n} j = \\sum_{j=1}^{n} j \\cdot j = \\frac{n(n+1)(2n+1)}{6}$.
 
 **The trick for $\\sum j 2^j$**: there is no inner sum yet — so *create* one by writing $j = \\sum_{i=1}^{j} 1$:
@@ -193,7 +193,7 @@ A consequence used constantly in CS: $\\ln(n!) = n \\ln n - n + O(\\log n)$, so 
 
 **Relations**: $f \\in o(g) \\Rightarrow f \\in O(g)$ (like $< \\Rightarrow \\leq$), and $f \\in o(g) \\Rightarrow f \\notin \\Omega(g)$.
 
-**Examples**: $10x^3 + 20x^2 + 5 \\in \\Theta(x^3)$; $2 + \\sin x \\in \\Theta(1)$ but $1 + \\sin x \\notin \\Theta(1)$ (it touches 0 infinitely often); any polynomial is in $o(2^x)$; $4^x \\notin O(2^x)$.`,
+**Examples**: $10x^3 + 20x^2 + 5 \\in \\Theta(x^3)$; $2 + \\sin x \\in \\Theta(1)$ but $1 + \\sin x \\notin \\Theta(1)$ (it gets arbitrarily close to 0, so it isn't $\\Omega(1)$); any polynomial is in $o(2^x)$; $4^x \\notin O(2^x)$.`,
     pitfall:
       "Analytic number theory uses different definitions (f ∈ Ω(g) iff f ∉ o(g)). The CS definitions above are stronger — be careful when reading math papers.",
     related: ["mit6120-analysis-big-o-proofs", "mit6120-analysis-notation-abuses", "complexity-analysis-big-o", "complexity-analysis-big-omega", "complexity-analysis-big-theta"],

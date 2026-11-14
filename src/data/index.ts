@@ -75,6 +75,7 @@ import { mit1805ContinuousProbabilityCards } from "./mit1805-continuous-probabil
 import { mit1805BayesianInferenceCards } from "./mit1805-bayesian-inference";
 import { mit1805FrequentistInferenceCards } from "./mit1805-frequentist-inference";
 import { mit6001ProceduresProcessesCards } from "./mit6001-procedures-processes";
+import { mit6001AbstractionHopCards } from "./mit6001-abstraction-hop";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -154,6 +155,7 @@ export const ALL_CARDS: Card[] = [
   ...mit1805BayesianInferenceCards,
   ...mit1805FrequentistInferenceCards,
   ...mit6001ProceduresProcessesCards,
+  ...mit6001AbstractionHopCards,
 ];
 
 export * from "./types";

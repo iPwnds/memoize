@@ -2276,6 +2276,42 @@ export const MIT6001_LECTURES: CourseLecture[] = [
       "mit6001-procs-pascal-triangle",
     ],
   },
+  {
+    number: 5,
+    title: "Data Abstraction",
+    cardIds: [
+      "mit6001-hop-block-structure",
+      "mit6001-hop-pairs-closure",
+      "mit6001-hop-list-procedures",
+      "mit6001-hop-rationals-abstraction-barrier",
+    ],
+  },
+  {
+    number: 6,
+    title: "Higher Order Procedures",
+    cardIds: [
+      "mit6001-hop-types-contracts",
+      "mit6001-hop-sum-higher-order",
+      "mit6001-hop-procedures-as-values",
+      "mit6001-hop-map-filter-fold",
+      "mit6001-hop-compose-type-variables",
+    ],
+  },
+  {
+    number: 7,
+    title: "Good Programming Practices",
+    cardIds: [
+      "mit6001-hop-repeated-by-types",
+      "mit6001-hop-programming-practice",
+    ],
+  },
+  {
+    number: 8,
+    title: "Using Higher Order Procedures",
+    cardIds: [
+      "mit6001-hop-picture-language",
+    ],
+  },
 ];
 
 /**

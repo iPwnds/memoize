@@ -108,7 +108,7 @@ The exponential is the **only** continuous memoryless distribution (the geometri
     tier: 1,
     module: MODULE,
     type: "code-trace",
-    front: "X has range [0, 2] and cdf F_X(x) = x²/4. Find the cdf and pdf of Y = X² with the cdf method, and state the general recipe.",
+    front: "X has range [0, 2] and cdf F(x) = x²/4. Find the cdf and pdf of Y = X² with the cdf method, and state the general recipe.",
     back: `**The cdf method** (usually easier than transforming the pdf directly): work from the **definition** of the cdf.
 
 1. Definition: $F_Y(y) = P(Y \\leq y)$.

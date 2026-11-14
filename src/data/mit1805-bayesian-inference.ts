@@ -231,7 +231,7 @@ The beta is also conjugate for **Bernoulli** and **geometric** likelihoods.`,
     tier: 1,
     module: MODULE,
     type: "concept",
-    front: "State the normal–normal update: a N(μ_prior, σ²_prior) prior on θ with n normal measurements of known variance σ². Interpret the formula.",
+    front: "State the normal–normal update: a normal prior N(μ₀, σ₀²) on θ with n normal measurements of known variance σ². Interpret the formula.",
     back: `The normal family is **its own conjugate prior** when the likelihood is normal with **known variance**.
 
 Prior $\\theta \\sim N(\\mu_{\\text{prior}}, \\sigma^2_{\\text{prior}})$; data $x_1, \\ldots, x_n \\sim N(\\theta, \\sigma^2)$ independently. Let

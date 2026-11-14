@@ -2143,6 +2143,12 @@ export const MIT1805_LECTURES: CourseLecture[] = [
     ],
   },
   {
+    number: 14,
+    title: "Continuous Data with Continuous Priors",
+    cardIds: [],
+    noCardContent: "Applies Class 13's continuous-prior updating to continuous (pdf) likelihoods — see the Class 13 card and the normal–normal update in Class 15.",
+  },
+  {
     number: 15,
     title: "Conjugate Priors: Beta and Normal",
     cardIds: [

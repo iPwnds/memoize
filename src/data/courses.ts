@@ -1555,6 +1555,37 @@ export const MIT6120_LECTURES: CourseLecture[] = [
       "mit6120-proofs-simple-sort-termination",
     ],
   },
+  {
+    number: 5,
+    title: "Sums",
+    cardIds: [
+      "mit6120-analysis-geometric-series-perturbation",
+      "mit6120-analysis-annuity-present-value",
+      "mit6120-analysis-ansatz-sum-of-squares",
+      "mit6120-analysis-double-sums-exchange-order",
+      "mit6120-analysis-integral-method",
+    ],
+  },
+  {
+    number: 6,
+    title: "Asymptotics",
+    cardIds: [
+      "mit6120-analysis-harmonic-numbers",
+      "mit6120-analysis-factorial-stirling",
+      "mit6120-analysis-asymptotic-definitions",
+      "mit6120-analysis-big-o-proofs",
+      "mit6120-analysis-notation-abuses",
+    ],
+  },
+  {
+    number: 7,
+    title: "Recurrences",
+    cardIds: [
+      "mit6120-analysis-towers-of-hanoi",
+      "mit6120-analysis-plug-and-chug-mergesort",
+      "mit6120-analysis-master-theorem-intuition",
+    ],
+  },
 ];
 
 /**

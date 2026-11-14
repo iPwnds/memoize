@@ -219,7 +219,7 @@ Computing $y^k \\bmod N$ itself is efficient via repeated squaring (related card
 **Security**: anyone who could **factor** $N$ into $p \\times q$ could run the identical decryption procedure — so RSA's security rests entirely on the presumed computational intractability of factoring large integers (an assumption that breaks under large-scale quantum computers, via Shor's algorithm, and that any proof of factoring's hardness would also establish $P \\neq NP$). The converse — whether RSA could be broken *without* factoring $N$ — remains a 30-year-old open problem; despite this theoretical uncertainty, RSA has withstood essentially all proposed attacks in practice and underlies most modern electronic commerce.`,
     pitfall:
       "The exponent 3 works only because Amazon specifically chose p, q with neither p-1 nor q-1 divisible by 3 — this is what guarantees an inverse k exists at all; a different fixed public exponent needs the analogous non-divisibility condition. In practice, small fixed exponents like 3 also require careful padding of messages with random data to avoid known small-exponent attacks — the bare x^3 mod N scheme sketched here is the core idea, not a production-ready protocol.",
-    related: ["mit6045-crypto-diffie-hellman", "mit6045-crypto-trapdoor-owf", "number-theory-modular-exponentiation", "number-theory-modular-inverse"],
+    related: ["mit6045-crypto-diffie-hellman", "mit6045-crypto-trapdoor-owf", "number-theory-modular-exponentiation", "number-theory-modular-inverse", "mit6120-number-theory-rsa-correctness"],
   },
   {
     id: "mit6045-crypto-trapdoor-owf",

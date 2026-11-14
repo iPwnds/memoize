@@ -61,6 +61,7 @@ import { mit6035SchedInstructionLoopSchedulingCards } from "./mit6035-sched-inst
 import { mit6035AllocParallelMemoryCards } from "./mit6035-alloc-parallel-memory";
 import { mit6120ProofsCards } from "./mit6120-proofs";
 import { mit6120AlgorithmAnalysisCards } from "./mit6120-algorithm-analysis";
+import { mit6120NumberTheoryCards } from "./mit6120-number-theory";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -126,6 +127,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6035AllocParallelMemoryCards,
   ...mit6120ProofsCards,
   ...mit6120AlgorithmAnalysisCards,
+  ...mit6120NumberTheoryCards,
 ];
 
 export * from "./types";

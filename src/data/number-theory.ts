@@ -38,7 +38,7 @@ Why it's fast: each step at least **halves** the larger of the two numbers withi
       structure: "Euclidean Algorithm",
       operations: [{ op: "gcd(a, b)", time: "O(log(min(a,b)))" }],
     },
-    related: ["number-theory-extended-euclidean", "number-theory-gcd-lcm"],
+    related: ["number-theory-extended-euclidean", "number-theory-gcd-lcm", "mit6120-number-theory-euclid-correctness"],
   },
   {
     id: "number-theory-extended-euclidean",
@@ -61,7 +61,7 @@ It's computed by unwinding the ordinary Euclidean algorithm's recursion — at e
       structure: "Extended Euclidean Algorithm",
       operations: [{ op: "Compute gcd(a,b) and Bézout coefficients", time: "O(log(min(a,b)))" }],
     },
-    related: ["number-theory-euclidean-algorithm", "number-theory-modular-inverse"],
+    related: ["number-theory-euclidean-algorithm", "number-theory-modular-inverse", "mit6120-number-theory-pulverizer-bezout"],
   },
 
   // ------------------------------------------------------ Modular exponentiation
@@ -89,7 +89,7 @@ This needs only $O(\\log b)$ multiplications instead of $O(b)$. Taking the resul
     },
     pitfall:
       "Forgetting to take the mod after EVERY multiplication (not just at the end) defeats the entire purpose — the intermediate un-reduced values would grow exponentially large, exactly the blowup this technique exists to avoid.",
-    related: ["number-theory-modular-inverse"],
+    related: ["number-theory-modular-inverse", "mit6120-number-theory-legal-substitutions"],
   },
   {
     id: "number-theory-modular-inverse",
@@ -114,7 +114,7 @@ def mod_inverse_extended_euclidean(a, m):
     return x % m`,
     pitfall:
       "Using Fermat's shortcut when the modulus is NOT prime silently gives a wrong answer — Fermat's little theorem's premise requires primality; always confirm the modulus is prime before reaching for a^(m-2) instead of extended Euclidean.",
-    related: ["number-theory-extended-euclidean", "number-theory-modular-exponentiation"],
+    related: ["number-theory-extended-euclidean", "number-theory-modular-exponentiation", "mit6120-number-theory-inverse-iff-coprime"],
   },
 
   // -------------------------------------------------------------- Sieve

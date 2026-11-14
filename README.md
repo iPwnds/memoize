@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 888 cards across 61 modules and 8 courses:
+quiz-app polish — 900 cards across 62 modules and 8 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -32,8 +32,8 @@ quiz-app polish — 888 cards across 61 modules and 8 courses:
   instruction scheduling and loop optimization, and register allocation,
   parallelization and memory optimization.
 
-- **MIT 6.1200J — Mathematics for Computer Science** (in progress) — 36 cards,
-  2 of 6 modules so far, mapped lecture-by-lecture against the actual Spring
+- **MIT 6.1200J — Mathematics for Computer Science** (in progress) — 48 cards,
+  3 of 6 modules so far, mapped lecture-by-lecture against the actual Spring
   2024 OCW syllabus — discrete math and proof technique, the first track aimed
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
@@ -246,8 +246,8 @@ material and are not tracked as separate entries):
   original, cross-linked only internally via `related`.
 
 **MIT 6.1200J** (Mathematics for Computer Science, Spring 2024 — formerly
-6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is in progress — 36 cards
-in 2 of 6 planned modules, one per unit of the course:
+6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is in progress — 48 cards
+in 3 of 6 planned modules, one per unit of the course:
 
 - **Proofs** (Lec 1–4) is done: propositions, quantifiers, implication, sets,
   axioms and Gödel; inference rules and the standard proof templates;
@@ -261,8 +261,16 @@ in 2 of 6 planned modules, one per unit of the course:
   and Stirling's formula, the rigorous definitions and limit tests behind
   O/o/Ω/ω/Θ/~ and their notation pitfalls, Towers of Hanoi, plug-and-chug,
   and the master theorem's recursion-tree intuition and gaps.
-- Still to come: Number Theory (Lec 8–10),
-  Graphs (Lec 11–14), Counting (Lec 15–17), Probability (Lec 18–24).
+- **Number Theory** (Lec 8–10) is done, also lean — the algorithms (Euclid,
+  modular inverse/exponentiation, Miller–Rabin) live in Complexity Class and
+  the RSA/Diffie–Hellman mechanics in MIT 6.045J, so these cards supply the
+  proofs behind them: divisibility and the water-jug invariant, Euclid's
+  correctness and bit-count bound, the Pulverizer and Bézout's identity,
+  congruence vs. remainders (and how `%` differs across languages), which
+  substitutions are legal mod n, inverses iff coprime, Fermat's little
+  theorem, RSA's correctness proof and real security assumptions, and the
+  Chinese Remainder Theorem.
+- Still to come: Graphs (Lec 11–14), Counting (Lec 15–17), Probability (Lec 18–24).
 - Sourced from the course's own Spring 2024 lecture notes (read page-by-page);
   Lecture 23 has no published notes, so it will be sourced from the course's
   official textbook (Lehman, Leighton & Meyer, *Mathematics for Computer

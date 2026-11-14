@@ -21,7 +21,7 @@ def contains(arr, target):
     return False`,
     pitfall:
       "O(n) does not mean 'exactly n operations' — it means 'bounded above by some constant multiple of n.' O(n) and O(1) are both valid (looser) upper bounds for an O(1) algorithm; Big-O alone doesn't tell you the bound is tight.",
-    related: ["complexity-analysis-big-omega", "complexity-analysis-big-theta"],
+    related: ["complexity-analysis-big-omega", "complexity-analysis-big-theta", "mit6120-analysis-asymptotic-definitions"],
   },
   {
     id: "complexity-analysis-big-omega",
@@ -201,7 +201,7 @@ Three cases, depending on which term dominates:
 See the three worked-example cards for each case in detail.`,
     pitfall:
       "The Master Theorem only applies when subproblems are equal-sized divisions (n/b) — not when they're unequal (like T(n) = T(n/3) + T(2n/3) + O(n), which needs the more general Akra-Bazzi method) and not when the recurrence subtracts rather than divides.",
-    related: ["complexity-analysis-master-theorem-case1", "complexity-analysis-master-theorem-case2", "complexity-analysis-master-theorem-case3"],
+    related: ["complexity-analysis-master-theorem-case1", "complexity-analysis-master-theorem-case2", "complexity-analysis-master-theorem-case3", "mit6120-analysis-master-theorem-intuition"],
   },
   {
     id: "complexity-analysis-master-theorem-case1",

@@ -93,6 +93,7 @@ export const MODULES: ModuleMeta[] = [
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit6120-proofs", title: "6.1200: Proofs", tier: 1, order: 700, course: "mit6120" },
   { slug: "mit6120-analysis", title: "6.1200: Algorithm Analysis", tier: 1, order: 701, course: "mit6120" },
+  { slug: "mit6120-number-theory", title: "6.1200: Number Theory", tier: 1, order: 702, course: "mit6120" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

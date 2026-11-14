@@ -1586,6 +1586,36 @@ export const MIT6120_LECTURES: CourseLecture[] = [
       "mit6120-analysis-master-theorem-intuition",
     ],
   },
+  {
+    number: 8,
+    title: "Divisibility",
+    cardIds: [
+      "mit6120-number-theory-divisibility",
+      "mit6120-number-theory-water-jugs",
+      "mit6120-number-theory-euclid-correctness",
+      "mit6120-number-theory-pulverizer-bezout",
+    ],
+  },
+  {
+    number: 9,
+    title: "Modular Arithmetic",
+    cardIds: [
+      "mit6120-number-theory-congruence-and-remainders",
+      "mit6120-number-theory-remainder-in-programming-languages",
+      "mit6120-number-theory-legal-substitutions",
+      "mit6120-number-theory-inverse-iff-coprime",
+      "mit6120-number-theory-fermats-little-theorem",
+    ],
+  },
+  {
+    number: 10,
+    title: "Cryptography",
+    cardIds: [
+      "mit6120-number-theory-rsa-correctness",
+      "mit6120-number-theory-rsa-security-assumptions",
+      "mit6120-number-theory-chinese-remainder-theorem",
+    ],
+  },
 ];
 
 /**

@@ -1869,6 +1869,40 @@ export const MIT1806_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Exam review — worked problems on Lectures 1–12, no new material.",
   },
+  {
+    number: 14,
+    title: "Orthogonal Vectors and Subspaces",
+    cardIds: [
+      "mit1806-orthogonality-orthogonal-vectors",
+      "mit1806-orthogonality-orthogonal-complements",
+      "mit1806-orthogonality-ata-invertible",
+    ],
+  },
+  {
+    number: 15,
+    title: "Projections onto Subspaces",
+    cardIds: [
+      "mit1806-orthogonality-projection-onto-line",
+      "mit1806-orthogonality-projection-onto-subspace",
+    ],
+  },
+  {
+    number: 16,
+    title: "Projection Matrices and Least Squares",
+    cardIds: [
+      "mit1806-orthogonality-least-squares-line",
+    ],
+  },
+  {
+    number: 17,
+    title: "Orthogonal Matrices and Gram-Schmidt",
+    cardIds: [
+      "mit1806-orthogonality-orthonormal-orthogonal-matrices",
+      "mit1806-orthogonality-orthonormal-bases-simplify",
+      "mit1806-orthogonality-gram-schmidt",
+      "mit1806-orthogonality-qr-factorization",
+    ],
+  },
 ];
 
 /**

@@ -102,7 +102,7 @@ Its columns are orthogonal (with the conjugated inner product), each of length $
 
 **FFT**: write $w_n = e^{2\\pi i/n}$; since $w_{2n}^2 = w_n$, a size-$2n$ transform splits into two size-$n$ transforms:
 $$F_{2n} = \\begin{bmatrix} I & D \\\\ I & -D \\end{bmatrix}\\begin{bmatrix} F_n & 0 \\\\ 0 & F_n \\end{bmatrix}P,$$
-where $P$ separates even- and odd-indexed entries and $D = \\text{diag}(1, w_{2n}, \\ldots, w_{2n}^{\,n-1})$ holds powers of the **$2n$-th** root of unity $w_{2n} = e^{2\\pi i/2n}$. The outer factors cost only $O(n)$. Recursing all the way down: about $\\frac12n\\log_2 n$ multiplications instead of $n^2$.
+where $P$ separates even- and odd-indexed entries and $D = \\text{diag}(1, w_{2n}, \\ldots, w_{2n}^{n-1})$ holds powers of the **$2n$-th** root of unity $w_{2n} = e^{2\\pi i/2n}$. The outer factors cost only $O(n)$. Recursing all the way down: about $\\frac12n\\log_2 n$ multiplications instead of $n^2$.
 
 For $n = 1024$: over a million vs. $\\frac12 \\cdot 1024 \\cdot 10 = 5120$ — **about 200× faster**. Possible only because $F_n$ has orthogonal columns with this special structure. (Gauss noticed the split, but not its significance.)`,
     complexity: {

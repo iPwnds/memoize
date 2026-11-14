@@ -148,7 +148,7 @@ By the induction hypothesis $x_1, \\ldots, x_{k-1}$ are independent, so every $c
     tier: 1,
     module: MODULE,
     type: "code-trace",
-    front: "Solve u_{k+1} = Au_k with eigenvectors, and use it to derive Binet's closed form for the Fibonacci numbers.",
+    front: "Solve uₖ₊₁ = A·uₖ with eigenvectors, and use it to derive Binet's closed form for the Fibonacci numbers.",
     back: `**Difference equations**: $u_{k+1} = Au_k$ gives $u_k = A^ku_0$. Expand the start in eigenvectors, $u_0 = c_1x_1 + \\cdots + c_nx_n = Sc$; then each piece just scales:
 $$u_k = c_1\\lambda_1^kx_1 + c_2\\lambda_2^kx_2 + \\cdots + c_n\\lambda_n^kx_n.$$
 For large $k$ the **largest $|\\lambda|$ dominates** the long-term behavior.
@@ -188,7 +188,7 @@ Starting at $(1, 0)$, the system flows to the **steady state** $u(\\infty) = (\\
     tier: 1,
     module: MODULE,
     type: "concept",
-    front: "How do eigenvalues determine the stability of du/dt = Au? Define the matrix exponential e^{At} and show e^{At} = Se^{Λt}S⁻¹.",
+    front: "How do eigenvalues determine the stability of du/dt = Au? Define the matrix exponential e^(At) and show e^(At) = S·e^(Λt)·S⁻¹.",
     back: `**Stability** — read off the real parts of the eigenvalues:
 1. **Stable** ($u(t) \\to 0$): every $\\text{Re}(\\lambda) < 0$.
 2. **Steady state**: one $\\lambda = 0$ and all others have $\\text{Re}(\\lambda) < 0$.

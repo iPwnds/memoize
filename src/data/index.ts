@@ -63,6 +63,7 @@ import { mit6120ProofsCards } from "./mit6120-proofs";
 import { mit6120AlgorithmAnalysisCards } from "./mit6120-algorithm-analysis";
 import { mit6120NumberTheoryCards } from "./mit6120-number-theory";
 import { mit6120GraphsCards } from "./mit6120-graphs";
+import { mit6120CountingCards } from "./mit6120-counting";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -130,6 +131,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6120AlgorithmAnalysisCards,
   ...mit6120NumberTheoryCards,
   ...mit6120GraphsCards,
+  ...mit6120CountingCards,
 ];
 
 export * from "./types";

@@ -1656,6 +1656,37 @@ export const MIT6120_LECTURES: CourseLecture[] = [
       "mit6120-graphs-parallel-scheduling-chains",
     ],
   },
+  {
+    number: 15,
+    title: "Relations and Counting",
+    cardIds: [
+      "mit6120-counting-relations-and-functions",
+      "mit6120-counting-equivalence-relations",
+      "mit6120-counting-weak-partial-orders",
+      "mit6120-counting-product-sum-bijection-rules",
+    ],
+  },
+  {
+    number: 16,
+    title: "Counting Techniques",
+    cardIds: [
+      "mit6120-counting-generalized-product-rule",
+      "mit6120-counting-division-rule-binomial",
+      "mit6120-counting-poker-recipes",
+      "mit6120-counting-complement-at-least-one-pair",
+    ],
+  },
+  {
+    number: 17,
+    title: "More Counting Techniques",
+    cardIds: [
+      "mit6120-counting-inclusion-exclusion",
+      "mit6120-counting-inclusion-exclusion-proof",
+      "mit6120-counting-pigeonhole",
+      "mit6120-counting-combinatorial-proofs",
+      "mit6120-counting-binomial-multinomial-theorem",
+    ],
+  },
 ];
 
 /**

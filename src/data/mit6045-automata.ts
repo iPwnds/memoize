@@ -198,7 +198,7 @@ Since $\\mathcal{P}(\\Sigma^*)$ is strictly bigger (uncountable) than the counta
 The lemma is really the pigeonhole non-regularity argument (see related card) packaged as a reusable tool: instead of re-deriving "some prefix must repeat a state" by hand for each new language, you invoke the lemma directly and focus on choosing $x$ and deriving the contradiction.`,
     pitfall:
       "The lemma only guarantees the split exists somewhere within the first p characters (|uv| ≤ p) — it does not let you choose which part of x gets pumped freely; a correct non-regularity proof must show the contradiction holds for *every* valid way of splitting x consistent with |uv| ≤ p and |v| ≥ 1, not just the split you'd prefer.",
-    related: ["mit6045-automata-pigeonhole-non-regularity", "mit6045-automata-pumping-lemma-application"],
+    related: ["mit6045-automata-pigeonhole-non-regularity", "mit6045-automata-pumping-lemma-application", "mit6120-counting-pigeonhole"],
   },
   {
     id: "mit6045-automata-pumping-lemma-application",

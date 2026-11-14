@@ -95,7 +95,7 @@ This is the mechanical foundation behind bitmask DP (see the Dynamic Programming
     },
     pitfall:
       "This only scales to roughly n ≤ 20-25 in practice — 2ⁿ grows explosively (see the Complexity & Analysis module's growth-at-scale card), so bitmask enumeration is a small-n technique, not a general one.",
-    related: ["dynamic-programming-bitmask-tsp", "backtracking-subsets"],
+    related: ["dynamic-programming-bitmask-tsp", "backtracking-subsets", "mit6120-counting-product-sum-bijection-rules"],
   },
 
   // ---------------------------------------------------------- Counting bits

@@ -201,7 +201,7 @@ Choosing the **most-constrained empty cell first** (fewest remaining valid digit
 | Subsets (power set) | No | Binary include/exclude per element, in index order | 2ⁿ |
 
 The recognizable tell in code: permutations track a **used[] array** (any not-yet-used element is fair game, from anywhere in the list); combinations pass a **start index forward** (never look back); subsets make an explicit **binary decision per element** rather than "picking the next item" at all. Recognizing which of these three shapes a problem actually wants is most of the work — the recursive skeleton around it is nearly identical in all three.`,
-    related: ["backtracking-permutations", "backtracking-combinations", "backtracking-subsets"],
+    related: ["backtracking-permutations", "backtracking-combinations", "backtracking-subsets", "mit6120-counting-division-rule-binomial"],
   },
 
   // ------------------------------------------------------------- Word search

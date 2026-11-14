@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 916 cards across 63 modules and 8 courses:
+quiz-app polish — 929 cards across 64 modules and 8 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -32,8 +32,8 @@ quiz-app polish — 916 cards across 63 modules and 8 courses:
   instruction scheduling and loop optimization, and register allocation,
   parallelization and memory optimization.
 
-- **MIT 6.1200J — Mathematics for Computer Science** (in progress) — 64 cards,
-  4 of 6 modules so far, mapped lecture-by-lecture against the actual Spring
+- **MIT 6.1200J — Mathematics for Computer Science** (in progress) — 77 cards,
+  5 of 6 modules so far, mapped lecture-by-lecture against the actual Spring
   2024 OCW syllabus — discrete math and proof technique, the first track aimed
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
@@ -246,8 +246,8 @@ material and are not tracked as separate entries):
   original, cross-linked only internally via `related`.
 
 **MIT 6.1200J** (Mathematics for Computer Science, Spring 2024 — formerly
-6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is in progress — 64 cards
-in 4 of 6 planned modules, one per unit of the course:
+6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is in progress — 77 cards
+in 5 of 6 planned modules, one per unit of the course:
 
 - **Proofs** (Lec 1–4) is done: propositions, quantifiers, implication, sets,
   axioms and Gödel; inference rules and the standard proof templates;
@@ -277,7 +277,15 @@ in 4 of 6 planned modules, one per unit of the course:
   matching with Gale–Shapley's correctness proofs and applicant-optimality,
   walks/paths/components, Euler tours, trees, digraphs/SCCs/condensation,
   topological orders, and parallel scheduling via chains and antichains.
-- Still to come: Counting (Lec 15–17), Probability (Lec 18–24).
+- **Relations & Counting** (Lec 15–17) is done, at full depth since almost
+  none of it existed in the app: relations and function properties
+  (total/injective/surjective/bijective), equivalence relations and the
+  partition theorem, weak partial and total orders, the product/sum/
+  bijection/generalized-product/division rules, binomial coefficients,
+  counting with recipes (and catching overcounts), complements,
+  inclusion–exclusion with its sign-cancellation proof, the pigeonhole
+  principle, combinatorial proofs, and the binomial/multinomial theorems.
+- Still to come: Probability (Lec 18–24).
 - Sourced from the course's own Spring 2024 lecture notes (read page-by-page);
   Lecture 23 has no published notes, so it will be sourced from the course's
   official textbook (Lehman, Leighton & Meyer, *Mathematics for Computer

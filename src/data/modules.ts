@@ -104,6 +104,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit1806-subspaces", title: "18.06: Vector Spaces & the Four Subspaces", tier: 1, order: 801, course: "mit1806" },
   { slug: "mit1806-orthogonality", title: "18.06: Orthogonality & Least Squares", tier: 1, order: 802, course: "mit1806" },
   { slug: "mit1806-determinants", title: "18.06: Determinants", tier: 1, order: 803, course: "mit1806" },
+  { slug: "mit1806-eigenvalues", title: "18.06: Eigenvalues & Eigenvectors", tier: 1, order: 804, course: "mit1806" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

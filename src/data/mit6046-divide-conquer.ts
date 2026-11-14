@@ -142,7 +142,7 @@ def multiply_polynomials(A_coeffs, B_coeffs):
     return IFFT(C_star)                # O(n log n) — same algorithm as FFT`,
     pitfall:
       "n must be a power of 2 (n = 2^ℓ) for the roots-of-unity collapsing-set structure to apply directly — polynomials of other degrees need padding with zero coefficients up to the next power of 2 before the FFT recursion works.",
-    related: ["mit6046-dc-fft-collapsing-sets", "mit6046-dc-polynomial-representations"],
+    related: ["mit6046-dc-fft-collapsing-sets", "mit6046-dc-polynomial-representations", "mit1806-eigenvalues-fourier-series"],
   },
   {
     id: "mit6046-dc-veb-clustering",

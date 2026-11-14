@@ -1930,6 +1930,41 @@ export const MIT1806_LECTURES: CourseLecture[] = [
       "mit1806-determinants-volume",
     ],
   },
+  {
+    number: 21,
+    title: "Eigenvalues and Eigenvectors",
+    cardIds: [
+      "mit1806-eigenvalues-definition-examples",
+      "mit1806-eigenvalues-characteristic-equation",
+      "mit1806-eigenvalues-trace-determinant",
+      "mit1806-eigenvalues-complex-and-repeated",
+    ],
+  },
+  {
+    number: 22,
+    title: "Diagonalization and Powers of A",
+    cardIds: [
+      "mit1806-eigenvalues-diagonalization",
+      "mit1806-eigenvalues-distinct-independent",
+      "mit1806-eigenvalues-difference-equations-fibonacci",
+    ],
+  },
+  {
+    number: 23,
+    title: "Differential Equations and exp(At)",
+    cardIds: [
+      "mit1806-eigenvalues-differential-equations",
+      "mit1806-eigenvalues-stability-matrix-exponential",
+    ],
+  },
+  {
+    number: 24,
+    title: "Markov Matrices; Fourier Series",
+    cardIds: [
+      "mit1806-eigenvalues-markov-matrices",
+      "mit1806-eigenvalues-fourier-series",
+    ],
+  },
 ];
 
 /**

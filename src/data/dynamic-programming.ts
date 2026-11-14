@@ -68,7 +68,7 @@ This is exactly the Fibonacci recurrence in different clothing — the general l
         { op: "DP (memo or tabulation)", time: "O(n)", space: "O(n) or O(1) rolling" },
       ],
     },
-    related: ["dynamic-programming-memo-vs-tabulation"],
+    related: ["dynamic-programming-memo-vs-tabulation", "mit1806-eigenvalues-difference-equations-fibonacci"],
   },
   {
     id: "dynamic-programming-house-robber",

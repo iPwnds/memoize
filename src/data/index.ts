@@ -69,6 +69,7 @@ import { mit1806EliminationCards } from "./mit1806-elimination";
 import { mit1806SubspacesCards } from "./mit1806-subspaces";
 import { mit1806OrthogonalityCards } from "./mit1806-orthogonality";
 import { mit1806DeterminantsCards } from "./mit1806-determinants";
+import { mit1806EigenvaluesCards } from "./mit1806-eigenvalues";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -142,6 +143,7 @@ export const ALL_CARDS: Card[] = [
   ...mit1806SubspacesCards,
   ...mit1806OrthogonalityCards,
   ...mit1806DeterminantsCards,
+  ...mit1806EigenvaluesCards,
 ];
 
 export * from "./types";

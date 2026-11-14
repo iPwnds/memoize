@@ -57,7 +57,7 @@ export function HomePage() {
       <div>
         <h1 className="text-3xl font-semibold tracking-tight">Memoize</h1>
         <p className="mt-1 text-slate-500 dark:text-slate-400">
-          A flashcard app for mastering algorithms and data structures — spaced
+          A flashcard app for mastering algorithms, theoretical CS, and systems — spaced
           repetition, structured reading, and course-specific study tracks.
         </p>
       </div>

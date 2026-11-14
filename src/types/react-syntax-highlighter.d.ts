@@ -8,9 +8,9 @@ declare module "react-syntax-highlighter/dist/esm/prism-light" {
   export default SyntaxHighlighter;
 }
 
-declare module "react-syntax-highlighter/dist/esm/languages/prism/python" {
-  const python: unknown;
-  export default python;
+declare module "react-syntax-highlighter/dist/esm/languages/prism/*" {
+  const language: unknown;
+  export default language;
 }
 
 declare module "react-syntax-highlighter/dist/esm/styles/prism" {

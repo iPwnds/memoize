@@ -70,11 +70,12 @@ export interface ModuleMeta {
   /** Order within its tier, for stable display/navigation. */
   order: number;
   /**
-   * Set when this module belongs to a specific external course (e.g.
-   * "mit6006") rather than the generic tiered curriculum. `tier` is still
-   * required for id/validator consistency but is not meaningful for course
-   * modules — every view that groups by tier must filter these out via
-   * `course` and present them through the course track UI instead.
+   * Id of the course this module belongs to — must match an entry in
+   * `COURSES` (src/data/courses.ts). Every module belongs to exactly one
+   * course. `tier`/`order` only drive display grouping for module-grouped
+   * courses (e.g. Complexity Class); in lecture-numbered courses (those
+   * with a `COURSE_LECTURE_MAPS` entry) they are placeholders kept for
+   * id/validator consistency.
    */
-  course?: string;
+  course: string;
 }

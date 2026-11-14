@@ -44,8 +44,8 @@ persistence (no backend, single-user). Content lives as typed data in
 ## Study modes
 
 The landing page is a dashboard: due-today count, streak, overall mastery, a
-one-click jump into Review, and — if you have one in progress — a course
-progress spotlight, plus a grid linking into every mode below.
+one-click jump into Review, a mastery bar for every course, plus a grid
+linking into every mode below.
 
 - **Review** — spaced-repetition queue (simplified SM-2), only cards due today,
   filterable by Track (Everything, or a specific course — isolating a course's

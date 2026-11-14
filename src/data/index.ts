@@ -128,7 +128,7 @@ export * from "./types";
 export * from "./modules";
 export * from "./courses";
 
-/** The `course` id of the module a card belongs to, or undefined for cards
- *  in the generic tiered curriculum. */
+/** The `course` id of the module a card belongs to, or undefined only if
+ *  the card's `module` doesn't resolve (which validate-content.ts rejects). */
 export const courseOfCard = (card: Card): string | undefined =>
   moduleBySlug(card.module)?.course;

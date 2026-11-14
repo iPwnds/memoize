@@ -569,12 +569,6 @@ export const MIT6045_LECTURES: CourseLecture[] = [
   },
 ];
 
-/**
- * Single source of truth mapping a course id to its lecture map. Every
- * entry in `COURSES` must have a corresponding entry here — enforced by
- * scripts/validate-content.ts — or /courses/<id> silently renders as if
- * the course id itself were invalid.
- */
 export const MIT6046_LECTURES: CourseLecture[] = [
   {
     number: 1,
@@ -753,12 +747,6 @@ export const MIT6046_LECTURES: CourseLecture[] = [
   },
 ];
 
-/**
- * Single source of truth mapping a course id to its lecture map. Every
- * entry in `COURSES` must have a corresponding entry here — enforced by
- * scripts/validate-content.ts — or /courses/<id> silently renders as if
- * the course id itself were invalid.
- */
 export const MIT6004_LECTURES: CourseLecture[] = [
   {
     number: 1,

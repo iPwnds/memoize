@@ -148,7 +148,7 @@ The fix: mark deleted slots with a special **tombstone** marker instead of plain
 This is why every practical hash table implementation **resizes well before the table is full** — commonly triggering a resize once $\\alpha$ crosses a threshold like 0.7, rather than waiting until 1.0.`,
     pitfall:
       "Assuming a hash table stays O(1) at any load factor — open addressing in particular degrades sharply (not gracefully) as load factor approaches 1, which is why implementations resize well before actually running out of slots.",
-    related: ["hashing-resizing-rehashing", "hashing-good-hash-function"],
+    related: ["hashing-resizing-rehashing", "hashing-good-hash-function", "mit6120-probability-birthday-principle"],
   },
   {
     id: "hashing-resizing-rehashing",

@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 929 cards across 64 modules and 8 courses:
+quiz-app polish — 950 cards across 65 modules and 8 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -32,18 +32,20 @@ quiz-app polish — 929 cards across 64 modules and 8 courses:
   instruction scheduling and loop optimization, and register allocation,
   parallelization and memory optimization.
 
-- **MIT 6.1200J — Mathematics for Computer Science** (in progress) — 77 cards,
-  5 of 6 modules so far, mapped lecture-by-lecture against the actual Spring
-  2024 OCW syllabus — discrete math and proof technique, the first track aimed
+- **MIT 6.1200J — Mathematics for Computer Science** — 98 cards, 6 modules,
+  mapped lecture-by-lecture against the actual Spring 2024 OCW syllabus (all
+  24 lectures) — discrete math and proof technique, the first track aimed
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
 
 The goal going forward: bring a graduate of an applied-CS (professional)
 bachelor up to the level of a university CS bachelor — benchmarked against
 KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
-only. The biggest remaining gaps are mathematical (proofs, logic, linear
-algebra, probability & statistics, calculus, numerical math) and declarative
-programming; systems and algorithms are already well covered.
+only. MIT 6.1200J now covers proofs, relations, counting and discrete
+probability; the biggest remaining gaps are logic (natural deduction,
+first-order logic), linear algebra, statistics, calculus, numerical math,
+infinite cardinality, and declarative programming — systems and algorithms
+are already well covered.
 
 ## Stack
 
@@ -246,8 +248,8 @@ material and are not tracked as separate entries):
   original, cross-linked only internally via `related`.
 
 **MIT 6.1200J** (Mathematics for Computer Science, Spring 2024 — formerly
-6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is in progress — 77 cards
-in 5 of 6 planned modules, one per unit of the course:
+6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is complete — 98 cards
+across 6 modules, one per unit of the course, mapped against all 24 lectures:
 
 - **Proofs** (Lec 1–4) is done: propositions, quantifiers, implication, sets,
   axioms and Gödel; inference rules and the standard proof templates;
@@ -285,12 +287,23 @@ in 5 of 6 planned modules, one per unit of the course:
   counting with recipes (and catching overcounts), complements,
   inclusion–exclusion with its sign-cancellation proof, the pigeonhole
   principle, combinatorial proofs, and the binomial/multinomial theorems.
-- Still to come: Probability (Lec 18–24).
+- **Probability** (Lec 18–24) is done, at full depth — a core gap against
+  KU Leuven's *Kansrekenen*: probability spaces and the tree method (Monty
+  Hall, nontransitive dice), probability rules, conditional probability,
+  Bayes' rule and base rates, Simpson's paradox, independence (pairwise vs.
+  mutual, correlated events, conditioning-induced dependence), the birthday
+  principle, random variables and the binomial distribution, a randomized
+  two-envelope strategy, expectation and linearity of expectation, variance
+  (and its additivity under pairwise independence), and the Markov,
+  Chebyshev and Chernoff bounds.
 - Sourced from the course's own Spring 2024 lecture notes (read page-by-page);
-  Lecture 23 has no published notes, so it will be sourced from the course's
-  official textbook (Lehman, Leighton & Meyer, *Mathematics for Computer
-  Science*, CC BY-SA, hosted on OCW). Units 2–3 overlap heavily with existing
-  tracks and will stay lean; Units 1, 5 and 6 are the real gap. Known
+  Lecture 23 has no published notes, so it is sourced from Lecture 24's own
+  variance review plus the course's official textbook (Lehman, Leighton &
+  Meyer, *Mathematics for Computer Science*, CC BY-SA, linked from the OCW
+  readings page), §20.2–20.3. Units 2–4 overlap heavily with existing tracks
+  and stay lean (supplying proofs, cross-linked both ways); Units 1, 5 and 6
+  are the real gap and get full depth. A few slips in the notes are corrected
+  in the cards (noted in each module's header comment). Known
   residual gap: Spring 2024 doesn't teach infinite cardinality /
   diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
 

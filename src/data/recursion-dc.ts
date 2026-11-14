@@ -174,7 +174,7 @@ Production libraries (BLAS implementations like OpenBLAS, MKL) mostly rely on hi
 Rule of thumb: reach for Las Vegas when correctness is non-negotiable and you can tolerate variable runtime (or bound its expectation); reach for Monte Carlo when a bounded, predictable runtime matters more than absolute certainty — often paired with a way to run extra rounds to push the error probability arbitrarily low.`,
     pitfall:
       "A Monte Carlo algorithm's error probability is a property of the ALGORITHM, not the input — running more independent rounds and taking a majority/consistency vote reduces it exponentially, but a single run always carries the stated risk, even on 'easy' inputs.",
-    related: ["sorting-quicksort-randomization", "recursion-dc-reservoir-sampling"],
+    related: ["sorting-quicksort-randomization", "recursion-dc-reservoir-sampling", "mit6120-probability-two-envelopes"],
   },
   {
     id: "recursion-dc-reservoir-sampling",

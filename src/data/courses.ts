@@ -1687,6 +1687,69 @@ export const MIT6120_LECTURES: CourseLecture[] = [
       "mit6120-counting-binomial-multinomial-theorem",
     ],
   },
+  {
+    number: 18,
+    title: "Introduction to Probability",
+    cardIds: [
+      "mit6120-probability-space-tree-method",
+      "mit6120-probability-monty-hall",
+      "mit6120-probability-nontransitive-dice",
+    ],
+  },
+  {
+    number: 19,
+    title: "Conditional Probability",
+    cardIds: [
+      "mit6120-probability-rules",
+      "mit6120-probability-conditional-product-rule",
+      "mit6120-probability-bayes-base-rates",
+      "mit6120-probability-simpsons-paradox",
+    ],
+  },
+  {
+    number: 20,
+    title: "Independence",
+    cardIds: [
+      "mit6120-probability-independence",
+      "mit6120-probability-pairwise-vs-mutual",
+      "mit6120-probability-conditional-independence",
+      "mit6120-probability-birthday-principle",
+    ],
+  },
+  {
+    number: 21,
+    title: "Random Variables",
+    cardIds: [
+      "mit6120-probability-random-variables",
+      "mit6120-probability-two-envelopes",
+      "mit6120-probability-binomial-distribution",
+    ],
+  },
+  {
+    number: 22,
+    title: "Expectation",
+    cardIds: [
+      "mit6120-probability-expectation",
+      "mit6120-probability-linearity-of-expectation",
+    ],
+  },
+  {
+    number: 23,
+    title: "Expectation and Variance",
+    cardIds: [
+      "mit6120-probability-variance",
+      "mit6120-probability-variance-of-sums",
+    ],
+  },
+  {
+    number: 24,
+    title: "Large Deviations: Chebyshev and Chernoff Bounds",
+    cardIds: [
+      "mit6120-probability-markov",
+      "mit6120-probability-chebyshev",
+      "mit6120-probability-chernoff",
+    ],
+  },
 ];
 
 /**

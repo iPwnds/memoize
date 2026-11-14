@@ -351,7 +351,7 @@ With a **random** pivot, the worst case still exists in theory, but which run hi
 In practice: \`pivot = random.randint(lo, hi)\`, swap it to a fixed position (e.g. the end), then run ordinary Lomuto/Hoare partitioning.`,
     pitfall:
       "Randomizing the pivot changes the *expected* complexity, not the worst-case bound — O(n²) is still possible, just astronomically unlikely.",
-    related: ["sorting-quicksort-pivot-selection"],
+    related: ["sorting-quicksort-pivot-selection", "mit6120-probability-linearity-of-expectation"],
   },
   {
     id: "sorting-quicksort-implementation",

@@ -96,6 +96,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6120-number-theory", title: "6.1200: Number Theory", tier: 1, order: 702, course: "mit6120" },
   { slug: "mit6120-graphs", title: "6.1200: Graphs", tier: 1, order: 703, course: "mit6120" },
   { slug: "mit6120-counting", title: "6.1200: Relations & Counting", tier: 1, order: 704, course: "mit6120" },
+  { slug: "mit6120-probability", title: "6.1200: Probability", tier: 1, order: 705, course: "mit6120" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

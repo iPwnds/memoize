@@ -90,7 +90,7 @@ $$E[X_i] = 1 + \\sum_{j \\neq i} \\Pr[h(k_i)=h(k_j)] \\leq 1 + \\frac{n-1}{m}$$
 Since $m = \\Theta(n)$, the load factor $\\alpha = n/m = O(1)$, so **every** chain has $O(1)$ expected length — regardless of what the input keys actually are, because the randomness is in the hash function's *choice*, not the input. That's why hash tables give expected $O(1)$ operations (amortized $O(1)$ if the table also resizes dynamically, by the same argument as a dynamic array) — the expectation is over the algorithm's own coin flips, not over an assumed input distribution.`,
     pitfall:
       "The O(1) expected-time guarantee is input-independent only because the hash function is chosen randomly at build time — using a fixed, publicly-known hash function (even a 'good-looking' one) reintroduces the adversarial-input vulnerability the universal-family construction exists to close.",
-    related: ["mit6006-sorting-hashing-direct-access-array", "hashing-good-hash-function", "hashing-separate-chaining"],
+    related: ["mit6006-sorting-hashing-direct-access-array", "hashing-good-hash-function", "hashing-separate-chaining", "mit6120-probability-pairwise-vs-mutual"],
   },
   {
     id: "mit6006-sorting-hashing-chaining-terminology",

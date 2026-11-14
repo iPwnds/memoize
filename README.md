@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 1007 cards across 70 modules and 9 courses:
+quiz-app polish — 1023 cards across 71 modules and 9 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -38,15 +38,15 @@ quiz-app polish — 1007 cards across 70 modules and 9 courses:
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
 
-- **MIT 18.06 — Linear Algebra** (in progress) — 57 cards, 5 of 6 modules so
-  far, from the 18.06SC (Fall 2011, Gilbert Strang) per-lecture summaries,
-  mapped against Strang's video lecture numbering.
+- **MIT 18.06 — Linear Algebra** — 73 cards, 6 modules, from the 18.06SC
+  (Fall 2011, Gilbert Strang) per-lecture summaries, mapped against all 34 of
+  Strang's video lectures.
 
 The goal going forward: bring a graduate of an applied-CS (professional)
 bachelor up to the level of a university CS bachelor — benchmarked against
 KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
 only. MIT 6.1200J now covers proofs, relations, counting and discrete
-probability, and MIT 18.06 (in progress) linear algebra; the biggest remaining
+probability, and MIT 18.06 linear algebra; the biggest remaining
 gaps are logic (natural deduction, first-order logic), statistics, calculus, numerical math,
 infinite cardinality, and declarative programming — systems and algorithms
 are already well covered.
@@ -311,8 +311,8 @@ across 6 modules, one per unit of the course, mapped against all 24 lectures:
   residual gap: Spring 2024 doesn't teach infinite cardinality /
   diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
 
-**MIT 18.06** (Linear Algebra, 18.06SC Fall 2011, Gilbert Strang) is in
-progress — 57 cards in 5 of 6 planned modules, sourced from the course's own
+**MIT 18.06** (Linear Algebra, 18.06SC Fall 2011, Gilbert Strang) is
+complete — 73 cards across 6 modules, sourced from the course's own
 per-lecture summaries with every matrix example recomputed exactly (the PDFs'
 matrix layouts don't survive text extraction). Lecture numbers follow
 Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
@@ -346,10 +346,21 @@ Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
   and Binet's Fibonacci formula, du/dt = Au with stability and e^(At),
   Markov matrices (eigenvalue 1, steady states), and Fourier series as an
   orthonormal expansion in function space.
-- Still to come: Positive Definite Matrices, SVD & Linear Transformations
-  (Lec 25–31, 33). 18.06 is computational; abstract linear-map/spectral-
-  theorem rigour and numerical conditioning/stability (KU Leuven's
-  *Lineaire algebra* proofs and *Numerieke wiskunde*) will remain partial gaps.
+- **Positive Definite Matrices, SVD & Linear Transformations** (Lec 25–31,
+  33) is done: the spectral theorem with proofs of real eigenvalues and
+  orthogonal eigenvectors, complex vectors and Hermitian/unitary matrices,
+  the Fourier matrix and FFT, the four positive-definiteness tests,
+  completing the square as elimination and the Hessian test, ellipsoids,
+  AᵀA and similar matrices (with proofs), Jordan form, the SVD and its four
+  orthonormal subspace bases, linear transformations and their matrices,
+  change of basis and image compression, and left/right inverses and the
+  pseudoinverse (with proof). Lectures 13, 32 and 34 are exam/course
+  reviews; the Quiz 2 review ("24b") has no tracker entry.
+- Where the summaries slip, the cards correct them (noted in each affected
+  module's header comment). 18.06 is computational: abstract
+  linear-map/spectral-theorem rigour and numerical conditioning/stability
+  (KU Leuven's *Lineaire algebra* proofs and *Numerieke wiskunde*) remain
+  partial gaps.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

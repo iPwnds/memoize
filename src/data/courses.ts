@@ -1965,6 +1965,82 @@ export const MIT1806_LECTURES: CourseLecture[] = [
       "mit1806-eigenvalues-fourier-series",
     ],
   },
+  {
+    number: 25,
+    title: "Symmetric Matrices and Positive Definiteness",
+    cardIds: [
+      "mit1806-pd-svd-spectral-theorem",
+      "mit1806-pd-svd-symmetric-real-orthogonal",
+    ],
+  },
+  {
+    number: 26,
+    title: "Complex Matrices; Fast Fourier Transform",
+    cardIds: [
+      "mit1806-pd-svd-complex-hermitian-unitary",
+      "mit1806-pd-svd-fourier-matrix-fft",
+    ],
+  },
+  {
+    number: 27,
+    title: "Positive Definite Matrices and Minima",
+    cardIds: [
+      "mit1806-pd-svd-positive-definite-tests",
+      "mit1806-pd-svd-completing-square-minima",
+      "mit1806-pd-svd-ellipsoids-3x3",
+    ],
+  },
+  {
+    number: 28,
+    title: "Similar Matrices and Jordan Form",
+    cardIds: [
+      "mit1806-pd-svd-ata-positive-definite",
+      "mit1806-pd-svd-similar-matrices",
+      "mit1806-pd-svd-jordan-form",
+    ],
+  },
+  {
+    number: 29,
+    title: "Singular Value Decomposition",
+    cardIds: [
+      "mit1806-pd-svd-svd",
+      "mit1806-pd-svd-svd-four-subspaces",
+    ],
+  },
+  {
+    number: 30,
+    title: "Linear Transformations and Their Matrices",
+    cardIds: [
+      "mit1806-pd-svd-linear-transformations",
+    ],
+  },
+  {
+    number: 31,
+    title: "Change of Basis; Image Compression",
+    cardIds: [
+      "mit1806-pd-svd-change-of-basis-compression",
+    ],
+  },
+  {
+    number: 32,
+    title: "Quiz 3 Review",
+    cardIds: [],
+    noCardContent: "Exam review — worked problems on Lectures 25–31, no new material.",
+  },
+  {
+    number: 33,
+    title: "Left and Right Inverses; Pseudoinverse",
+    cardIds: [
+      "mit1806-pd-svd-left-right-inverses",
+      "mit1806-pd-svd-pseudoinverse",
+    ],
+  },
+  {
+    number: 34,
+    title: "Final Course Review",
+    cardIds: [],
+    noCardContent: "Course review — a tour back through the whole course, no new material.",
+  },
 ];
 
 /**

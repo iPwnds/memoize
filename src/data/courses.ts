@@ -137,6 +137,19 @@ export const COURSES: CourseMeta[] = [
       { label: "Statistics II: Frequentist Inference", lectures: [17, 26] },
     ],
   },
+  {
+    id: "mit6001",
+    title: "MIT 6.001 — Structure and Interpretation of Computer Programs",
+    subtitle:
+      "Spring 2005 · Eric Grimson, Peter Szolovits, Trevor Darrell · MIT OpenCourseWare (with the SICP textbook)",
+    // Quiz 1 follows Lecture 8 and Quiz 2 follows Recitation 19 (syllabus
+    // "Scheduled Exams" and calendar); the final covers the rest.
+    quizScopes: [
+      { label: "Quiz 1 (Lec 1–8)", lectures: [1, 8] },
+      { label: "Quiz 2 (Lec 9–19)", lectures: [9, 19] },
+      { label: "Final (Lec 20–26)", lectures: [20, 26] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2225,6 +2238,46 @@ export const MIT1805_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT6001_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction to Computation",
+    cardIds: [
+      "mit6001-procs-declarative-vs-imperative",
+      "mit6001-procs-language-elements",
+    ],
+  },
+  {
+    number: 2,
+    title: "Scheme Basics",
+    cardIds: [
+      "mit6001-procs-lambda-procedure-objects",
+      "mit6001-procs-sqrt-by-averaging",
+    ],
+  },
+  {
+    number: 3,
+    title: "Procedures, Processes, and Recursion",
+    cardIds: [
+      "mit6001-procs-substitution-model",
+      "mit6001-procs-if-special-form",
+      "mit6001-procs-recursive-factorial",
+      "mit6001-procs-iterative-factorial",
+      "mit6001-procs-induction-correctness",
+    ],
+  },
+  {
+    number: 4,
+    title: "Orders of Growth and Kinds of Procedures",
+    cardIds: [
+      "mit6001-procs-orders-of-growth",
+      "mit6001-procs-tree-recursion-fibonacci",
+      "mit6001-procs-fast-exponentiation",
+      "mit6001-procs-pascal-triangle",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2241,4 +2294,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6120: MIT6120_LECTURES,
   mit1806: MIT1806_LECTURES,
   mit1805: MIT1805_LECTURES,
+  mit6001: MIT6001_LECTURES,
 };

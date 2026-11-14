@@ -19,6 +19,25 @@ SyntaxHighlighter.registerLanguage("cpp", cpp);
 SyntaxHighlighter.registerLanguage("bash", bash);
 SyntaxHighlighter.registerLanguage("nasm", nasm);
 
+// Card content writes display math as a `$$...$$` line inside a paragraph.
+// remark-math only treats `$$` as display (block) math when the fences sit on
+// their own lines separated by blank lines — otherwise it renders inline,
+// cramming large expressions (e.g. matrices) into running text. Normalize
+// such lines into proper display blocks, skipping fenced code.
+function normalizeDisplayMath(md: string): string {
+  return md
+    .split("```")
+    .map((part, i) =>
+      i % 2 === 1
+        ? part
+        : part.replace(
+            /(^|\n)[ \t]*\$\$([\s\S]+?)\$\$[ \t]*(?=\n|$)/g,
+            (_, pre: string, body: string) => `${pre}\n$$\n${body.trim()}\n$$\n`,
+          ),
+    )
+    .join("```");
+}
+
 export function Markdown({ children }: { children: string }) {
   const dark = useUiStore((s) => s.dark);
   return (
@@ -53,7 +72,7 @@ export function Markdown({ children }: { children: string }) {
           },
         }}
       >
-        {children}
+        {normalizeDisplayMath(children)}
       </ReactMarkdown>
     </div>
   );

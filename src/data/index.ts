@@ -72,6 +72,7 @@ import { mit1806DeterminantsCards } from "./mit1806-determinants";
 import { mit1806EigenvaluesCards } from "./mit1806-eigenvalues";
 import { mit1806PositiveDefiniteSvdCards } from "./mit1806-positive-definite-svd";
 import { mit1805ContinuousProbabilityCards } from "./mit1805-continuous-probability";
+import { mit1805BayesianInferenceCards } from "./mit1805-bayesian-inference";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -148,6 +149,7 @@ export const ALL_CARDS: Card[] = [
   ...mit1806EigenvaluesCards,
   ...mit1806PositiveDefiniteSvdCards,
   ...mit1805ContinuousProbabilityCards,
+  ...mit1805BayesianInferenceCards,
 ];
 
 export * from "./types";

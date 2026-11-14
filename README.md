@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 1035 cards across 72 modules and 10 courses:
+quiz-app polish — 1047 cards across 73 modules and 10 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -43,7 +43,7 @@ quiz-app polish — 1035 cards across 72 modules and 10 courses:
   Strang's video lectures.
 
 - **MIT 18.05 — Introduction to Probability and Statistics** (in progress) —
-  12 cards, 1 of 3 modules so far, from the Spring 2022 per-class reading
+  24 cards, 2 of 3 modules so far, from the Spring 2022 per-class reading
   notes, numbered by class.
 
 The goal going forward: bring a graduate of an applied-CS (professional)
@@ -368,7 +368,7 @@ Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
   partial gaps.
 
 **MIT 18.05** (Introduction to Probability and Statistics, Spring 2022,
-Jeremy Orloff & Jennifer French) is in progress — 12 cards in 1 of 3 planned
+Jeremy Orloff & Jennifer French) is in progress — 24 cards in 2 of 3 planned
 modules, following the course's own arc (probability → Bayesian inference →
 frequentist inference), sourced from its per-class reading notes with every
 numeric example recomputed.
@@ -382,8 +382,14 @@ numeric example recomputed.
   standardization, the law of large numbers, the central limit theorem
   (with a continuity-correction example), joint distributions, and
   covariance/correlation.
-- Still to come: Maximum Likelihood & Bayesian Inference (Classes 10–16),
-  Frequentist Inference — significance tests, confidence intervals, the
+- **Maximum Likelihood & Bayesian Inference** (Classes 10–16) is done: the
+  phases of statistics, MLEs (discrete and continuous, via log likelihood),
+  the Bayesian update table, prior/likelihood/posterior and MLE vs MAP,
+  prior and posterior predictive probabilities, odds and Bayes factors,
+  continuous priors, conjugate priors (beta–binomial with proof,
+  normal–normal precision weighting), choosing priors, and credible
+  intervals.
+- Still to come: Frequentist Inference — significance tests, confidence intervals, the
   bootstrap and linear regression (Classes 17–26).
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks

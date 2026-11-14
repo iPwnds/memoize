@@ -2110,6 +2110,54 @@ export const MIT1805_LECTURES: CourseLecture[] = [
       "mit1805-probability-covariance-correlation",
     ],
   },
+  {
+    number: 10,
+    title: "Introduction to Statistics; Maximum Likelihood Estimates",
+    cardIds: [
+      "mit1805-bayes-what-statistics-does",
+      "mit1805-bayes-mle-discrete",
+      "mit1805-bayes-mle-continuous",
+    ],
+  },
+  {
+    number: 11,
+    title: "Bayesian Updating with Discrete Priors",
+    cardIds: [
+      "mit1805-bayes-update-table",
+      "mit1805-bayes-prior-likelihood-posterior",
+    ],
+  },
+  {
+    number: 12,
+    title: "Bayesian Updating: Probabilistic Prediction; Odds",
+    cardIds: [
+      "mit1805-bayes-predictive-probability",
+      "mit1805-bayes-odds-bayes-factors",
+    ],
+  },
+  {
+    number: 13,
+    title: "Bayesian Updating with Continuous Priors",
+    cardIds: [
+      "mit1805-bayes-continuous-priors",
+    ],
+  },
+  {
+    number: 15,
+    title: "Conjugate Priors: Beta and Normal",
+    cardIds: [
+      "mit1805-bayes-conjugate-beta-binomial",
+      "mit1805-bayes-normal-normal",
+    ],
+  },
+  {
+    number: 16,
+    title: "Choosing Priors; Probability Intervals",
+    cardIds: [
+      "mit1805-bayes-choosing-priors",
+      "mit1805-bayes-probability-intervals",
+    ],
+  },
 ];
 
 /**

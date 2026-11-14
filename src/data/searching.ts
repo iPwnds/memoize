@@ -34,7 +34,7 @@ The loop invariant to hold onto: "if the target is present, it's within \`[lo, h
       structure: "Binary Search",
       operations: [{ op: "Search", time: "O(log n)", space: "O(1) iterative, O(log n) recursive" }],
     },
-    related: ["searching-binary-search-off-by-one", "searching-binary-search-iterative"],
+    related: ["searching-binary-search-off-by-one", "searching-binary-search-iterative", "mit6120-proofs-invariant-principle"],
   },
   {
     id: "searching-binary-search-iterative",

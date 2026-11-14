@@ -61,7 +61,7 @@ for large enough $c$ — the $k$ terms cancel, leaving a constant. Intuitively: 
 **Why $\\Phi(\\text{initial}) = 0$ matters**: the amortized-bound guarantee $\\sum \\text{amortized} \\geq \\sum \\text{actual}$ only holds if $\\Phi$ **never drops below** its initial value at any point in the sequence (intuitively, "the bank account can't go negative" — you can't have amortized-saved more than you've actually paid). If the counter starts at $000\\cdots0$, $\\Phi = 0$ initially and $\\Phi \\geq 0$ always (it's a bit count), so the bound holds throughout. Starting from a nonzero initial value would make $\\Phi(\\text{initial}) > 0$, and later configurations could in principle have *smaller* $\\Phi$ than that starting point, breaking the guarantee.`,
     pitfall:
       "The potential function's validity depends on Φ never going below Φ(initial) at ANY point during execution, not just at the end — a Φ that dips negative partway through a sequence (even if it recovers later) invalidates the amortized bound for prefixes of that sequence.",
-    related: ["mit6046-am-four-methods-overview", "mit6046-am-tree-splits-merges"],
+    related: ["mit6046-am-four-methods-overview", "mit6046-am-tree-splits-merges", "mit6120-proofs-termination-derived-variables"],
   },
   {
     id: "mit6046-am-tree-splits-merges",

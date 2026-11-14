@@ -143,7 +143,7 @@ def min_clock_period(tPD_reg, tPD_logic, tSETUP_reg):
 **Valid state diagrams** require every state's *outgoing* arcs to be: (1) **mutually exclusive** — no two arcs leaving the same state can be labeled with the same input value (the machine's next move must be deterministic); (2) **collectively exhaustive** — every state must specify a transition for *every* possible input combination (a state with "nothing happens" on some input is drawn as an explicit self-loop, not left undefined).
 
 **Moore vs. Mealy machines**: a **Moore** machine's outputs depend only on the *current state* ($\\text{Out}(s)$) — outputs are drawn attached to states. A **Mealy** machine's outputs depend on *both* the current state and the current input ($\\text{Out}(s,I)$) — outputs are drawn attached to transition arcs. Mealy machines can sometimes react to an input one step "faster" (the output changes immediately, without waiting for a state transition to complete), but Moore machines are often simpler to reason about since their outputs are a pure function of "where the machine currently is."`,
-    related: ["mit6004-logic-fsm-hardware-implementation", "mit6004-logic-boolean-minimization"],
+    related: ["mit6004-logic-fsm-hardware-implementation", "mit6004-logic-boolean-minimization", "mit6120-proofs-state-machine-definitions"],
   },
   {
     id: "mit6004-logic-fsm-hardware-implementation",

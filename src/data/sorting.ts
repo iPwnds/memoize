@@ -26,7 +26,7 @@ Used in practice almost nowhere directly — it exists pedagogically to introduc
     },
     pitfall:
       "Forgetting the early-exit flag turns an already-sorted array into a full O(n²) pass anyway — the naive textbook version has no best-case speedup.",
-    related: ["sorting-choosing-algorithm", "sorting-stability-matters"],
+    related: ["sorting-choosing-algorithm", "sorting-stability-matters", "mit6120-proofs-simple-sort-termination"],
   },
   {
     id: "sorting-bubble-implementation",

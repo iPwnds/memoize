@@ -37,7 +37,7 @@ Worked shape (from the lecture's birthday-matching algorithm, which scans studen
 This is also why recursion is such a central tool in algorithm design, not just an implementation trick: a recursive algorithm's correctness proof and its code structure are often the same induction.`,
     pitfall:
       "Case analysis (checking small inputs by hand) is not a substitute for induction here — it proves correctness on the cases you checked, not on the unbounded general input space the problem is defined over.",
-    related: ["mit6006-foundations-problem-vs-algorithm"],
+    related: ["mit6006-foundations-problem-vs-algorithm", "mit6120-proofs-induction-axiom-sum", "mit6120-proofs-strong-induction"],
   },
   {
     id: "mit6006-foundations-word-ram",

@@ -63,7 +63,7 @@ Extend $\\delta$ to strings via $\\delta^*: Q \\times \\Sigma^* \\to Q$, defined
 $\\delta$ being a *total function* (exactly one next state per state/symbol pair, no gaps) is what makes DFAs deterministic — at every point in reading the input, there's exactly one possible current state, never a choice and never a dead end (missing transitions are conventionally routed to an implicit trap state).`,
     pitfall:
       "δ must be defined for every (state, symbol) pair — a DFA diagram that 'omits' some arrows isn't leaving them undefined, it's using the convention that missing transitions go to an implicit non-accepting trap state you can't leave.",
-    related: ["mit6045-automata-nfa-formal-definition"],
+    related: ["mit6045-automata-nfa-formal-definition", "mit6120-proofs-state-machine-definitions"],
   },
   {
     id: "mit6045-automata-nfa-formal-definition",

@@ -46,7 +46,7 @@ export const mit6035AllocParallelMemoryCards: Card[] = [
 **Select phase**: **pop** nodes off the stack one at a time (reverse removal order) and assign each the **first color not already used by any of its neighbors currently colored** — by construction from the simplify phase, a popped node was removed while its degree was < N, so at least one color is guaranteed free among its (at most N−1 distinct) neighbors' colors.
 
 **If simplify gets stuck** (every remaining node has degree ≥ N, but the graph isn't empty): the graph may or may not still be colorable — a node must be chosen to **spill** (or **split**, related card) speculatively, removed from the graph anyway, and the algorithm optimistically continues; if select later fails to find a free color for that node when popped, it's confirmed as an actual spill.`,
-    related: ["mit6035-alloc-webs-and-interference", "mit6035-alloc-coloring-worked-example"],
+    related: ["mit6035-alloc-webs-and-interference", "mit6035-alloc-coloring-worked-example", "mit6120-graphs-coloring-chromatic-number"],
   },
   {
     id: "mit6035-alloc-coloring-worked-example",

@@ -285,7 +285,7 @@ def kahn_topo_sort(graph, n):
       structure: "Topological Sort (Kahn's)",
       operations: [{ op: "Sort", time: "O(V + E)" }],
     },
-    related: ["graph-traversal-topo-sort-overview", "graph-traversal-topo-dfs"],
+    related: ["graph-traversal-topo-sort-overview", "graph-traversal-topo-dfs", "mit6120-graphs-topological-order"],
   },
   {
     id: "graph-traversal-topo-dfs",
@@ -362,6 +362,6 @@ def is_bipartite(graph, n):
     },
     pitfall:
       "Forgetting to restart the coloring process from every unvisited vertex (not just one source) misses disconnected components — a graph can be bipartite within each component individually while the check needs to verify all of them.",
-    related: ["graph-traversal-bfs"],
+    related: ["graph-traversal-bfs", "mit6120-graphs-bipartite-average-degree"],
   },
 ];

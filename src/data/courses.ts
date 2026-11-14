@@ -1616,6 +1616,46 @@ export const MIT6120_LECTURES: CourseLecture[] = [
       "mit6120-number-theory-chinese-remainder-theorem",
     ],
   },
+  {
+    number: 11,
+    title: "Graphs and Coloring",
+    cardIds: [
+      "mit6120-graphs-handshake-lemma",
+      "mit6120-graphs-bipartite-average-degree",
+      "mit6120-graphs-coloring-chromatic-number",
+      "mit6120-graphs-greedy-coloring",
+      "mit6120-graphs-induction-buildup-error",
+    ],
+  },
+  {
+    number: 12,
+    title: "Matching",
+    cardIds: [
+      "mit6120-graphs-matching-definitions",
+      "mit6120-graphs-stable-matching-definitions",
+      "mit6120-graphs-gale-shapley-algorithm",
+      "mit6120-graphs-gale-shapley-proofs",
+      "mit6120-graphs-applicant-optimal",
+    ],
+  },
+  {
+    number: 13,
+    title: "Connectivity and Trees",
+    cardIds: [
+      "mit6120-graphs-walks-paths-components",
+      "mit6120-graphs-euler-tours",
+      "mit6120-graphs-trees-n-minus-1-edges",
+    ],
+  },
+  {
+    number: 14,
+    title: "Digraphs and DAGs",
+    cardIds: [
+      "mit6120-graphs-digraphs-scc-condensation",
+      "mit6120-graphs-topological-order",
+      "mit6120-graphs-parallel-scheduling-chains",
+    ],
+  },
 ];
 
 /**

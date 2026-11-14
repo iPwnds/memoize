@@ -13,7 +13,7 @@ export const advancedGraphsCards: Card[] = [
     back: `In a **directed** graph, a strongly connected component (SCC) is a maximal set of vertices where **every vertex can reach every other vertex** in the set via directed paths. This is a strictly stronger notion than the "weakly connected" components you'd get by ignoring edge direction (see the Graph Traversal module's connected-components card) — a directed graph can be one weakly-connected piece while containing many separate SCCs.
 
 Why it matters: SCCs let you **collapse** a directed graph into a DAG (the "condensation" — contract each SCC to a single node) — this is a common first step in graph algorithms, since many problems become tractable once you know you're working with a DAG (e.g. topological sort only applies to DAGs). Real uses: detecting cycles/deadlocks (a non-trivial SCC — more than one vertex — implies a cycle), compiler dependency analysis, analyzing web-page link structure, social network mutual-reachability clusters.`,
-    related: ["advanced-graphs-kosaraju", "advanced-graphs-tarjan-scc"],
+    related: ["advanced-graphs-kosaraju", "advanced-graphs-tarjan-scc", "mit6120-graphs-digraphs-scc-condensation"],
   },
   {
     id: "advanced-graphs-kosaraju",
@@ -234,7 +234,7 @@ This is also directly useful as an algorithm: finding min-cut is literally "run 
     back: `Given a bipartite graph (two vertex sides, edges only between sides — see the Graph Traversal module's bipartiteness card), a **matching** pairs up vertices via edges such that no vertex is used twice; **maximum matching** finds the largest such pairing.
 
 Reduction to max flow: add a **super-source** $s$ connected to every vertex on the left side (capacity 1 each), add a **super-sink** $t$ connected to from every vertex on the right side (capacity 1 each), and give every original bipartite edge capacity 1, directed left-to-right. Since all capacities are 1, any integer flow corresponds to a valid matching (flow conservation at each vertex, capacity-1 edges enforcing "used at most once"), and the **maximum flow value equals the maximum matching size**. This means Edmonds-Karp already solves bipartite matching in $O(VE^2)$ — but the specialized structure (all capacities are 1) allows a much faster dedicated algorithm: **Hopcroft-Karp** (see that card).`,
-    related: ["graph-traversal-bipartiteness", "advanced-graphs-hopcroft-karp", "advanced-graphs-max-flow-overview"],
+    related: ["graph-traversal-bipartiteness", "advanced-graphs-hopcroft-karp", "advanced-graphs-max-flow-overview", "mit6120-graphs-matching-definitions"],
   },
   {
     id: "advanced-graphs-hopcroft-karp",
@@ -314,7 +314,7 @@ A* only has an advantage when you have a **specific target vertex** and a decent
 **Directed graph**: an Eulerian **circuit** exists iff every vertex's in-degree equals its out-degree, and the graph is connected (ignoring direction, with all edges reachable from any starting point). An Eulerian **path** exists iff at most one vertex has $\\text{out-degree} - \\text{in-degree} = 1$ (the start) and at most one has $\\text{in-degree} - \\text{out-degree} = 1$ (the end), with all other vertices balanced.
 
 This is the origin problem of graph theory itself — the Seven Bridges of Königsberg, which Euler proved unsolvable precisely because the underlying graph had four odd-degree vertices, violating the circuit condition (and even the path condition, needing exactly two, not four).`,
-    related: ["advanced-graphs-hierholzer"],
+    related: ["advanced-graphs-hierholzer", "mit6120-graphs-euler-tours"],
   },
   {
     id: "advanced-graphs-hierholzer",

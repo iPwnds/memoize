@@ -97,6 +97,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6120-graphs", title: "6.1200: Graphs", tier: 1, order: 703, course: "mit6120" },
   { slug: "mit6120-counting", title: "6.1200: Relations & Counting", tier: 1, order: 704, course: "mit6120" },
   { slug: "mit6120-probability", title: "6.1200: Probability", tier: 1, order: 705, course: "mit6120" },
+
+  // MIT 18.06SC course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit1806-elimination", title: "18.06: Elimination & Matrices", tier: 1, order: 800, course: "mit1806" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

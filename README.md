@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 950 cards across 65 modules and 8 courses:
+quiz-app polish — 963 cards across 66 modules and 9 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -38,12 +38,16 @@ quiz-app polish — 950 cards across 65 modules and 8 courses:
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
 
+- **MIT 18.06 — Linear Algebra** (in progress) — 13 cards, 1 of 6 modules so
+  far, from the 18.06SC (Fall 2011, Gilbert Strang) per-lecture summaries,
+  mapped against Strang's video lecture numbering.
+
 The goal going forward: bring a graduate of an applied-CS (professional)
 bachelor up to the level of a university CS bachelor — benchmarked against
 KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
 only. MIT 6.1200J now covers proofs, relations, counting and discrete
-probability; the biggest remaining gaps are logic (natural deduction,
-first-order logic), linear algebra, statistics, calculus, numerical math,
+probability, and MIT 18.06 (in progress) linear algebra; the biggest remaining
+gaps are logic (natural deduction, first-order logic), statistics, calculus, numerical math,
 infinite cardinality, and declarative programming — systems and algorithms
 are already well covered.
 
@@ -306,6 +310,24 @@ across 6 modules, one per unit of the course, mapped against all 24 lectures:
   in the cards (noted in the affected modules' header comments). Known
   residual gap: Spring 2024 doesn't teach infinite cardinality /
   diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
+
+**MIT 18.06** (Linear Algebra, 18.06SC Fall 2011, Gilbert Strang) is in
+progress — 13 cards in 1 of 6 planned modules, sourced from the course's own
+per-lecture summaries with every matrix example recomputed exactly (the PDFs'
+matrix layouts don't survive text extraction). Lecture numbers follow
+Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
+
+- **Elimination & Matrices** (Lec 1–5) is done: the row/column/matrix
+  pictures, elimination and back substitution, elimination and permutation
+  matrices, four views of matrix multiplication, inverses and Gauss–Jordan,
+  (AB)⁻¹ and (AB)ᵀ, A = LU / LDU / PA = LU and the n³/3 cost, symmetric
+  RᵀR, and vector spaces/subspaces.
+- Still to come: Vector Spaces & the Four Subspaces (Lec 6–12), Orthogonality
+  & Least Squares (Lec 14–17), Determinants (Lec 18–20), Eigenvalues
+  (Lec 21–24), Positive Definite Matrices, SVD & Linear Transformations
+  (Lec 25–31, 33). 18.06 is computational; abstract linear-map/spectral-
+  theorem rigour and numerical conditioning/stability (KU Leuven's
+  *Lineaire algebra* proofs and *Numerieke wiskunde*) will remain partial gaps.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

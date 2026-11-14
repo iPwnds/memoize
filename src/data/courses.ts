@@ -114,6 +114,17 @@ export const COURSES: CourseMeta[] = [
       { label: "Unit 6: Probability", lectures: [18, 24] },
     ],
   },
+  {
+    id: "mit1806",
+    title: "MIT 18.06 — Linear Algebra",
+    subtitle:
+      "18.06SC Fall 2011 · Gilbert Strang · MIT OpenCourseWare (lecture numbers follow Strang's video lectures)",
+    quizScopes: [
+      { label: "Unit I: Ax = b and the Four Subspaces", lectures: [1, 13] },
+      { label: "Unit II: Least Squares, Determinants and Eigenvalues", lectures: [14, 24] },
+      { label: "Unit III: Positive Definite Matrices and Applications", lectures: [25, 34] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -1752,6 +1763,52 @@ export const MIT6120_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT1806_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "The Geometry of Linear Equations",
+    cardIds: [
+      "mit1806-elimination-three-pictures",
+      "mit1806-elimination-ax-combination-of-columns",
+    ],
+  },
+  {
+    number: 2,
+    title: "Elimination with Matrices",
+    cardIds: [
+      "mit1806-elimination-elimination-to-u",
+      "mit1806-elimination-elimination-matrices",
+    ],
+  },
+  {
+    number: 3,
+    title: "Multiplication and Inverse Matrices",
+    cardIds: [
+      "mit1806-elimination-four-ways-to-multiply",
+      "mit1806-elimination-inverses-and-singularity",
+      "mit1806-elimination-gauss-jordan",
+    ],
+  },
+  {
+    number: 4,
+    title: "Factorization into A = LU",
+    cardIds: [
+      "mit1806-elimination-inverse-transpose-of-product",
+      "mit1806-elimination-a-equals-lu",
+      "mit1806-elimination-elimination-cost",
+    ],
+  },
+  {
+    number: 5,
+    title: "Transposes, Permutations, Spaces Rⁿ",
+    cardIds: [
+      "mit1806-elimination-pa-equals-lu-permutations",
+      "mit1806-elimination-transposes-symmetric",
+      "mit1806-elimination-vector-spaces-subspaces",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -1766,4 +1823,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6828: MIT6828_LECTURES,
   mit6035: MIT6035_LECTURES,
   mit6120: MIT6120_LECTURES,
+  mit1806: MIT1806_LECTURES,
 };

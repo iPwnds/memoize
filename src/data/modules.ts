@@ -88,6 +88,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6035-flow", title: "6.035: Program Analysis & Dataflow Foundations", tier: 1, order: 602, course: "mit6035" },
   { slug: "mit6035-sched", title: "6.035: Instruction Scheduling & Loop Optimization", tier: 1, order: 603, course: "mit6035" },
   { slug: "mit6035-alloc", title: "6.035: Register Allocation, Parallelization & Memory Optimization", tier: 1, order: 604, course: "mit6035" },
+
+  // MIT 6.1200J course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit6120-proofs", title: "6.1200: Proofs", tier: 1, order: 700, course: "mit6120" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

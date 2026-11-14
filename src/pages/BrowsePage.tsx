@@ -4,7 +4,7 @@ import { ALL_CARDS, COURSES, MODULES } from "../data";
 import type { CardType } from "../data/types";
 import { ALL_TRACK, courseTrack, matchesTrack } from "../lib/track";
 
-const TYPES: CardType[] = ["concept", "complexity", "code-trace", "compare", "implementation"];
+const TYPES: CardType[] = ["concept", "complexity", "code-trace", "compare", "implementation", "proof"];
 
 export function BrowsePage() {
   const [track, setTrack] = useState<string>(ALL_TRACK);
@@ -132,7 +132,7 @@ export function BrowsePage() {
               Next →
             </button>
           </div>
-          <CardView card={current} flipped={flipped} onFlip={() => setFlipped(true)} />
+          <CardView key={current.id} card={current} flipped={flipped} onFlip={() => setFlipped(true)} />
         </>
       ) : (
         <div className="py-24 text-center text-slate-500 dark:text-slate-400">

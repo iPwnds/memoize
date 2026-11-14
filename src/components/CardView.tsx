@@ -10,6 +10,7 @@ const TYPE_LABEL: Record<Card["type"], string> = {
   "code-trace": "Code Trace",
   compare: "Compare",
   implementation: "Coding Practice",
+  proof: "Proof",
 };
 
 const TYPE_COLOR: Record<Card["type"], string> = {
@@ -18,6 +19,7 @@ const TYPE_COLOR: Record<Card["type"], string> = {
   "code-trace": "bg-sky-100 text-sky-700 dark:bg-sky-500/20 dark:text-sky-300",
   compare: "bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-500/20 dark:text-fuchsia-300",
   implementation: "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300",
+  proof: "bg-rose-100 text-rose-700 dark:bg-rose-500/20 dark:text-rose-300",
 };
 
 export function CardView({
@@ -30,7 +32,8 @@ export function CardView({
   onFlip: () => void;
 }) {
   const [attempt, setAttempt] = useState("");
-  const isImplementation = card.type === "implementation";
+  // Implementation and proof cards get scratch space for an attempt before revealing.
+  const hasAttempt = card.type === "implementation" || card.type === "proof";
   const moduleTitle = moduleBySlug(card.module)?.title ?? card.module;
 
   return (
@@ -52,24 +55,24 @@ export function CardView({
       >
         <div className="text-lg font-medium leading-snug">{card.front}</div>
 
-        {isImplementation && !flipped && (
+        {hasAttempt && !flipped && (
           <div className="mt-4" onClick={(e) => e.stopPropagation()}>
             <textarea
               value={attempt}
               onChange={(e) => setAttempt(e.target.value)}
-              placeholder="Write your attempt here (not saved, just scratch space)..."
+              placeholder={`Write your ${card.type === "proof" ? "proof" : "attempt"} here (not saved, just scratch space)...`}
               className="h-40 w-full resize-y rounded-lg border border-slate-200 bg-slate-50 p-3 font-mono text-sm outline-none focus:border-indigo-400 dark:border-slate-700 dark:bg-slate-950"
             />
             <button
               onClick={onFlip}
               className="mt-3 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500"
             >
-              Reveal solution
+              {card.type === "proof" ? "Reveal proof" : "Reveal solution"}
             </button>
           </div>
         )}
 
-        {!isImplementation && !flipped && (
+        {!hasAttempt && !flipped && (
           <div className="mt-6 text-sm text-slate-400">
             Click, or press space / enter, to flip
           </div>

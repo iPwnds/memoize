@@ -98,6 +98,22 @@ export const COURSES: CourseMeta[] = [
       { label: "Optimization & Back End (Lec 10–20)", lectures: [10, 20] },
     ],
   },
+  {
+    id: "mit6120",
+    title: "MIT 6.1200J — Mathematics for Computer Science",
+    subtitle:
+      "Spring 2024 (formerly 6.042J) · Zachary Abel, Brynmor Chapman, Erik Demaine · MIT OpenCourseWare",
+    // The course's own unit structure (from its readings page); the Spring
+    // 2024 OCW site doesn't publish quiz ranges.
+    quizScopes: [
+      { label: "Unit 1: Proofs", lectures: [1, 4] },
+      { label: "Unit 2: Algorithm Analysis", lectures: [5, 7] },
+      { label: "Unit 3: Number Theory", lectures: [8, 10] },
+      { label: "Unit 4: Graphs", lectures: [11, 14] },
+      { label: "Unit 5: Counting", lectures: [15, 17] },
+      { label: "Unit 6: Probability", lectures: [18, 24] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -1491,6 +1507,56 @@ export const MIT6035_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT6120_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Predicates, Sets, and Proofs",
+    cardIds: [
+      "mit6120-proofs-what-is-a-proof",
+      "mit6120-proofs-propositions-predicates-quantifiers",
+      "mit6120-proofs-connectives-and-english-or",
+      "mit6120-proofs-implication-truth-table",
+      "mit6120-proofs-sets-basics",
+      "mit6120-proofs-axioms-consistency-completeness",
+    ],
+  },
+  {
+    number: 2,
+    title: "Contradiction and Induction",
+    cardIds: [
+      "mit6120-proofs-inference-rules",
+      "mit6120-proofs-basic-proof-templates",
+      "mit6120-proofs-contrapositive-n-squared-even",
+      "mit6120-proofs-sqrt2-irrational",
+      "mit6120-proofs-proof-outlining",
+      "mit6120-proofs-induction-axiom-sum",
+      "mit6120-proofs-strengthening-ih-trominoes",
+    ],
+  },
+  {
+    number: 3,
+    title: "Casework and Strong Induction",
+    cardIds: [
+      "mit6120-proofs-proof-by-cases-template",
+      "mit6120-proofs-ramsey-r33",
+      "mit6120-proofs-strong-induction",
+      "mit6120-proofs-block-stacking-game",
+      "mit6120-proofs-beats-ordering",
+    ],
+  },
+  {
+    number: 4,
+    title: "State Machines",
+    cardIds: [
+      "mit6120-proofs-state-machine-definitions",
+      "mit6120-proofs-invariant-principle",
+      "mit6120-proofs-8-puzzle-parity",
+      "mit6120-proofs-termination-derived-variables",
+      "mit6120-proofs-simple-sort-termination",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -1504,4 +1570,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6004: MIT6004_LECTURES,
   mit6828: MIT6828_LECTURES,
   mit6035: MIT6035_LECTURES,
+  mit6120: MIT6120_LECTURES,
 };

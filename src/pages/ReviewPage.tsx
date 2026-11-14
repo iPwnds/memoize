@@ -125,7 +125,7 @@ export function ReviewPage() {
         </div>
       </div>
 
-      <CardView card={current} flipped={flipped} onFlip={() => setFlipped(true)} />
+      <CardView key={current.id} card={current} flipped={flipped} onFlip={() => setFlipped(true)} />
 
       {flipped && (
         <div className="mx-auto grid w-full max-w-2xl grid-cols-4 gap-2">

@@ -8,6 +8,7 @@ const TYPE_LABEL: Record<Card["type"], string> = {
   "code-trace": "Code Trace",
   compare: "Compare",
   implementation: "Coding Practice",
+  proof: "Proof",
 };
 
 export function LearnCardSection({

@@ -9,7 +9,9 @@ export type CardType =
   | "complexity"
   | "code-trace"
   | "compare"
-  | "implementation";
+  | "implementation"
+  /** A theorem/claim to prove; the back is a worked proof. */
+  | "proof";
 
 /** One row of a data structure/algorithm's operation-complexity table. */
 export interface ComplexityRow {

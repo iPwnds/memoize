@@ -84,7 +84,7 @@ export function CramPage() {
               />
             </div>
           </div>
-          <CardView card={current} flipped={flipped} onFlip={() => setFlipped(true)} />
+          <CardView key={current.id} card={current} flipped={flipped} onFlip={() => setFlipped(true)} />
           <div className="mx-auto flex w-full max-w-2xl justify-between">
             <button
               onClick={() => {

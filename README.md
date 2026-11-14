@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 852 cards across 59 modules and 7 courses:
+quiz-app polish — 875 cards across 60 modules and 8 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -32,7 +32,18 @@ quiz-app polish — 852 cards across 59 modules and 7 courses:
   instruction scheduling and loop optimization, and register allocation,
   parallelization and memory optimization.
 
-More MIT OpenCourseWare courses are intended to follow the same pattern.
+- **MIT 6.1200J — Mathematics for Computer Science** (in progress) — 23 cards,
+  1 of 6 modules so far, mapped lecture-by-lecture against the actual Spring
+  2024 OCW syllabus — discrete math and proof technique, the first track aimed
+  squarely at the math gap between an applied-CS bachelor and a university
+  CS bachelor.
+
+The goal going forward: bring a graduate of an applied-CS (professional)
+bachelor up to the level of a university CS bachelor — benchmarked against
+KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
+only. The biggest remaining gaps are mathematical (proofs, logic, linear
+algebra, probability & statistics, calculus, numerical math) and declarative
+programming; systems and algorithms are already well covered.
 
 ## Stack
 
@@ -233,6 +244,26 @@ material and are not tracked as separate entries):
   memory-system optimization (locality, tiling, prefetching, alias analysis).
   Essentially no overlap with the rest of the app — every card here is
   original, cross-linked only internally via `related`.
+
+**MIT 6.1200J** (Mathematics for Computer Science, Spring 2024 — formerly
+6.042J; Zachary Abel, Brynmor Chapman, Erik Demaine) is in progress — 23 cards
+in 1 of 6 planned modules, one per unit of the course:
+
+- **Proofs** (Lec 1–4) is done: propositions, quantifiers, implication, sets,
+  axioms and Gödel; inference rules and the standard proof templates;
+  contradiction; induction, strengthening the hypothesis, and strong
+  induction; proof by cases; state machines, the invariant principle, and
+  termination via potential functions. Worked proofs use the `proof` card
+  type (scratch space for your own attempt before the proof is revealed).
+- Still to come: Algorithm Analysis (Lec 5–7), Number Theory (Lec 8–10),
+  Graphs (Lec 11–14), Counting (Lec 15–17), Probability (Lec 18–24).
+- Sourced from the course's own Spring 2024 lecture notes (read page-by-page);
+  Lecture 23 has no published notes, so it will be sourced from the course's
+  official textbook (Lehman, Leighton & Meyer, *Mathematics for Computer
+  Science*, CC BY-SA, hosted on OCW). Units 2–3 overlap heavily with existing
+  tracks and will stay lean; Units 1, 5 and 6 are the real gap. Known
+  residual gap: Spring 2024 doesn't teach infinite cardinality /
+  diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

@@ -1807,6 +1807,68 @@ export const MIT1806_LECTURES: CourseLecture[] = [
       "mit1806-elimination-vector-spaces-subspaces",
     ],
   },
+  {
+    number: 6,
+    title: "Column Space and Nullspace",
+    cardIds: [
+      "mit1806-subspaces-nullspace-is-subspace",
+      "mit1806-subspaces-column-space-solvability",
+    ],
+  },
+  {
+    number: 7,
+    title: "Solving Ax = 0: Pivot Variables, Special Solutions",
+    cardIds: [
+      "mit1806-subspaces-special-solutions",
+      "mit1806-subspaces-rref-nullspace-matrix",
+    ],
+  },
+  {
+    number: 8,
+    title: "Solving Ax = b: Row Reduced Form R",
+    cardIds: [
+      "mit1806-subspaces-complete-solution",
+      "mit1806-subspaces-rank-cases",
+    ],
+  },
+  {
+    number: 9,
+    title: "Independence, Basis, and Dimension",
+    cardIds: [
+      "mit1806-subspaces-independence",
+      "mit1806-subspaces-basis-dimension",
+    ],
+  },
+  {
+    number: 10,
+    title: "The Four Fundamental Subspaces",
+    cardIds: [
+      "mit1806-subspaces-four-subspaces",
+      "mit1806-subspaces-rank-nullity",
+    ],
+  },
+  {
+    number: 11,
+    title: "Matrix Spaces; Rank 1; Small World Graphs",
+    cardIds: [
+      "mit1806-subspaces-other-vector-spaces",
+      "mit1806-subspaces-rank-one-matrices",
+    ],
+  },
+  {
+    number: 12,
+    title: "Graphs, Networks, Incidence Matrices",
+    cardIds: [
+      "mit1806-subspaces-incidence-matrices",
+      "mit1806-subspaces-euler-formula",
+    ],
+  },
+  {
+    number: 13,
+    title: "Quiz 1 Review",
+    cardIds: [],
+    noCardContent: "Exam review — worked problems on Lectures 1–12, no new material.",
+  },
 ];
 
 /**

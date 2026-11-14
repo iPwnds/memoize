@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 963 cards across 66 modules and 9 courses:
+quiz-app polish — 977 cards across 67 modules and 9 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -38,7 +38,7 @@ quiz-app polish — 963 cards across 66 modules and 9 courses:
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
 
-- **MIT 18.06 — Linear Algebra** (in progress) — 13 cards, 1 of 6 modules so
+- **MIT 18.06 — Linear Algebra** (in progress) — 27 cards, 2 of 6 modules so
   far, from the 18.06SC (Fall 2011, Gilbert Strang) per-lecture summaries,
   mapped against Strang's video lecture numbering.
 
@@ -312,7 +312,7 @@ across 6 modules, one per unit of the course, mapped against all 24 lectures:
   diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
 
 **MIT 18.06** (Linear Algebra, 18.06SC Fall 2011, Gilbert Strang) is in
-progress — 13 cards in 1 of 6 planned modules, sourced from the course's own
+progress — 27 cards in 2 of 6 planned modules, sourced from the course's own
 per-lecture summaries with every matrix example recomputed exactly (the PDFs'
 matrix layouts don't survive text extraction). Lecture numbers follow
 Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
@@ -322,7 +322,14 @@ Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
   matrices, four views of matrix multiplication, inverses and Gauss–Jordan,
   (AB)⁻¹ and (AB)ᵀ, A = LU / LDU / PA = LU and the n³/3 cost, symmetric
   RᵀR, and vector spaces/subspaces.
-- Still to come: Vector Spaces & the Four Subspaces (Lec 6–12), Orthogonality
+- **Vector Spaces & the Four Subspaces** (Lec 6–12) is done: nullspace and
+  column space, special solutions and rref, the complete solution of Ax = b
+  and the four rank cases, independence/basis/dimension, the four
+  fundamental subspaces with proofs of rank–nullity and row rank = column
+  rank, matrix and function spaces, rank-one matrices, and incidence
+  matrices (Kirchhoff's law, Euler's formula from the subspace dimensions).
+  Lecture 13 is the Unit I exam review.
+- Still to come: Orthogonality
   & Least Squares (Lec 14–17), Determinants (Lec 18–20), Eigenvalues
   (Lec 21–24), Positive Definite Matrices, SVD & Linear Transformations
   (Lec 25–31, 33). 18.06 is computational; abstract linear-map/spectral-

@@ -327,7 +327,7 @@ It must be a **leaf** — removing an arbitrary vertex can disconnect the tree.
 - every pair of vertices joined by a **unique** path
 - minimally connected (removing any edge disconnects it)
 - maximally acyclic (adding any edge creates a cycle)`,
-    related: ["mit6120-graphs-induction-buildup-error", "mit6120-graphs-walks-paths-components", "shortest-paths-mst-mst-overview"],
+    related: ["mit6120-graphs-induction-buildup-error", "mit6120-graphs-walks-paths-components", "shortest-paths-mst-mst-overview", "mit1806-subspaces-euler-formula"],
   },
 
   // --- Lecture 14: Digraphs and DAGs ---

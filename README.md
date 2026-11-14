@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 987 cards across 68 modules and 9 courses:
+quiz-app polish — 996 cards across 69 modules and 9 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -38,7 +38,7 @@ quiz-app polish — 987 cards across 68 modules and 9 courses:
   squarely at the math gap between an applied-CS bachelor and a university
   CS bachelor.
 
-- **MIT 18.06 — Linear Algebra** (in progress) — 37 cards, 3 of 6 modules so
+- **MIT 18.06 — Linear Algebra** (in progress) — 46 cards, 4 of 6 modules so
   far, from the 18.06SC (Fall 2011, Gilbert Strang) per-lecture summaries,
   mapped against Strang's video lecture numbering.
 
@@ -312,7 +312,7 @@ across 6 modules, one per unit of the course, mapped against all 24 lectures:
   diagonalization, which KU Leuven's *Bewijzen en redeneren* does.
 
 **MIT 18.06** (Linear Algebra, 18.06SC Fall 2011, Gilbert Strang) is in
-progress — 37 cards in 3 of 6 planned modules, sourced from the course's own
+progress — 46 cards in 4 of 6 planned modules, sourced from the course's own
 per-lecture summaries with every matrix example recomputed exactly (the PDFs'
 matrix layouts don't survive text extraction). Lecture numbers follow
 Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
@@ -334,7 +334,12 @@ Strang's 34 video lectures, which the 18.06SC sessions track one-to-one.
   N(A), projections onto lines and subspaces and the normal equations,
   least-squares line fitting, orthonormal/orthogonal matrices, Gram–Schmidt
   and A = QR.
-- Still to come: Determinants (Lec 18–20), Eigenvalues
+- **Determinants** (Lec 18–20) is done, built axiomatically from the three
+  defining properties: derived properties with proofs, det = 0 iff singular
+  (and computing det via pivots), det AB and det Aᵀ, the big formula and
+  cofactor expansion, the cofactor formula for A⁻¹ (with proof), Cramer's
+  rule, and |det A| as volume.
+- Still to come: Eigenvalues
   (Lec 21–24), Positive Definite Matrices, SVD & Linear Transformations
   (Lec 25–31, 33). 18.06 is computational; abstract linear-map/spectral-
   theorem rigour and numerical conditioning/stability (KU Leuven's

@@ -23,7 +23,7 @@ This single $O(1)$ primitive — "which way does this triple of points turn" —
     return 0       # collinear`,
     pitfall:
       "Preferring this integer cross-product test over computing and comparing actual angles (via atan2 or trigonometry) isn't just style — angle computation introduces floating-point error that can flip a comparison's result near-boundary, while the cross product stays exact for integer coordinates.",
-    related: ["computational-geometry-graham-scan", "computational-geometry-segment-intersection"],
+    related: ["computational-geometry-graham-scan", "computational-geometry-segment-intersection", "mit1806-determinants-volume"],
   },
 
   // ------------------------------------------------------------- Convex hull

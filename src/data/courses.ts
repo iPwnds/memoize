@@ -1903,6 +1903,33 @@ export const MIT1806_LECTURES: CourseLecture[] = [
       "mit1806-orthogonality-qr-factorization",
     ],
   },
+  {
+    number: 18,
+    title: "Properties of Determinants",
+    cardIds: [
+      "mit1806-determinants-three-properties",
+      "mit1806-determinants-derived-properties",
+      "mit1806-determinants-singular-iff-zero",
+      "mit1806-determinants-product-and-transpose",
+    ],
+  },
+  {
+    number: 19,
+    title: "Determinant Formulas and Cofactors",
+    cardIds: [
+      "mit1806-determinants-big-formula",
+      "mit1806-determinants-cofactors",
+    ],
+  },
+  {
+    number: 20,
+    title: "Cramer's Rule, Inverse Matrix, and Volume",
+    cardIds: [
+      "mit1806-determinants-inverse-formula",
+      "mit1806-determinants-cramers-rule",
+      "mit1806-determinants-volume",
+    ],
+  },
 ];
 
 /**

@@ -103,6 +103,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit1806-elimination", title: "18.06: Elimination & Matrices", tier: 1, order: 800, course: "mit1806" },
   { slug: "mit1806-subspaces", title: "18.06: Vector Spaces & the Four Subspaces", tier: 1, order: 801, course: "mit1806" },
   { slug: "mit1806-orthogonality", title: "18.06: Orthogonality & Least Squares", tier: 1, order: 802, course: "mit1806" },
+  { slug: "mit1806-determinants", title: "18.06: Determinants", tier: 1, order: 803, course: "mit1806" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

@@ -3,7 +3,7 @@
 A flashcard app for mastering algorithms, data structures, and theoretical CS,
 organized entirely by course — every module belongs to exactly one course,
 there's no undifferentiated generic pile. Built for depth and correctness over
-quiz-app polish — 1058 cards across 74 modules and 10 courses:
+quiz-app polish — 1340 cards across 99 modules and 15 courses:
 
 - **Complexity Class** — 322 cards, 24 modules, the original from-first-principles
   algorithms & data structures curriculum, independent of any external syllabus.
@@ -44,16 +44,39 @@ quiz-app polish — 1058 cards across 74 modules and 10 courses:
 
 - **MIT 18.05 — Introduction to Probability and Statistics** — 35 cards,
   3 modules, from the Spring 2022 per-class reading notes, numbered by class.
+- **MIT 18.01 — Single Variable Calculus** — 78 cards, 6 modules, from the
+  18.01SC (Fall 2010, OCW Scholar, David Jerison) per-session lecture notes,
+  numbered by the course's 101 sessions.
+- **MIT 18.335J — Introduction to Numerical Methods** — 56 cards, 5 modules,
+  from the Spring 2019 (Steven G. Johnson) per-lecture summaries and course
+  handouts, numbered by lecture (the numerical-linear-algebra core, Lec 1–24).
+- **MIT 24.241 — Logic I** — 59 cards, 5 modules, from the Fall 2009 OCW
+  slides, handouts, TA problem-set answers and quizzes (Ephraim Glick),
+  numbered by lecture session (all 25).
+- **MIT 6.042J — Mathematics for Computer Science (Logic & Infinite Sets)** —
+  19 cards, 2 modules, from the Spring 2015 OCW textbook chapters (MCS
+  Ch. 3 and 7), numbered by class session (Sessions 4, 5 and 11 only; the
+  rest of 6.042J is covered by the 6.1200J track).
+- **MIT 6.001 — Structure and Interpretation of Computer Programs** — 70 cards,
+  7 modules, from the Spring 2005 online-lecture handouts and code handouts plus
+  the SICP textbook, mapped against all 26 lectures. It is the declarative-
+  programming track (functional programming, evaluators, laziness, logic
+  programming).
 
 The goal going forward: bring a graduate of an applied-CS (professional)
 bachelor up to the level of a university CS bachelor — benchmarked against
 KU Leuven's *Bachelor in de informatica* — using MIT OpenCourseWare courses
-only. MIT 6.1200J now covers proofs, relations, counting and discrete
-probability, MIT 18.06 linear algebra, and MIT 18.05 continuous probability and
-statistics; the biggest remaining gaps are logic (natural deduction,
-first-order logic), calculus, numerical math,
-infinite cardinality, and declarative programming — systems and algorithms
-are already well covered.
+only. Every major gap now has a track: proofs, relations, counting and
+discrete probability (MIT 6.1200J), linear algebra (MIT 18.06), continuous
+probability and statistics (MIT 18.05), single-variable calculus (MIT 18.01),
+numerical linear algebra (MIT 18.335J), logic with soundness/completeness
+(MIT 24.241) and normal forms plus infinite cardinality (MIT 6.042J), and
+functional and logic programming (MIT 6.001). What remains is narrower:
+multivariable calculus and real-analysis rigour, abstract linear-map /
+spectral-theorem proofs, numerical root finding, interpolation and
+quadrature, static typing with Hindley–Milner inference and Prolog
+specifics, and resolution/tableaux in logic — systems and algorithms were
+already well covered.
 
 ## Stack
 
@@ -394,6 +417,223 @@ numeric example recomputed.
   frequentist-vs-Bayesian comparison, confidence intervals for normal data
   and what "95% confidence" really means, polling and large-sample
   intervals, the bootstrap, and least-squares linear regression.
+
+**MIT 18.01** (Single Variable Calculus, 18.01SC Fall 2010, David Jerison) is
+complete — 78 cards across 6 modules, sourced from the course's own
+per-session lecture notes (the written notes that accompany each video clip,
+686 pages across 101 sessions), with every derivative, integral, limit and
+series recomputed in sympy. The tracker follows the OCW Scholar numbering
+(Sessions 1–101) and groups it by the course's five units, each closed by an
+exam review and exam (Sessions 21/22, 41/42, 66/67, 85/86); Unit 5 is split
+at its own Part A / Part B boundary. Worked-example sessions (e.g. the ring on
+a string, the sphere and cauldron volumes, the wine glass) are folded into
+neighbouring cards and say so in the tracker. Measured against KU Leuven's
+*Wiskunde I*, this covers limits, derivatives, integrals, series and
+Taylor polynomials, and first-order separable differential equations.
+
+- **Differentiation** (Sessions 1–22) is done: the derivative as a limit of
+  secant slopes and as a rate of change, derivatives from the definition,
+  limits, one-sided limits and continuity (with the ε–δ definition added),
+  discontinuity types, differentiable ⇒ continuous, sin/cos derivatives and
+  the squeeze proof of sin θ/θ → 1, the sum/product/quotient rules, the chain
+  rule (with a proof that survives Δg = 0), higher derivatives and Dⁿxⁿ = n!,
+  rational exponents and inverse functions by implicit differentiation, aˣ,
+  M(a), e and ln, logarithmic differentiation, (1 + 1/n)ⁿ → e, and the
+  hyperbolic functions.
+- **Applications of Differentiation** (Sessions 23–42) is done: linear and
+  quadratic approximation (and differentials), curve sketching, max/min at
+  critical points and endpoints, related rates, Newton's method and its
+  quadratic convergence, the mean value theorem (proof via Rolle added) and
+  its consequences, MVT inequalities, antiderivatives and their uniqueness,
+  substitution, and separable differential equations.
+- **The Definite Integral & its Applications** (Sessions 43–67) is done:
+  Riemann sums, FTC1 and FTC2 with proofs, properties and estimation,
+  definite substitution, ln defined as an integral, new functions (erf,
+  Fresnel, Li), areas between curves, disks and shells, average value,
+  weighted averages and probability, numerical integration (trapezoid vs
+  Simpson), and the Gaussian integral √π.
+- **Techniques of Integration** (Sessions 68–86) is done and kept lean: trig
+  powers, ∫tan/∫sec, trig substitution and completing the square, partial
+  fractions (cover-up, repeated and quadratic factors), integration by parts
+  and reduction formulas, arc length (radians as arc length), surface area,
+  parametric curves, and polar coordinates and polar area.
+- **L'Hôpital's Rule & Improper Integrals** (Sessions 87–93) is done:
+  L'Hôpital (the general rule proved from the Cauchy MVT), rates of growth
+  (ln x ≪ xᵃ ≪ eᵖˣ, linked to the 6.1200J asymptotics cards), indeterminate
+  forms, improper integrals and the p-test, limit/direct comparison, and
+  integrals over singularities.
+- **Infinite Series & Taylor Series** (Sessions 94–101) is done: partial sums
+  and the geometric series, the integral test (proved) and the harmonic
+  series, comparison and the ratio test, the stacking-blocks overhang (linked
+  both ways with 6.1200J's harmonic-number card), power series and radius of
+  convergence, Taylor's formula with remainder, and term-by-term operations
+  (ln(1 + x), e^(−t²), erf).
+- Where the notes slip, the cards correct them (each module's header comment
+  lists the corrections). The notes are informal by design; the ε–δ limit,
+  the Rolle-based MVT proof, the general L'Hôpital rule, the ratio test,
+  absolute/alternating convergence and Taylor's remainder theorem are added
+  (and marked as additions in the headers). Residual gap: real-analysis
+  rigour (completeness of ℝ, uniform continuity, Riemann integrability
+  proofs) that KU Leuven's *Wiskunde I* touches is only stated, not proved.
+
+**MIT 18.335J** (Introduction to Numerical Methods, Spring 2019, Steven G.
+Johnson) covers its numerical-linear-algebra core: 56 cards across 5
+modules for Lectures 1–24. The course is the numerical layer on top of MIT
+18.06: what elimination, QR, the SVD and eigenvalues do in floating point.
+Sources are the OCW per-lecture summaries plus the course's handouts
+(Johnson's notes on Newton's method, summation accuracy, backwards
+stability and norm equivalence; Per-Olof Persson's slides on IEEE
+arithmetic, Gram–Schmidt, Householder/Givens, Hessenberg reduction, the QR
+algorithm and sparse matrices) and the Pset 1/2 solutions where the
+summaries point to them. The textbook (Trefethen & Bau) is not on OCW and
+was not used. Every numeric example, flop count and code sketch was
+recomputed or run. Lectures 25–39 (optimization, adjoint methods,
+quadrature, FFTs) are outside this track's scope.
+
+- **Floating Point, Stability & Conditioning** (Lec 1–5) is done: Newton's
+  square roots and their quadratic convergence (with proofs), the
+  floating-point model and IEEE single/double formats, special values and
+  gradual underflow, floating-point myths, naive vs pairwise summation
+  error bounds, forwards/backwards stability (with the summation proof),
+  vector/matrix norms and norm equivalence, condition numbers, and
+  ‖A‖₂ via the Rayleigh quotient with κ(A*A) = κ(A)².
+- **SVD, Least Squares & QR** (Lec 7–11) is done: the SVD and κ₂ =
+  σ₁/σₙ, the ±σ Hermitian embedding, least squares three ways, why normal
+  equations square κ, classical vs modified Gram–Schmidt (with Persson's
+  orthogonality-loss example), triangular orthogonalization vs orthogonal
+  triangularization, Householder reflectors, Givens rotations, and
+  Householder QR.
+- **Caches, LU & Cholesky** (Lec 11–14) is done: why flop counts don't
+  predict speed, the ideal-cache model, blocked and cache-oblivious matrix
+  multiplication, spatial locality, LU and why not to form A⁻¹, partial
+  pivoting, the growth factor (2ᵐ⁻¹ example), Cholesky, and structured
+  solvers.
+- **Eigenvalue Algorithms** (Lec 14–17) is done: the Schur factorization,
+  why eigensolvers must iterate, Wilkinson's polynomial, Hessenberg
+  reduction, power/inverse iteration, Rayleigh-quotient iteration, QR as
+  simultaneous iteration (with proof), and shifted QR with Wilkinson shifts
+  and deflation.
+- **Krylov Methods & Sparse Solvers** (Lec 17–24) is done: Arnoldi,
+  Rayleigh–Ritz and Lanczos, restarting, GMRES and its polynomial
+  convergence theory, preconditioning, steepest descent vs conjugate
+  gradient (exact 2×2 trace), CG convergence, PCG/biCG, solver-choice
+  rules, and sparse-direct fill-in with nested dissection.
+
+**MIT 24.241** (Logic I, Fall 2009, Ephraim Glick; TA Damien Rochford) is
+complete — 59 cards across 5 modules, following the course's own two-part
+arc (sentential logic and its metatheory, then predicate logic and its
+metatheory). The course's textbook (Bergmann, Moor & Nelson, *The Logic
+Book*) is not on OCW, so cards are sourced only from the OCW-hosted slides,
+handouts, problem-set answer sheets, quizzes and final exam. Every truth
+table, interpretation and derivation was re-checked by brute force or line by
+line, and errors in the source (e.g. a false "symmetric + transitive ⇒
+reflexive" answer, a typo in the satisfaction clause for &, and a wrong ∃E
+step in the soundness proof) are corrected and logged in the module headers.
+
+- **Sentential Logic — Syntax & Semantics** (Lectures 1–5) is done:
+  validity and soundness of arguments, truth-functionality, the recursive
+  syntax of SL, connectives and translation ("only if", "because"), the
+  oddities of the material conditional, truth tables, truth-functional
+  properties, entailment and validity, entailment metatheorems, and
+  explosion.
+- **Natural Deduction in SD** (Lectures 6–8) is done: Fitch-style
+  derivations (scope, primary/auxiliary assumptions, accessibility, Γ ⊢ P),
+  SD's intro/elim rules, worked derivations (reductio, conditional proof, ∨E,
+  De Morgan, the theorem (A ⊃ B) ∨ (B ⊃ A)), SD+ derived rules, what
+  derivations can establish, and why a rule must be truth-preserving.
+- **Metatheory of SL** (Lectures 9–11, 13) is done: ⊨ vs ⊢, induction on
+  sentences (with a strengthened hypothesis), replacement of equivalents,
+  truth-functional completeness via characteristic sentences/DNF, the
+  Sheffer stroke and neither-nor, soundness of SD, completeness of SD
+  (Lindenbaum construction, maximally consistent sets, truth lemma),
+  compactness, and the two meanings of "complete".
+- **Predicate Logic — Syntax, Translation & Formal Semantics** (Lectures
+  12–18) is done: why PL, formulas and sentences, scope and free/bound
+  variables, identity and counting, translation patterns, quantifier
+  movement, quantificational properties and counter-interpretations,
+  nonempty domains (and free logic), and the formal semantics with
+  variable assignments, satisfaction and truth, with worked evaluations.
+- **Derivations in PD & Metatheory of Predicate Logic** (Lectures 19–25) is
+  done: the quantifier rules and why ∀I/∃E need their restrictions, worked
+  PD and PDE derivations, ∃∀ ⇒ ∀∃, what PD can and can't establish
+  (semi-decidability), soundness of PD (∀E and ∃E cases), completeness of PD
+  (evenly subscripted sets, the Henkin construction, the canonical model on
+  the positive integers), and Löwenheim–Skolem and compactness. Lecture 25
+  (review) has no card content.
+
+**MIT 6.042J** (Mathematics for Computer Science, Spring 2015, Albert R.
+Meyer & Adam Chlipala) covers only the two topics the KU Leuven logic and
+proof courses need that neither the 6.1200J nor the 24.241 OCW materials
+cover — 19 cards across 2 modules, sourced from the course's OCW-hosted
+textbook chapters (*Mathematics for Computer Science*, 2015 edition) and
+numbered by the class sessions that assign them.
+
+- **Logical Formulas — Normal Forms, Equivalence Axioms & SAT** (Sessions
+  4–5, MCS Ch. 3) is done: validity vs satisfiability, DNF and CNF from a
+  truth table, the equivalence axioms, algebraic DNF conversion, the
+  completeness of the equivalence axioms, SAT and P vs NP, ambiguous "any",
+  and validity for predicate formulas.
+- **Infinite Sets — Cardinality, Diagonalization & ZFC** (Session 11, MCS
+  Ch. 7) is done: surj/inj/bij/strict, Schröder–Bernstein and
+  comparability, Hilbert's hotel, countable sets (ℤ, ℚ, finite sequences),
+  Cantor's theorem, the diagonal argument, uncountability of ℝ, larger
+  infinities and the continuum hypothesis, the halting problem as a
+  diagonal argument, Russell's paradox, and the ZFC axioms.
+
+**MIT 6.001** (Structure and Interpretation of Computer Programs, Spring 2005,
+Eric Grimson, Peter Szolovits & Trevor Darrell) is complete: 70 cards across 7
+modules. It closes the gap left by KU Leuven's *Declaratieve talen*. The cards
+are sourced from the course's per-lecture handouts (slide narration, with code
+read from the slide images), its three evaluator code handouts, and the SICP
+textbook that the OCW readings page links. Every trace and count was re-run
+by hand or in Python.
+
+- **Procedures, Processes & Orders of Growth** (Lec 1–4) is done:
+  declarative vs imperative knowledge, primitives/combination/abstraction,
+  lambda and procedure objects, sqrt by successive averaging, the substitution
+  model and applicative order, why `if` is a special form, recursive vs
+  iterative factorial (with an induction proof of correctness), Θ for time and
+  space, tree-recursive Fibonacci (2F(n+1) − 1 calls), linear, iterative and
+  logarithmic exponentiation, and Pascal's triangle.
+- **Data Abstraction & Higher-Order Procedures** (Lec 5–8) is done: block
+  structure, the cons/car/cdr contract and closure, list procedures,
+  rationals behind an abstraction barrier, 6.001's type notation, `sum`,
+  `deriv`/`fixed-point`/`average-damp`, map/filter/fold-right, compose's
+  polymorphic type with type variables, deriving `repeated` from its type,
+  debugging methodology, and the Escher picture language.
+- **Symbols, Tagged Data, Mutation & Search** (Lec 9–14) is done: quote and
+  symbols, symbolic differentiation, tagged data and data-directed/defensive
+  programming, tables and hash tables as opaque ADTs, set!/set-car!/set-cdr!
+  with sharing and identity, the O(1) mutable queue, trees, and DFS/BFS
+  seekers. Lecture 14 has no handout, so its tracker entry points to Lecture 13
+  and 6.006.
+- **Environment Model & Object-Oriented Programming** (Lec 15–18) is done:
+  frames and the name/define/set! rules, the lambda and application rules
+  (lexical scoping), closures with local state, message passing, generic
+  operations vs objects, and the Scheme object system (ask/self, inheritance,
+  delegate vs ask, multiple inheritance).
+- **Interpreters, the Metacircular Evaluator & Lazy Evaluation** (Lec 19–21)
+  is done: interpreter stages, the step-by-step Scheme* evaluator,
+  m-eval/m-apply, syntax vs semantics (let desugaring), environments as list
+  structure, lexical vs dynamic scoping, normal vs applicative order, the lazy
+  evaluator with memoized thunks, and streams (infinite streams, the stream
+  sieve, an integrator).
+- **Concurrency, Universal Machines & Computability** (Lec 22–26) is done:
+  interleavings and serializers, deadlock and mutexes, the analyze evaluator,
+  eval as a universal machine, the halting theorem by diagonalization, and the
+  Y combinator. Lectures 24 and 25 were guest talks with no notes, so they have
+  tracker-only entries.
+- **Logic Programming & Nondeterministic Search** (SICP §4.3–4.4) is done:
+  relations vs functions, amb and chronological backtracking, the query
+  language, rules as Horn clauses, streams of frames, unification (with the
+  occurs check and its implementation), rule application, logic vs control
+  (infinite loops), and negation as failure under the closed-world assumption.
+  The 2005 course has no logic-programming lecture, so these cards sit in the
+  Lecture 21 tracker entry as the next "variation on a Scheme".
+- Where the handouts slip, the cards correct them (noted in each module's
+  header comment). Static type systems with Hindley–Milner inference
+  (Haskell's side of *Declaratieve talen*) remain a gap. 6.001 only covers
+  dynamic types and informal type reasoning.
 
 Run `scripts/validate-content.ts` after adding cards to any module — it checks
 id uniqueness, module/tier consistency, and that every `related` link resolves.

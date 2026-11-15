@@ -314,7 +314,7 @@ newton(lambda x: x*x - 5, lambda x: 2*x, 2.0)  # 2.2360679775`,
     codeLang: "python",
     pitfall:
       "Quadratic convergence is local. Far from the root, or near a root where f′ ≈ 0 (a double root), Newton can be slow, jump to another root, or cycle.",
-    related: ["mit1801-applications-linear-approximation"],
+    related: ["mit1801-applications-linear-approximation", "mit1801-integration-numerical-integration"],
   },
 
   // --- Session 34: Introduction to the mean value theorem ---
@@ -340,7 +340,7 @@ Then $g(a) = g(b) = 0$, so Rolle gives $g'(c) = f'(c) - \\frac{f(b) - f(a)}{b - 
 **Hypotheses matter.**
 - *Continuity:* sit still for 6 h, then teleport 3000 km. You are never doing 500 km/h.
 - *Differentiability:* for $f = \\lvert x\\rvert$ on $[-1, 2]$ the secant slope is $\\frac13$, but $f' = \\pm1$ everywhere it exists. "One bad point ruins the proof."`,
-    related: ["mit1801-applications-mvt-consequences", "mit1801-differentiation-differentiable-implies-continuous"],
+    related: ["mit1801-applications-mvt-consequences", "mit1801-differentiation-differentiable-implies-continuous", "mit1801-integration-ftc-mvt"],
   },
   {
     id: "mit1801-applications-mvt-consequences",
@@ -418,7 +418,7 @@ This is "the basis for calculus": the rate of change determines a function **exc
 **Apparent paradox.** $\\int\\sin x\\cos x\\,dx$ equals both $\\frac12\\sin^2 x$ and $-\\frac12\\cos^2 x$. These differ by $\\frac12(\\sin^2 x + \\cos^2 x) = \\frac12$, which is just a different $c$.`,
     pitfall:
       "Uniqueness needs an interval. ln|x| + c can use different constants on x < 0 and x > 0, because the domain of 1/x has two pieces.",
-    related: ["mit1801-applications-mvt-consequences", "mit1801-applications-substitution"],
+    related: ["mit1801-applications-mvt-consequences", "mit1801-applications-substitution", "mit1801-integration-ftc1"],
   },
 
   // --- Session 38: Integration by substitution ---
@@ -443,7 +443,7 @@ $$\\int\\frac{dx}{x\\ln x} \\overset{u = \\ln x,\\ du = dx/x}{=} \\int\\frac{du}
 Substitution is the chain rule run backwards. Leibniz's differentials make it bookkeeping: $du = u'(x)\\,dx$.`,
     pitfall:
       "Guessing without checking. Always differentiate your answer; it takes seconds and catches every missing constant factor.",
-    related: ["mit1801-applications-antiderivatives", "mit1801-differentiation-chain-rule"],
+    related: ["mit1801-applications-antiderivatives", "mit1801-differentiation-chain-rule", "mit1801-integration-estimation-substitution"],
   },
 
   // --- Session 39: Introduction to differential equations ---
@@ -467,7 +467,7 @@ The **additive** constant became a **multiplicative** one, $a = \\pm e^c$. An in
 **What can be lost.** Dividing by $g(y)$ drops the solutions with $g(y) = 0$. Here that is $y \\equiv 0$, which is $a = 0$. Whenever you divide, note what might be zero and check that case separately.
 
 **General vs particular solution.** The family $y = ae^{-x^2/2}$ is the general solution; an initial condition picks one member.`,
-    related: ["mit1801-applications-differential-equations-curves", "mit1801-applications-antiderivatives", "mit1806-eigenvalues-differential-equations"],
+    related: ["mit1801-applications-differential-equations-curves", "mit1801-applications-antiderivatives", "mit1806-eigenvalues-differential-equations", "mit1801-integration-gaussian-integral"],
   },
 
   // --- Session 40: Separation of variables ---

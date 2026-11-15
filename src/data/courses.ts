@@ -2528,6 +2528,172 @@ export const MIT1801_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Exam 2 (Unit 2: Applications of Differentiation).",
   },
+  {
+    number: 43,
+    title: "Definite Integrals",
+    cardIds: [],
+    noCardContent: "The definite integral as area under a curve (divide into rectangles, add, take the limit) is on the Session 46 Riemann-sum card.",
+  },
+  {
+    number: 44,
+    title: "Adding Areas of Rectangles",
+    cardIds: [
+      "mit1801-integration-integral-of-x-squared",
+    ],
+  },
+  {
+    number: 45,
+    title: "Some Easy Integrals",
+    cardIds: [],
+    noCardContent: "∫₀ᵇ x dx = b²/2 and ∫₀ᵇ 1 dx = b by geometry, noted on the Session 44 card.",
+  },
+  {
+    number: 46,
+    title: "Riemann Sums",
+    cardIds: [
+      "mit1801-integration-riemann-sums",
+    ],
+  },
+  {
+    number: 47,
+    title: "Introduction of the Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-ftc1",
+    ],
+  },
+  {
+    number: 48,
+    title: "The Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-properties",
+    ],
+  },
+  {
+    number: 49,
+    title: "Applications of the Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-estimation-substitution",
+    ],
+  },
+  {
+    number: 50,
+    title: "Combining the Fundamental Theorem and the Mean Value Theorem",
+    cardIds: [
+      "mit1801-integration-ftc-mvt",
+    ],
+  },
+  {
+    number: 51,
+    title: "The Second Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-ftc2",
+    ],
+  },
+  {
+    number: 52,
+    title: "Proving the Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-ftc-proofs",
+    ],
+  },
+  {
+    number: 53,
+    title: "New Functions from Old",
+    cardIds: [],
+    noCardContent: "ln x = ∫₁ˣ dt/t and the bell-curve area ∫₀ˣ e^(−t²) dt as functions defined by integrals; see the Session 54 and 55 cards.",
+  },
+  {
+    number: 54,
+    title: "The Second Fundamental Theorem and ln x",
+    cardIds: [
+      "mit1801-integration-ln-as-integral",
+    ],
+  },
+  {
+    number: 55,
+    title: "Creating New Functions Using the Second Fundamental Theorem",
+    cardIds: [
+      "mit1801-integration-new-functions",
+    ],
+  },
+  {
+    number: 56,
+    title: "Geometric Interpretation of Definite Integrals",
+    cardIds: [
+      "mit1801-integration-area-between-curves",
+    ],
+  },
+  {
+    number: 57,
+    title: "How to Calculate Volumes",
+    cardIds: [
+      "mit1801-integration-volumes",
+    ],
+  },
+  {
+    number: 58,
+    title: "Volume of a Sphere (Revolving About the x-Axis)",
+    cardIds: [],
+    noCardContent: "Worked disk-method example (the ball of radius a, and its caps), on the Session 57 volumes card.",
+  },
+  {
+    number: 59,
+    title: "Volume of a Paraboloid (Revolving About the y-Axis)",
+    cardIds: [],
+    noCardContent: "Worked shell-method example (the cauldron, πa²/2, and the units warning), on the Session 57 volumes card.",
+  },
+  {
+    number: 60,
+    title: "Integrals and Averages",
+    cardIds: [
+      "mit1801-integration-average-value",
+    ],
+  },
+  {
+    number: 61,
+    title: "Integrals and Weighted Averages",
+    cardIds: [],
+    noCardContent: "Weighted averages and the boiling-cauldron example (average temperature 80°) are on the Session 62 card.",
+  },
+  {
+    number: 62,
+    title: "Integrals and Probability",
+    cardIds: [
+      "mit1801-integration-weighted-averages-probability",
+    ],
+  },
+  {
+    number: 63,
+    title: "Numerical Integration",
+    cardIds: [
+      "mit1801-integration-numerical-integration",
+    ],
+  },
+  {
+    number: 64,
+    title: "Numerical Integration, Continued",
+    cardIds: [],
+    noCardContent: "The trapezoid/Simpson estimates of ln 2 and the f ≡ 1 self-check are on the Session 63 card.",
+  },
+  {
+    number: 65,
+    title: "Bell Curve Conclusion",
+    cardIds: [
+      "mit1801-integration-gaussian-integral",
+    ],
+  },
+  {
+    number: 66,
+    title: "Review for Exam 3",
+    cardIds: [],
+    noCardContent: "Exam 3 review: definite integrals, numerical rules (upper/lower vs left/right sums), areas and volumes (disks vs shells vs washers), cumulative sums, and sketching ∫ₐˣ f, all covered by the Unit 3 cards.",
+  },
+  {
+    number: 67,
+    title: "Materials for Exam 3",
+    cardIds: [],
+    noCardContent: "Exam 3 (Unit 3: The Definite Integral and its Applications).",
+  },
 ];
 
 /**

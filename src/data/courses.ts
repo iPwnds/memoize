@@ -2240,22 +2240,33 @@ export const MIT24241_LECTURES: CourseLecture[] = [
   {
     number: 1,
     title: "Basic Notions of Logic; Arguments; the Connectives",
-    cardIds: ["mit24241-sl-validity-soundness"],
+    cardIds: [
+      "mit24241-sl-validity-soundness",
+    ],
   },
   {
     number: 2,
     title: "Truth-Functionality; SL Syntax and Semantics; Translation",
-    cardIds: ["mit24241-sl-truth-functionality", "mit24241-sl-syntax", "mit24241-sl-connectives-and-translation"],
+    cardIds: [
+      "mit24241-sl-truth-functionality",
+      "mit24241-sl-syntax",
+      "mit24241-sl-connectives-and-translation",
+    ],
   },
   {
     number: 3,
     title: "Translation Continued; Problems with Conditionals; Truth-Tables",
-    cardIds: ["mit24241-sl-conditional-laws"],
+    cardIds: [
+      "mit24241-sl-conditional-laws",
+    ],
   },
   {
     number: 4,
     title: "Truth-Tables and Logical Properties of Compound Sentences",
-    cardIds: ["mit24241-sl-truth-table-computation", "mit24241-sl-tf-properties"],
+    cardIds: [
+      "mit24241-sl-truth-table-computation",
+      "mit24241-sl-tf-properties",
+    ],
   },
   {
     number: 5,
@@ -2264,6 +2275,34 @@ export const MIT24241_LECTURES: CourseLecture[] = [
       "mit24241-sl-tf-entailment-validity",
       "mit24241-sl-entailment-metatheorems",
       "mit24241-sl-explosion-and-fallacies",
+    ],
+  },
+  {
+    number: 6,
+    title: "Derivations in Sentential Logic (SD)",
+    cardIds: [
+      "mit24241-sd-derivation-structure",
+      "mit24241-sd-rules",
+      "mit24241-sd-negation-rules-example",
+    ],
+  },
+  {
+    number: 7,
+    title: "Derivations in SD/SD+",
+    cardIds: [
+      "mit24241-sd-conditional-proof",
+      "mit24241-sd-disjunction-elimination",
+      "mit24241-sd-plus-derived-rules",
+    ],
+  },
+  {
+    number: 8,
+    title: "Theorem-Proving; Review",
+    cardIds: [
+      "mit24241-sd-theorem-derivation",
+      "mit24241-sd-properties-in-sd",
+      "mit24241-sd-negated-theorem-explosion",
+      "mit24241-sd-unsound-rule",
     ],
   },
 ];

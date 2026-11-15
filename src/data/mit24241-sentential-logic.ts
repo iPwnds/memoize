@@ -142,7 +142,7 @@ Why these are "problems with conditionals" for English:
 These are features of the **material** conditional: ⊃ is defined by its truth table, and its truth value depends only on the truth values of its parts. SL accepts these oddities in exchange for being truth-functional.`,
     pitfall:
       "Contraposition (A ⊃ B to ∼B ⊃ ∼A) is valid. Its look-alikes are not: the converse (B ⊃ A) and the inverse (∼A ⊃ ∼B) are not entailed by A ⊃ B.",
-    related: ["mit24241-sl-connectives-and-translation", "mit6120-proofs-implication-truth-table"],
+    related: ["mit24241-sl-connectives-and-translation", "mit6120-proofs-implication-truth-table", "mit24241-sd-theorem-derivation"],
   },
 
   // --- Lecture 4: Truth-tables and logical properties of compound sentences ---
@@ -258,7 +258,7 @@ This is the semantic counterpart of the derivation rule ⊃I. To show Γ ⊨ P �
 In the same style (3.6E 4c): if Γ ⊨ P and Γ′ ⊨ Q, then Γ ∪ Γ′ ⊨ P & Q. Any TVA making Γ ∪ Γ′ true makes both Γ and Γ′ true, hence makes P and Q true.`,
     pitfall:
       "Entailment doesn't distribute over ∨. {A ∨ B} ⊨ A ∨ B, yet {A ∨ B} entails neither A nor B (Problem Set 2, 3.5E 5c). Getting P ∨ Q from Γ doesn't mean Γ settles which disjunct is true.",
-    related: ["mit24241-sl-tf-entailment-validity"],
+    related: ["mit24241-sl-tf-entailment-validity", "mit24241-sd-conditional-proof"],
   },
   {
     id: "mit24241-sl-explosion-and-fallacies",
@@ -282,6 +282,6 @@ No row has a true premise, so certainly no row has a true premise and a false co
 Dually, if P is TF-true then Γ ⊨ P for every Γ, including ∅.`,
     pitfall:
       "A valid argument with an inconsistent premise set is not sound (its premises can't all be true). Explosion makes such arguments trivially valid, and useless as evidence for their conclusions.",
-    related: ["mit24241-sl-validity-soundness", "mit24241-sl-tf-properties"],
+    related: ["mit24241-sl-validity-soundness", "mit24241-sl-tf-properties", "mit24241-sd-negated-theorem-explosion"],
   },
 ];

@@ -2694,6 +2694,131 @@ export const MIT1801_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Exam 3 (Unit 3: The Definite Integral and its Applications).",
   },
+  {
+    number: 68,
+    title: "Integral of sin^n(x) cos^m(x): Odd Exponents",
+    cardIds: [
+      "mit1801-techniques-trig-powers",
+    ],
+  },
+  {
+    number: 69,
+    title: "Integral of sin^n(x) cos^m(x): Even Exponents",
+    cardIds: [],
+    noCardContent: "Even powers via the half-angle formulas (∫cos²x, ∫sin²x cos²x), on the Session 68 card.",
+  },
+  {
+    number: 70,
+    title: "Preview of Trig Substitution and Polar Coordinates",
+    cardIds: [],
+    noCardContent: "The circle-tab area ∫√(a² − y²) dy via y = a sin θ, on the Session 72 trig-substitution card.",
+  },
+  {
+    number: 71,
+    title: "Integrals Involving Secant, Cosecant and Cotangent",
+    cardIds: [
+      "mit1801-techniques-tan-sec-integrals",
+    ],
+  },
+  {
+    number: 72,
+    title: "Trig Substitution",
+    cardIds: [
+      "mit1801-techniques-trig-substitution",
+    ],
+  },
+  {
+    number: 73,
+    title: "Completing the Square",
+    cardIds: [],
+    noCardContent: "∫dx/√(x² + 4x) by completing the square and u = 2 sec θ, on the Session 72 card.",
+  },
+  {
+    number: 74,
+    title: "Integration by Partial Fractions",
+    cardIds: [
+      "mit1801-techniques-partial-fractions",
+    ],
+  },
+  {
+    number: 75,
+    title: "Advanced Partial Fractions",
+    cardIds: [
+      "mit1801-techniques-partial-fractions-general",
+    ],
+  },
+  {
+    number: 76,
+    title: "Integration by Parts",
+    cardIds: [
+      "mit1801-techniques-integration-by-parts",
+    ],
+  },
+  {
+    number: 77,
+    title: "Volume of a Wine Glass",
+    cardIds: [],
+    noCardContent: "The eˣ wine glass, π(e − 2) by disks and by shells, worked on the Session 76 integration-by-parts card.",
+  },
+  {
+    number: 78,
+    title: "Computing the Length of a Curve",
+    cardIds: [
+      "mit1801-techniques-arc-length",
+    ],
+  },
+  {
+    number: 79,
+    title: "Surface Area",
+    cardIds: [
+      "mit1801-techniques-surface-area",
+    ],
+  },
+  {
+    number: 80,
+    title: "Parametric Curves",
+    cardIds: [
+      "mit1801-techniques-parametric-curves",
+    ],
+  },
+  {
+    number: 81,
+    title: "Examples Using Parametrized Curves",
+    cardIds: [],
+    noCardContent: "The ellipse (2 sin t, cos t), its non-elementary perimeter and its surface of revolution, on the Session 80 card.",
+  },
+  {
+    number: 82,
+    title: "Polar Coordinates",
+    cardIds: [
+      "mit1801-techniques-polar-coordinates",
+    ],
+  },
+  {
+    number: 83,
+    title: "Polar Coordinates, Continued",
+    cardIds: [
+      "mit1801-techniques-polar-area",
+    ],
+  },
+  {
+    number: 84,
+    title: "Polar Coordinates and Graphing",
+    cardIds: [],
+    noCardContent: "Graphs of r = 2a cos θ over a full turn and the rose r = sin 2θ (negative r), on the Session 82 and 83 cards.",
+  },
+  {
+    number: 85,
+    title: "Review for Exam 4",
+    cardIds: [],
+    noCardContent: "Exam 4 review: setting up integrals, partial-fraction set-ups and ∫x arctan x dx (on the Session 76 card).",
+  },
+  {
+    number: 86,
+    title: "Materials for Exam 4",
+    cardIds: [],
+    noCardContent: "Exam 4 (Unit 4: Techniques of Integration).",
+  },
 ];
 
 /**

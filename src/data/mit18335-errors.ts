@@ -62,7 +62,7 @@ the **Babylonian** algorithm (c. 1000 BCE): if $x_n > \\sqrt a$ then $a/x_n < \\
 Once close, the number of correct digits roughly **doubles** each step; seven iterations already give more than 60 digits, at which point the answer is limited only by the working precision.
 
 This one example shows all three concerns that set numerical methods apart: the answers are real numbers (only ever approximated), **cost** matters (and nowadays memory access often matters more than arithmetic counts), and **accuracy** matters, both from the algorithm itself (converging but never arriving) and from floating-point roundoff.`,
-    related: ["mit18335-errors-newton-quadratic-convergence", "mit18335-errors-newton-sqrt-converges"],
+    related: ["mit18335-errors-newton-quadratic-convergence", "mit18335-errors-newton-sqrt-converges", "mit18335-eig-eigensolvers-must-iterate"],
   },
   {
     id: "mit18335-errors-newton-sqrt-converges",
@@ -104,7 +104,7 @@ The error **squares** (and halves) every step once $|\\delta_n| \\ll 1$. If $|\\
 Check on the $\\sqrt 2$ trace: $\\delta_4 \\approx 1.5 \\cdot 10^{-6}$ predicts $\\delta_5 \\approx 1.1 \\cdot 10^{-12}$, matching $665857/470832$.`,
     pitfall:
       "“Quadratic convergence” (error squares each iteration) is not “second-order accuracy” (discretization error ∝ h², as in ODE or quadrature schemes). The two terminologies are unrelated, and the course warns against mixing them up.",
-    related: ["mit18335-errors-newton-sqrt-converges", "mit18335-errors-newton-square-roots"],
+    related: ["mit18335-errors-newton-sqrt-converges", "mit18335-errors-newton-square-roots", "mit18335-eig-power-inverse-iteration"],
   },
 
   // --- Lecture 2: Floating-point arithmetic ---

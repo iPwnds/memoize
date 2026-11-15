@@ -2358,6 +2358,32 @@ export const MIT18335_LECTURES: CourseLecture[] = [
     cardIds: [
       "mit18335-lu-cholesky",
       "mit18335-lu-structured-solvers",
+      "mit18335-eig-schur-factorization",
+    ],
+  },
+  {
+    number: 15,
+    title: "Eigensolver Algorithms: Companion Matrices, Ill-Conditioning, and Hessenberg Factorization",
+    cardIds: [
+      "mit18335-eig-eigensolvers-must-iterate",
+      "mit18335-eig-wilkinson-polynomial",
+      "mit18335-eig-hessenberg-reduction",
+    ],
+  },
+  {
+    number: 16,
+    title: "The Power Method and the QR Algorithm",
+    cardIds: [
+      "mit18335-eig-power-inverse-iteration",
+      "mit18335-eig-rayleigh-quotient-iteration",
+      "mit18335-eig-qr-algorithm-simultaneous-iteration",
+    ],
+  },
+  {
+    number: 17,
+    title: "Shifted QR and Rayleigh Quotients",
+    cardIds: [
+      "mit18335-eig-shifted-qr-algorithm",
     ],
   },
 ];

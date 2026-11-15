@@ -77,6 +77,7 @@ import { mit1805FrequentistInferenceCards } from "./mit1805-frequentist-inferenc
 import { mit18335ErrorsCards } from "./mit18335-errors";
 import { mit18335QrCards } from "./mit18335-qr";
 import { mit18335LuCards } from "./mit18335-lu";
+import { mit18335EigCards } from "./mit18335-eig";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -158,6 +159,7 @@ export const ALL_CARDS: Card[] = [
   ...mit18335ErrorsCards,
   ...mit18335QrCards,
   ...mit18335LuCards,
+  ...mit18335EigCards,
 ];
 
 export * from "./types";

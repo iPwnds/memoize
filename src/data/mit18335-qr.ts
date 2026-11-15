@@ -208,7 +208,7 @@ $$v = \\operatorname{sign}(x_1)\\lVert x\\rVert e_1 + x,$$
 which reflects $x$ to $-\\operatorname{sign}(x_1)\\lVert x\\rVert e_1$. If instead $x$ is nearly parallel to $+e_1$ and we used $\\lVert x\\rVert e_1 - x$, then $v$ would be a **difference of nearly equal vectors**: catastrophic cancellation, and $v/\\lVert v\\rVert$ would be garbage. The chosen sign makes $\\lVert v\\rVert \\geq \\lVert x\\rVert$.`,
     pitfall:
       "sign(0) must be taken as +1 here. MATLAB's sign(0) returns 0, which would make v = x and fail to zero anything when x₁ = 0.",
-    related: ["mit18335-qr-triangular-vs-orthogonal", "mit18335-qr-householder-qr-algorithm", "mit18335-qr-givens-rotations", "mit1806-orthogonality-projection-onto-subspace"],
+    related: ["mit18335-qr-triangular-vs-orthogonal", "mit18335-qr-householder-qr-algorithm", "mit18335-qr-givens-rotations", "mit1806-orthogonality-projection-onto-subspace", "mit18335-eig-hessenberg-reduction"],
   },
   {
     id: "mit18335-qr-givens-rotations",
@@ -232,7 +232,7 @@ $$\\sum_{k=1}^n 6(m-k)(n-k) \\approx 3mn^2 - n^3,$$
 about **50% more** than Householder's $2mn^2 - \\frac23n^3$.
 
 **When Givens wins:** when only a few entries need zeroing. QR of an upper-Hessenberg matrix (as in the QR eigenvalue algorithm) needs just $m - 1$ rotations, $O(m^2)$ work instead of $O(m^3)$.`,
-    related: ["mit18335-qr-householder-reflectors", "mit18335-qr-householder-qr-algorithm"],
+    related: ["mit18335-qr-householder-reflectors", "mit18335-qr-householder-qr-algorithm", "mit18335-eig-shifted-qr-algorithm"],
   },
 
   // --- Lecture 11: Householder QR finished (cache material in mit18335-lu) ---

@@ -118,6 +118,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit18335-errors", title: "18.335: Floating Point, Stability & Conditioning", tier: 1, order: 1200, course: "mit18335" },
   { slug: "mit18335-qr", title: "18.335: SVD, Least Squares & QR", tier: 1, order: 1201, course: "mit18335" },
   { slug: "mit18335-lu", title: "18.335: Caches, LU & Cholesky", tier: 1, order: 1202, course: "mit18335" },
+  { slug: "mit18335-eig", title: "18.335: Eigenvalue Algorithms", tier: 1, order: 1203, course: "mit18335" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

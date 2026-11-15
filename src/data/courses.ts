@@ -2312,6 +2312,52 @@ export const MIT6001_LECTURES: CourseLecture[] = [
       "mit6001-hop-picture-language",
     ],
   },
+  {
+    number: 9,
+    title: "Symbols and Quotation",
+    cardIds: [
+      "mit6001-data-quote-symbols",
+      "mit6001-data-symbolic-deriv",
+    ],
+  },
+  {
+    number: 10,
+    title: "Tagged Data",
+    cardIds: [
+      "mit6001-data-tagged-data",
+      "mit6001-data-defensive-evaluator",
+    ],
+  },
+  {
+    number: 11,
+    title: "Advanced Data Types",
+    cardIds: [
+      "mit6001-data-tables-adt",
+      "mit6001-data-hash-table",
+    ],
+  },
+  {
+    number: 12,
+    title: "Data Mutation",
+    cardIds: [
+      "mit6001-data-mutation-sharing",
+      "mit6001-data-queue-mutation",
+    ],
+  },
+  {
+    number: 13,
+    title: "Trees, Graphs and Search",
+    cardIds: [
+      "mit6001-data-trees-count-leaves",
+      "mit6001-data-search-structures",
+    ],
+  },
+  {
+    number: 14,
+    title: "Graphs and Search",
+    cardIds: [],
+    noCardContent: "Live lecture with no handout on OCW. It continues Lecture 13's graph search (see that lecture's search card); for BFS/DFS in depth see MIT 6.006's Graphs module.",
+  },
 ];
 
 /**

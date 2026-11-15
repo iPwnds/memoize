@@ -117,6 +117,7 @@ export const MODULES: ModuleMeta[] = [
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit6001-procs", title: "6.001: Procedures, Processes & Orders of Growth", tier: 1, order: 1300, course: "mit6001" },
   { slug: "mit6001-hop", title: "6.001: Data Abstraction & Higher-Order Procedures", tier: 1, order: 1301, course: "mit6001" },
+  { slug: "mit6001-data", title: "6.001: Symbols, Tagged Data, Mutation & Search", tier: 1, order: 1302, course: "mit6001" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

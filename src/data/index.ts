@@ -78,6 +78,7 @@ import { mit6001ProceduresProcessesCards } from "./mit6001-procedures-processes"
 import { mit6001AbstractionHopCards } from "./mit6001-abstraction-hop";
 import { mit6001SymbolsDataMutationCards } from "./mit6001-symbols-data-mutation";
 import { mit6001EnvironmentOopCards } from "./mit6001-environment-oop";
+import { mit6001EvaluatorsStreamsCards } from "./mit6001-evaluators-streams";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -160,6 +161,7 @@ export const ALL_CARDS: Card[] = [
   ...mit6001AbstractionHopCards,
   ...mit6001SymbolsDataMutationCards,
   ...mit6001EnvironmentOopCards,
+  ...mit6001EvaluatorsStreamsCards,
 ];
 
 export * from "./types";

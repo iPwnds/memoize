@@ -2390,6 +2390,35 @@ export const MIT6001_LECTURES: CourseLecture[] = [
       "mit6001-env-multiple-inheritance",
     ],
   },
+  {
+    number: 19,
+    title: "Interpretation",
+    cardIds: [
+      "mit6001-eval-interpreter-stages",
+      "mit6001-eval-scheme-star-evolution",
+      "mit6001-eval-lambda-eval-apply-cycle",
+    ],
+  },
+  {
+    number: 20,
+    title: "The Meta-circular Evaluator",
+    cardIds: [
+      "mit6001-eval-metacircular-core",
+      "mit6001-eval-syntax-vs-semantics",
+      "mit6001-eval-environment-representation",
+      "mit6001-eval-lexical-vs-dynamic-scoping",
+    ],
+  },
+  {
+    number: 21,
+    title: "Lazy Evaluation",
+    cardIds: [
+      "mit6001-eval-applicative-vs-normal-order",
+      "mit6001-eval-lazy-evaluator-thunks",
+      "mit6001-eval-streams",
+      "mit6001-eval-infinite-streams",
+    ],
+  },
 ];
 
 /**

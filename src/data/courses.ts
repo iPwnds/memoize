@@ -2419,6 +2419,42 @@ export const MIT6001_LECTURES: CourseLecture[] = [
       "mit6001-eval-infinite-streams",
     ],
   },
+  {
+    number: 22,
+    title: "Asynchronous Computing",
+    cardIds: [
+      "mit6001-conc-time-and-interleaving",
+      "mit6001-conc-serializers-deadlock",
+    ],
+  },
+  {
+    number: 23,
+    title: "Universal Machines",
+    cardIds: [
+      "mit6001-conc-analyze-evaluator",
+      "mit6001-conc-eval-universal-machine",
+    ],
+  },
+  {
+    number: 24,
+    title: "Geometric Folding Algorithms: Origami, Linkages, and Polyhedra",
+    cardIds: [],
+    noCardContent: "Live guest lecture by Erik Demaine, outside the 6.001 syllabus; OCW publishes no notes for it.",
+  },
+  {
+    number: 25,
+    title: "Peer-To-Peer Computing Research: A Fad?",
+    cardIds: [],
+    noCardContent: "Live guest lecture by Frans Kaashoek, outside the 6.001 syllabus; OCW publishes no notes for it. For distributed systems see MIT 6.046J's Distributed Algorithms module.",
+  },
+  {
+    number: 26,
+    title: "Computability",
+    cardIds: [
+      "mit6001-conc-halting-theorem",
+      "mit6001-conc-y-combinator",
+    ],
+  },
 ];
 
 /**

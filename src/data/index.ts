@@ -79,6 +79,13 @@ import { mit18335QrCards } from "./mit18335-qr";
 import { mit18335LuCards } from "./mit18335-lu";
 import { mit18335EigCards } from "./mit18335-eig";
 import { mit18335KrylovCards } from "./mit18335-krylov";
+import { mit6001ProceduresProcessesCards } from "./mit6001-procedures-processes";
+import { mit6001AbstractionHopCards } from "./mit6001-abstraction-hop";
+import { mit6001SymbolsDataMutationCards } from "./mit6001-symbols-data-mutation";
+import { mit6001EnvironmentOopCards } from "./mit6001-environment-oop";
+import { mit6001EvaluatorsStreamsCards } from "./mit6001-evaluators-streams";
+import { mit6001ConcurrencyComputabilityCards } from "./mit6001-concurrency-computability";
+import { mit6001LogicProgrammingCards } from "./mit6001-logic-programming";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -162,6 +169,13 @@ export const ALL_CARDS: Card[] = [
   ...mit18335LuCards,
   ...mit18335EigCards,
   ...mit18335KrylovCards,
+  ...mit6001ProceduresProcessesCards,
+  ...mit6001AbstractionHopCards,
+  ...mit6001SymbolsDataMutationCards,
+  ...mit6001EnvironmentOopCards,
+  ...mit6001EvaluatorsStreamsCards,
+  ...mit6001ConcurrencyComputabilityCards,
+  ...mit6001LogicProgrammingCards,
 ];
 
 export * from "./types";

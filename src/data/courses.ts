@@ -149,6 +149,19 @@ export const COURSES: CourseMeta[] = [
       { label: "After the midterm (Lec 21–24)", lectures: [21, 24] },
     ],
   },
+  {
+    id: "mit6001",
+    title: "MIT 6.001 — Structure and Interpretation of Computer Programs",
+    subtitle:
+      "Spring 2005 · Eric Grimson, Peter Szolovits, Trevor Darrell · MIT OpenCourseWare (with the SICP textbook)",
+    // Quiz 1 follows Lecture 8 and Quiz 2 follows Recitation 19 (syllabus
+    // "Scheduled Exams" and calendar); the final covers the rest.
+    quizScopes: [
+      { label: "Quiz 1 (Lec 1–8)", lectures: [1, 8] },
+      { label: "Quiz 2 (Lec 9–19)", lectures: [9, 19] },
+      { label: "Final (Lec 20–26)", lectures: [20, 26] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2444,6 +2457,238 @@ export const MIT18335_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT6001_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction to Computation",
+    cardIds: [
+      "mit6001-procs-declarative-vs-imperative",
+      "mit6001-procs-language-elements",
+    ],
+  },
+  {
+    number: 2,
+    title: "Scheme Basics",
+    cardIds: [
+      "mit6001-procs-lambda-procedure-objects",
+      "mit6001-procs-sqrt-by-averaging",
+    ],
+  },
+  {
+    number: 3,
+    title: "Procedures, Processes, and Recursion",
+    cardIds: [
+      "mit6001-procs-substitution-model",
+      "mit6001-procs-if-special-form",
+      "mit6001-procs-recursive-factorial",
+      "mit6001-procs-iterative-factorial",
+      "mit6001-procs-induction-correctness",
+    ],
+  },
+  {
+    number: 4,
+    title: "Orders of Growth and Kinds of Procedures",
+    cardIds: [
+      "mit6001-procs-orders-of-growth",
+      "mit6001-procs-tree-recursion-fibonacci",
+      "mit6001-procs-fast-exponentiation",
+      "mit6001-procs-pascal-triangle",
+    ],
+  },
+  {
+    number: 5,
+    title: "Data Abstraction",
+    cardIds: [
+      "mit6001-hop-block-structure",
+      "mit6001-hop-pairs-closure",
+      "mit6001-hop-list-procedures",
+      "mit6001-hop-rationals-abstraction-barrier",
+    ],
+  },
+  {
+    number: 6,
+    title: "Higher Order Procedures",
+    cardIds: [
+      "mit6001-hop-types-contracts",
+      "mit6001-hop-sum-higher-order",
+      "mit6001-hop-procedures-as-values",
+      "mit6001-hop-map-filter-fold",
+      "mit6001-hop-compose-type-variables",
+    ],
+  },
+  {
+    number: 7,
+    title: "Good Programming Practices",
+    cardIds: [
+      "mit6001-hop-repeated-by-types",
+      "mit6001-hop-programming-practice",
+    ],
+  },
+  {
+    number: 8,
+    title: "Using Higher Order Procedures",
+    cardIds: [
+      "mit6001-hop-picture-language",
+    ],
+  },
+  {
+    number: 9,
+    title: "Symbols and Quotation",
+    cardIds: [
+      "mit6001-data-quote-symbols",
+      "mit6001-data-symbolic-deriv",
+    ],
+  },
+  {
+    number: 10,
+    title: "Tagged Data",
+    cardIds: [
+      "mit6001-data-tagged-data",
+      "mit6001-data-defensive-evaluator",
+    ],
+  },
+  {
+    number: 11,
+    title: "Advanced Data Types",
+    cardIds: [
+      "mit6001-data-tables-adt",
+      "mit6001-data-hash-table",
+    ],
+  },
+  {
+    number: 12,
+    title: "Data Mutation",
+    cardIds: [
+      "mit6001-data-mutation-sharing",
+      "mit6001-data-queue-mutation",
+    ],
+  },
+  {
+    number: 13,
+    title: "Trees, Graphs and Search",
+    cardIds: [
+      "mit6001-data-trees-count-leaves",
+      "mit6001-data-search-structures",
+    ],
+  },
+  {
+    number: 14,
+    title: "Graphs and Search",
+    cardIds: [],
+    noCardContent: "Live lecture with no handout on OCW. It continues Lecture 13's graph search (see that lecture's search card); for BFS/DFS in depth see MIT 6.006's Graphs module.",
+  },
+  {
+    number: 15,
+    title: "Environment Model",
+    cardIds: [
+      "mit6001-env-frames-name-define-set",
+      "mit6001-env-lambda-application-rules",
+      "mit6001-env-closures-local-state",
+    ],
+  },
+  {
+    number: 16,
+    title: "Object Oriented Programming I",
+    cardIds: [
+      "mit6001-env-message-passing-data",
+      "mit6001-env-operations-types-table",
+    ],
+  },
+  {
+    number: 17,
+    title: "Object Oriented Programming II",
+    cardIds: [
+      "mit6001-env-ask-self-oop",
+    ],
+  },
+  {
+    number: 18,
+    title: "Object Oriented Programming III",
+    cardIds: [
+      "mit6001-env-inheritance-delegation",
+      "mit6001-env-multiple-inheritance",
+    ],
+  },
+  {
+    number: 19,
+    title: "Interpretation",
+    cardIds: [
+      "mit6001-eval-interpreter-stages",
+      "mit6001-eval-scheme-star-evolution",
+      "mit6001-eval-lambda-eval-apply-cycle",
+    ],
+  },
+  {
+    number: 20,
+    title: "The Meta-circular Evaluator",
+    cardIds: [
+      "mit6001-eval-metacircular-core",
+      "mit6001-eval-syntax-vs-semantics",
+      "mit6001-eval-environment-representation",
+      "mit6001-eval-lexical-vs-dynamic-scoping",
+    ],
+  },
+  {
+    number: 21,
+    title: "Lazy Evaluation",
+    cardIds: [
+      "mit6001-eval-applicative-vs-normal-order",
+      "mit6001-eval-lazy-evaluator-thunks",
+      "mit6001-eval-streams",
+      "mit6001-eval-infinite-streams",
+      // Logic programming (SICP §4.3-4.4): no 2005 lecture covers it; mapped
+      // here as the next "variation on a Scheme" after §4.2, built on §3.5's
+      // streams. See the header of src/data/mit6001-logic-programming.ts.
+      "mit6001-logic-relations-not-functions",
+      "mit6001-logic-amb-backtracking",
+      "mit6001-logic-query-language-basics",
+      "mit6001-logic-compound-queries-rules",
+      "mit6001-logic-pattern-matching-frames",
+      "mit6001-logic-unification",
+      "mit6001-logic-unify-implementation",
+      "mit6001-logic-applying-rules",
+      "mit6001-logic-logic-vs-programs",
+      "mit6001-logic-negation-as-failure",
+    ],
+  },
+  {
+    number: 22,
+    title: "Asynchronous Computing",
+    cardIds: [
+      "mit6001-conc-time-and-interleaving",
+      "mit6001-conc-serializers-deadlock",
+    ],
+  },
+  {
+    number: 23,
+    title: "Universal Machines",
+    cardIds: [
+      "mit6001-conc-analyze-evaluator",
+      "mit6001-conc-eval-universal-machine",
+    ],
+  },
+  {
+    number: 24,
+    title: "Geometric Folding Algorithms: Origami, Linkages, and Polyhedra",
+    cardIds: [],
+    noCardContent: "Live guest lecture by Erik Demaine, outside the 6.001 syllabus; OCW publishes no notes for it.",
+  },
+  {
+    number: 25,
+    title: "Peer-To-Peer Computing Research: A Fad?",
+    cardIds: [],
+    noCardContent: "Live guest lecture by Frans Kaashoek, outside the 6.001 syllabus; OCW publishes no notes for it. For distributed systems see MIT 6.046J's Distributed Algorithms module.",
+  },
+  {
+    number: 26,
+    title: "Computability",
+    cardIds: [
+      "mit6001-conc-halting-theorem",
+      "mit6001-conc-y-combinator",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2461,4 +2706,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit1806: MIT1806_LECTURES,
   mit1805: MIT1805_LECTURES,
   mit18335: MIT18335_LECTURES,
+  mit6001: MIT6001_LECTURES,
 };

@@ -120,6 +120,15 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit18335-lu", title: "18.335: Caches, LU & Cholesky", tier: 1, order: 1202, course: "mit18335" },
   { slug: "mit18335-eig", title: "18.335: Eigenvalue Algorithms", tier: 1, order: 1203, course: "mit18335" },
   { slug: "mit18335-krylov", title: "18.335: Krylov Methods & Sparse Solvers", tier: 1, order: 1204, course: "mit18335" },
+  // MIT 6.001 course track — see src/data/courses.ts for the lecture map.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit6001-procs", title: "6.001: Procedures, Processes & Orders of Growth", tier: 1, order: 1300, course: "mit6001" },
+  { slug: "mit6001-hop", title: "6.001: Data Abstraction & Higher-Order Procedures", tier: 1, order: 1301, course: "mit6001" },
+  { slug: "mit6001-data", title: "6.001: Symbols, Tagged Data, Mutation & Search", tier: 1, order: 1302, course: "mit6001" },
+  { slug: "mit6001-env", title: "6.001: Environment Model & Object-Oriented Programming", tier: 1, order: 1303, course: "mit6001" },
+  { slug: "mit6001-eval", title: "6.001: Interpreters, the Metacircular Evaluator & Lazy Evaluation", tier: 1, order: 1304, course: "mit6001" },
+  { slug: "mit6001-conc", title: "6.001: Concurrency, Universal Machines & Computability", tier: 1, order: 1305, course: "mit6001" },
+  { slug: "mit6001-logic", title: "6.001: Logic Programming & Nondeterministic Search", tier: 1, order: 1306, course: "mit6001" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

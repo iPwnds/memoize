@@ -61,6 +61,21 @@ for (const c of ALL_CARDS) {
 }
 
 const courseIds = new Set(COURSES.map((c) => c.id));
+if (courseIds.size !== COURSES.length) {
+  const seen = new Set<string>();
+  for (const c of COURSES) {
+    if (seen.has(c.id)) fail(`Duplicate course id "${c.id}" in COURSES`);
+    seen.add(c.id);
+  }
+}
+for (const [cid, lectures] of Object.entries(COURSE_LECTURE_MAPS)) {
+  if (!courseIds.has(cid)) fail(`COURSE_LECTURE_MAPS has "${cid}" but COURSES has no such course`);
+  const nums = new Set<number>();
+  for (const l of lectures) {
+    if (nums.has(l.number)) fail(`Course "${cid}" lists Lecture ${l.number} more than once`);
+    nums.add(l.number);
+  }
+}
 for (const m of MODULES) {
   if (!m.course) {
     fail(`Module "${m.slug}" has no \`course\` — every module must belong to a course`);

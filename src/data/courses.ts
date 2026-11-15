@@ -162,6 +162,29 @@ export const COURSES: CourseMeta[] = [
       { label: "Final (Lec 20–26)", lectures: [20, 26] },
     ],
   },
+  {
+    id: "mit24241",
+    title: "MIT 24.241 — Logic I",
+    subtitle:
+      "Fall 2009 · Ephraim Glick (TA Damien Rochford) · MIT OpenCourseWare (numbered by lecture session; cards sourced from the OCW slides, handouts, problem-set answers and quizzes)",
+    // The course's own two-part arc (Session 10 slides, "course structure"):
+    // sentential logic + its metatheory, then predicate logic + its metatheory.
+    quizScopes: [
+      { label: "Sentential Logic: SL, SD and Their Metatheory", lectures: [1, 11] },
+      { label: "Predicate Logic: PL, PD and Their Metatheory", lectures: [12, 25] },
+    ],
+  },
+  {
+    id: "mit6042",
+    title: "MIT 6.042J — Mathematics for Computer Science (Logic & Infinite Sets)",
+    subtitle:
+      "Spring 2015 · Albert R. Meyer, Adam Chlipala · MIT OpenCourseWare (numbered by class session; only the sessions not already covered by the 6.1200J track: logical formulas and infinite sets)",
+    // The course's own unit structure (readings page): all three sessions
+    // carded here belong to Unit 1.
+    quizScopes: [
+      { label: "Unit 1: Proofs", lectures: [1, 11] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2689,6 +2712,258 @@ export const MIT6001_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT24241_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Basic Notions of Logic; Arguments; the Connectives",
+    cardIds: [
+      "mit24241-sl-validity-soundness",
+    ],
+  },
+  {
+    number: 2,
+    title: "Truth-Functionality; SL Syntax and Semantics; Translation",
+    cardIds: [
+      "mit24241-sl-truth-functionality",
+      "mit24241-sl-syntax",
+      "mit24241-sl-connectives-and-translation",
+    ],
+  },
+  {
+    number: 3,
+    title: "Translation Continued; Problems with Conditionals; Truth-Tables",
+    cardIds: [
+      "mit24241-sl-conditional-laws",
+    ],
+  },
+  {
+    number: 4,
+    title: "Truth-Tables and Logical Properties of Compound Sentences",
+    cardIds: [
+      "mit24241-sl-truth-table-computation",
+      "mit24241-sl-tf-properties",
+    ],
+  },
+  {
+    number: 5,
+    title: "Entailment and Validity with Truth-Tables",
+    cardIds: [
+      "mit24241-sl-tf-entailment-validity",
+      "mit24241-sl-entailment-metatheorems",
+      "mit24241-sl-explosion-and-fallacies",
+    ],
+  },
+  {
+    number: 6,
+    title: "Derivations in Sentential Logic (SD)",
+    cardIds: [
+      "mit24241-sd-derivation-structure",
+      "mit24241-sd-rules",
+      "mit24241-sd-negation-rules-example",
+    ],
+  },
+  {
+    number: 7,
+    title: "Derivations in SD/SD+",
+    cardIds: [
+      "mit24241-sd-conditional-proof",
+      "mit24241-sd-disjunction-elimination",
+      "mit24241-sd-plus-derived-rules",
+    ],
+  },
+  {
+    number: 8,
+    title: "Theorem-Proving; Review",
+    cardIds: [
+      "mit24241-sd-theorem-derivation",
+      "mit24241-sd-properties-in-sd",
+      "mit24241-sd-negated-theorem-explosion",
+      "mit24241-sd-unsound-rule",
+    ],
+  },
+  {
+    number: 9,
+    title: "Introduction to Meta-Theory; Mathematical Induction",
+    cardIds: [
+      "mit24241-slmeta-semantic-vs-syntactic",
+      "mit24241-slmeta-induction-on-sentences",
+      "mit24241-slmeta-replacement-of-equivalents",
+    ],
+  },
+  {
+    number: 10,
+    title: "Soundness of SD/SD+",
+    cardIds: [
+      "mit24241-slmeta-tf-completeness-dnf",
+      "mit24241-slmeta-soundness-strategy",
+      "mit24241-slmeta-soundness-cases",
+    ],
+  },
+  {
+    number: 11,
+    title: "Completeness of SD/SD+",
+    cardIds: [
+      "mit24241-slmeta-sheffer-and-incomplete-sets",
+      "mit24241-slmeta-completeness-roadmap",
+      "mit24241-slmeta-maximal-consistent-construction",
+      "mit24241-slmeta-truth-lemma",
+    ],
+  },
+  {
+    number: 12,
+    title: "Introduction to Predicate Logic: Quantifiers, Variables, Constants, Predicates, Universe of Discourse",
+    cardIds: [
+      "mit24241-pl-why-predicate-logic",
+      "mit24241-pl-vocabulary-and-formulas",
+    ],
+  },
+  {
+    number: 13,
+    title: "Open Sentences; Free vs. Bound Variables; Scope; Multiply Quantified Sentences; Definite Descriptions; Properties of Relations",
+    cardIds: [
+      "mit24241-slmeta-compactness",
+      "mit24241-slmeta-two-completeness-notions",
+      "mit24241-pl-scope-free-bound",
+      "mit24241-pl-formula-or-sentence",
+      "mit24241-pl-relation-properties-countermodel",
+    ],
+  },
+  {
+    number: 14,
+    title: "Identity; Functions; Translation to and from Predicate Logic (PL)",
+    cardIds: [
+      "mit24241-pl-identity-and-counting",
+    ],
+  },
+  {
+    number: 15,
+    title: "Translation to and from PL/PLE; “Most”; Donkey Sentences",
+    cardIds: [
+      "mit24241-pl-translation-patterns",
+      "mit24241-pl-prenex-restriction",
+    ],
+  },
+  {
+    number: 16,
+    title: "Informal PL/PLE Semantics: Interpretations, Quantificational Truth, Consistency, Equivalence, Validity",
+    cardIds: [
+      "mit24241-pl-quantificational-properties",
+      "mit24241-pl-nonempty-domain",
+    ],
+  },
+  {
+    number: 17,
+    title: "Formal PL/PLE Semantics: Extensions, Interpretations, Variable Assignments, Satisfaction, Truth",
+    cardIds: [
+      "mit24241-pl-formal-semantics",
+    ],
+  },
+  {
+    number: 18,
+    title: "Formal PL/PLE Semantics Continued; Review",
+    cardIds: [
+      "mit24241-pl-satisfaction-worked-example",
+      "mit24241-pl-q-true-proof",
+      "mit24241-pl-evaluating-sentences",
+    ],
+  },
+  {
+    number: 19,
+    title: "Derivations in PD",
+    cardIds: [
+      "mit24241-pd-quantifier-rules",
+      "mit24241-pd-restriction-violations",
+      "mit24241-pd-exists-elim-example",
+    ],
+  },
+  {
+    number: 20,
+    title: "Derivations in PD+/PDE",
+    cardIds: [
+      "mit24241-pd-exists-forall-swap",
+      "mit24241-pd-identity-rules",
+    ],
+  },
+  {
+    number: 21,
+    title: "Derivations in PDE Continued; Preliminaries for Meta-Theory",
+    cardIds: [
+      "mit24241-pd-what-pd-can-prove",
+    ],
+  },
+  {
+    number: 22,
+    title: "Meta-Theory: Soundness of PD, PD+, PDE",
+    cardIds: [
+      "mit24241-pd-soundness-forall-elim",
+      "mit24241-pd-soundness-exists-elim",
+    ],
+  },
+  {
+    number: 23,
+    title: "Meta-Theory: Completeness of PD",
+    cardIds: [
+      "mit24241-pd-completeness-roadmap",
+      "mit24241-pd-even-subscripts",
+      "mit24241-pd-henkin-construction",
+    ],
+  },
+  {
+    number: 24,
+    title: "Meta-Theory: Completeness Continued; PD+; PDE",
+    cardIds: [
+      "mit24241-pd-canonical-model-truth-lemma",
+      "mit24241-pd-lowenheim-skolem-compactness",
+    ],
+  },
+  {
+    number: 25,
+    title: "Review",
+    cardIds: [],
+    noCardContent: "A review session with no new material. The final exam's questions are carded throughout the course (e.g. ∃E's restriction, identity derivations, Löwenheim–Skolem).",
+  },
+];
+
+export const MIT6042_LECTURES: CourseLecture[] = [
+  {
+    number: 4,
+    title: "Logical Formulas: Propositional Logic, Equivalence and Validity, Normal Forms, SAT (MCS 3.1-3.5)",
+    cardIds: [
+      "mit6042-logic-validity-satisfiability",
+      "mit6042-logic-dnf-cnf-from-truth-table",
+      "mit6042-logic-equivalence-axioms",
+      "mit6042-logic-algebraic-dnf-conversion",
+      "mit6042-logic-axioms-complete",
+      "mit6042-logic-sat-problem",
+    ],
+  },
+  {
+    number: 5,
+    title: "Predicate Formulas (MCS 3.6)",
+    cardIds: [
+      "mit6042-logic-ambiguous-any",
+      "mit6042-logic-predicate-validity",
+    ],
+  },
+  {
+    number: 11,
+    title: "Infinite Sets (MCS Chapter 7)",
+    cardIds: [
+      "mit6042-infinite-surj-inj-bij",
+      "mit6042-infinite-schroder-bernstein",
+      "mit6042-infinite-adding-one-element",
+      "mit6042-infinite-countable-sets",
+      "mit6042-infinite-cantor-theorem",
+      "mit6042-infinite-diagonal-argument",
+      "mit6042-infinite-reals-uncountable",
+      "mit6042-infinite-larger-infinities-ch",
+      "mit6042-infinite-halting-problem",
+      "mit6042-infinite-russell-paradox",
+      "mit6042-infinite-zfc-axioms",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2707,4 +2982,6 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit1805: MIT1805_LECTURES,
   mit18335: MIT18335_LECTURES,
   mit6001: MIT6001_LECTURES,
+  mit24241: MIT24241_LECTURES,
+  mit6042: MIT6042_LECTURES,
 };

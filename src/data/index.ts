@@ -86,6 +86,13 @@ import { mit6001EnvironmentOopCards } from "./mit6001-environment-oop";
 import { mit6001EvaluatorsStreamsCards } from "./mit6001-evaluators-streams";
 import { mit6001ConcurrencyComputabilityCards } from "./mit6001-concurrency-computability";
 import { mit6001LogicProgrammingCards } from "./mit6001-logic-programming";
+import { mit24241SententialLogicCards } from "./mit24241-sentential-logic";
+import { mit24241NaturalDeductionSdCards } from "./mit24241-natural-deduction-sd";
+import { mit24241SlMetatheoryCards } from "./mit24241-sl-metatheory";
+import { mit24241PredicateLogicCards } from "./mit24241-predicate-logic";
+import { mit24241PdMetatheoryCards } from "./mit24241-pd-metatheory";
+import { mit6042LogicalFormulasCards } from "./mit6042-logical-formulas";
+import { mit6042InfiniteSetsCards } from "./mit6042-infinite-sets";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -176,6 +183,13 @@ export const ALL_CARDS: Card[] = [
   ...mit6001EvaluatorsStreamsCards,
   ...mit6001ConcurrencyComputabilityCards,
   ...mit6001LogicProgrammingCards,
+  ...mit24241SententialLogicCards,
+  ...mit24241NaturalDeductionSdCards,
+  ...mit24241SlMetatheoryCards,
+  ...mit24241PredicateLogicCards,
+  ...mit24241PdMetatheoryCards,
+  ...mit6042LogicalFormulasCards,
+  ...mit6042InfiniteSetsCards,
 ];
 
 export * from "./types";

@@ -129,6 +129,16 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6001-eval", title: "6.001: Interpreters, the Metacircular Evaluator & Lazy Evaluation", tier: 1, order: 1304, course: "mit6001" },
   { slug: "mit6001-conc", title: "6.001: Concurrency, Universal Machines & Computability", tier: 1, order: 1305, course: "mit6001" },
   { slug: "mit6001-logic", title: "6.001: Logic Programming & Nondeterministic Search", tier: 1, order: 1306, course: "mit6001" },
+
+  // MIT 24.241 course track — see src/data/courses.ts for the lecture map.
+  { slug: "mit24241-sl", title: "24.241: Sentential Logic — Syntax & Semantics", tier: 1, order: 1100, course: "mit24241" },
+  { slug: "mit24241-sd", title: "24.241: Natural Deduction in SD", tier: 1, order: 1101, course: "mit24241" },
+  { slug: "mit24241-slmeta", title: "24.241: Metatheory of SL — Soundness, Completeness & Compactness", tier: 1, order: 1102, course: "mit24241" },
+  { slug: "mit24241-pl", title: "24.241: Predicate Logic — Syntax, Translation & Formal Semantics", tier: 1, order: 1103, course: "mit24241" },
+  { slug: "mit24241-pd", title: "24.241: Derivations in PD & Metatheory of Predicate Logic", tier: 1, order: 1104, course: "mit24241" },
+  // MIT 6.042J course track (logic & infinite sets only) — see src/data/courses.ts.
+  { slug: "mit6042-logic", title: "6.042J: Logical Formulas — Normal Forms, Equivalence Axioms & SAT", tier: 1, order: 1110, course: "mit6042" },
+  { slug: "mit6042-infinite", title: "6.042J: Infinite Sets — Cardinality, Diagonalization & ZFC", tier: 1, order: 1111, course: "mit6042" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

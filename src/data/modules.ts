@@ -116,6 +116,7 @@ export const MODULES: ModuleMeta[] = [
   // MIT 18.335J course track — see src/data/courses.ts for the lecture map.
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit18335-errors", title: "18.335: Floating Point, Stability & Conditioning", tier: 1, order: 1200, course: "mit18335" },
+  { slug: "mit18335-qr", title: "18.335: SVD, Least Squares & QR", tier: 1, order: 1201, course: "mit18335" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

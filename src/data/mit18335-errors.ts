@@ -317,7 +317,7 @@ The same argument shows $\\lVert\\tilde x - x\\rVert = \\lVert\\tilde x\\rVert O
 - $\\lVert A\\rVert \\geq |\\lambda|$ for every eigenvalue of a square $A$ (take $x$ the eigenvector).
 - $\\lVert A\\rVert_2 = \\sigma_{\\max}(A)$, the largest singular value (proved in Lec 5).
 - **Unitary invariance**: for $Q^* = Q^{-1}$, $\\lVert QA\\rVert_2 = \\lVert A\\rVert_2$ and $\\lVert QA\\rVert_F = \\lVert A\\rVert_F$. Multiplying by unitary matrices never amplifies errors, which is the root of Householder QR's stability.`,
-    related: ["mit18335-errors-norm-equivalence", "mit18335-errors-two-norm-rayleigh-quotient", "mit1806-orthogonality-orthonormal-orthogonal-matrices"],
+    related: ["mit18335-errors-norm-equivalence", "mit18335-errors-two-norm-rayleigh-quotient", "mit1806-orthogonality-orthonormal-orthogonal-matrices", "mit18335-qr-triangular-vs-orthogonal"],
   },
   {
     id: "mit18335-errors-norm-equivalence",
@@ -389,7 +389,7 @@ is **the condition number of the matrix**. In the 2-norm it equals $\\sigma_{\\m
 In double precision you should expect to lose about 4–5 of the ~16 digits when solving with this $A$, *however* good the solver is.`,
     pitfall:
       "κ(A) is not det(A). A matrix with a tiny determinant can be perfectly conditioned (10⁻³I has det 10⁻³⁰⁰ for n = 100 but κ = 1). Near-singularity is measured relative to the matrix's own size, by σmin/σmax.",
-    related: ["mit18335-errors-condition-number", "mit18335-errors-two-norm-rayleigh-quotient", "mit1806-determinants-singular-iff-zero"],
+    related: ["mit18335-errors-condition-number", "mit18335-errors-two-norm-rayleigh-quotient", "mit1806-determinants-singular-iff-zero", "mit18335-qr-svd-norms-conditioning"],
   },
   {
     id: "mit18335-errors-two-norm-rayleigh-quotient",
@@ -412,6 +412,6 @@ These square roots are the **singular values**, so $\\kappa_2(A) = \\sigma_{\\ma
 **Why not compute via $A^*A$:** its eigenvalues are $\\sigma_i^2$, so
 $$\\kappa(A^*A) = \\kappa(A)^2.$$
 Example: $A = \\begin{pmatrix}1 & 2\\\\ 3 & 4\\end{pmatrix}$ has $\\sigma^2 = 15 \\pm\\sqrt{221}$, so $\\kappa_2(A) \\approx 14.93$ but $\\kappa_2(A^TA) \\approx 223.0$. Squaring the condition number squares the error amplification, which is why the SVD (one decomposition of $A$ itself) is preferred.`,
-    related: ["mit18335-errors-matrix-condition-number", "mit1806-pd-svd-ata-positive-definite", "mit1806-pd-svd-spectral-theorem"],
+    related: ["mit18335-errors-matrix-condition-number", "mit1806-pd-svd-ata-positive-definite", "mit1806-pd-svd-spectral-theorem", "mit18335-qr-svd-norms-conditioning", "mit18335-qr-normal-equations-squaring"],
   },
 ];

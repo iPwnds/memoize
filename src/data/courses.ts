@@ -2292,6 +2292,47 @@ export const MIT18335_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Guest lecture (Christopher Rackauckas) surveying modern differential-equation solver software: benchmarks and software design, not numerical linear algebra. Outside this track's scope.",
   },
+  {
+    number: 7,
+    title: "The SVD, its Applications, and Condition Numbers",
+    cardIds: [
+      "mit18335-qr-svd-norms-conditioning",
+      "mit18335-qr-hermitian-embedding-svd",
+    ],
+  },
+  {
+    number: 8,
+    title: "Linear Regression and the Generalized SVD",
+    cardIds: [
+      "mit18335-qr-least-squares-three-ways",
+    ],
+  },
+  {
+    number: 9,
+    title: "Solving the Normal Equations by QR and Gram-Schmidt",
+    cardIds: [
+      "mit18335-qr-normal-equations-squaring",
+      "mit18335-qr-classical-gram-schmidt",
+    ],
+  },
+  {
+    number: 10,
+    title: "Modified Gram-Schmidt and Householder QR",
+    cardIds: [
+      "mit18335-qr-cgs-vs-mgs",
+      "mit18335-qr-triangular-vs-orthogonal",
+      "mit18335-qr-householder-reflectors",
+      "mit18335-qr-givens-rotations",
+    ],
+  },
+  {
+    number: 11,
+    title: "Matrix Operations, Caches, and Blocking",
+    cardIds: [
+      "mit18335-qr-householder-qr-algorithm",
+    ],
+    problemSet: "Problem Set 3",
+  },
 ];
 
 /**

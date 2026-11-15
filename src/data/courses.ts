@@ -137,6 +137,18 @@ export const COURSES: CourseMeta[] = [
       { label: "Statistics II: Frequentist Inference", lectures: [17, 26] },
     ],
   },
+  {
+    id: "mit18335",
+    title: "MIT 18.335J — Introduction to Numerical Methods",
+    subtitle:
+      "Spring 2019 · Steven G. Johnson · MIT OpenCourseWare (numerical linear algebra core, Lectures 1–24)",
+    // The course's own exam structure: the take-home midterm covers
+    // everything up to and including Lecture 20 and Problem Set 4.
+    quizScopes: [
+      { label: "Midterm (Lec 1–20, through Pset 4)", lectures: [1, 20] },
+      { label: "After the midterm (Lec 21–24)", lectures: [21, 24] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2225,6 +2237,63 @@ export const MIT1805_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT18335_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Course Overview; Newton's Method for Root-Finding",
+    cardIds: [
+      "mit18335-errors-newton-square-roots",
+      "mit18335-errors-newton-sqrt-converges",
+      "mit18335-errors-newton-quadratic-convergence",
+    ],
+    problemSet: "Problem Set 1",
+  },
+  {
+    number: 2,
+    title: "Floating-Point Arithmetic",
+    cardIds: [
+      "mit18335-errors-floating-point-model",
+      "mit18335-errors-ieee-754-formats",
+      "mit18335-errors-special-values-gradual-underflow",
+      "mit18335-errors-floating-point-myths",
+    ],
+  },
+  {
+    number: 3,
+    title: "Floating-Point Summation and Backwards Stability",
+    cardIds: [
+      "mit18335-errors-naive-summation-error",
+      "mit18335-errors-pairwise-summation",
+      "mit18335-errors-stability-definitions",
+      "mit18335-errors-summation-backwards-stable",
+    ],
+  },
+  {
+    number: 4,
+    title: "Norms on Vector Spaces",
+    cardIds: [
+      "mit18335-errors-vector-matrix-norms",
+      "mit18335-errors-norm-equivalence",
+    ],
+  },
+  {
+    number: 5,
+    title: "Condition Numbers",
+    cardIds: [
+      "mit18335-errors-condition-number",
+      "mit18335-errors-matrix-condition-number",
+      "mit18335-errors-two-norm-rayleigh-quotient",
+    ],
+    problemSet: "Problem Set 2",
+  },
+  {
+    number: 6,
+    title: "Numerical Methods for Ordinary Differential Equations",
+    cardIds: [],
+    noCardContent: "Guest lecture (Christopher Rackauckas) surveying modern differential-equation solver software: benchmarks and software design, not numerical linear algebra. Outside this track's scope.",
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2241,4 +2310,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6120: MIT6120_LECTURES,
   mit1806: MIT1806_LECTURES,
   mit1805: MIT1805_LECTURES,
+  mit18335: MIT18335_LECTURES,
 };

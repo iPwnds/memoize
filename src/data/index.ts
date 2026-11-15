@@ -76,6 +76,7 @@ import { mit1805BayesianInferenceCards } from "./mit1805-bayesian-inference";
 import { mit1805FrequentistInferenceCards } from "./mit1805-frequentist-inference";
 import { mit24241SententialLogicCards } from "./mit24241-sentential-logic";
 import { mit24241NaturalDeductionSdCards } from "./mit24241-natural-deduction-sd";
+import { mit24241SlMetatheoryCards } from "./mit24241-sl-metatheory";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -156,6 +157,7 @@ export const ALL_CARDS: Card[] = [
   ...mit1805FrequentistInferenceCards,
   ...mit24241SententialLogicCards,
   ...mit24241NaturalDeductionSdCards,
+  ...mit24241SlMetatheoryCards,
 ];
 
 export * from "./types";

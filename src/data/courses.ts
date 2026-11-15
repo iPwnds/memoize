@@ -2305,6 +2305,42 @@ export const MIT24241_LECTURES: CourseLecture[] = [
       "mit24241-sd-unsound-rule",
     ],
   },
+  {
+    number: 9,
+    title: "Introduction to Meta-Theory; Mathematical Induction",
+    cardIds: [
+      "mit24241-slmeta-semantic-vs-syntactic",
+      "mit24241-slmeta-induction-on-sentences",
+      "mit24241-slmeta-replacement-of-equivalents",
+    ],
+  },
+  {
+    number: 10,
+    title: "Soundness of SD/SD+",
+    cardIds: [
+      "mit24241-slmeta-tf-completeness-dnf",
+      "mit24241-slmeta-soundness-strategy",
+      "mit24241-slmeta-soundness-cases",
+    ],
+  },
+  {
+    number: 11,
+    title: "Completeness of SD/SD+",
+    cardIds: [
+      "mit24241-slmeta-sheffer-and-incomplete-sets",
+      "mit24241-slmeta-completeness-roadmap",
+      "mit24241-slmeta-maximal-consistent-construction",
+      "mit24241-slmeta-truth-lemma",
+    ],
+  },
+  {
+    number: 13,
+    title: "Open Sentences; Free vs. Bound Variables; Scope; Multiply Quantified Sentences; Definite Descriptions; Properties of Relations",
+    cardIds: [
+      "mit24241-slmeta-compactness",
+      "mit24241-slmeta-two-completeness-notions",
+    ],
+  },
 ];
 
 /**

@@ -274,7 +274,7 @@ Both C and ∼C are derived, so the set is inconsistent in SD.
 It cannot directly establish the negative properties: consistency, non-entailment, invalidity, indeterminacy, non-equivalence. Those say *no* derivation exists, and a truth table (one row) is the natural way to show them.`,
     pitfall:
       "Failing to find a derivation proves nothing. Γ ⊬ P is a claim about all possible derivations. Show Γ ⊭ P with one TVA, and then completeness (contraposed) gives Γ ⊬ P.",
-    related: ["mit24241-sd-derivation-structure", "mit24241-sl-tf-properties"],
+    related: ["mit24241-sd-derivation-structure", "mit24241-sl-tf-properties", "mit24241-slmeta-completeness-roadmap"],
   },
   {
     id: "mit24241-sd-negated-theorem-explosion",

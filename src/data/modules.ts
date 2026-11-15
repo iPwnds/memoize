@@ -117,6 +117,7 @@ export const MODULES: ModuleMeta[] = [
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit24241-sl", title: "24.241: Sentential Logic — Syntax & Semantics", tier: 1, order: 1100, course: "mit24241" },
   { slug: "mit24241-sd", title: "24.241: Natural Deduction in SD", tier: 1, order: 1101, course: "mit24241" },
+  { slug: "mit24241-slmeta", title: "24.241: Metatheory of SL — Soundness, Completeness & Compactness", tier: 1, order: 1102, course: "mit24241" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

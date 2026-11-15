@@ -72,7 +72,7 @@ The **truth table** of the connective is just a listing of that function. SL's f
 The course's answer for this sentence (Problem Set 1) is to translate it as a **single atomic sentence** A. You lose its internal structure, but you don't misrepresent it. The same goes for "necessarily", "believes that", "before" and similar connectives.`,
     pitfall:
       "Don't translate 'P because Q' as P & Q, or as Q ⊃ P. Both are truth-functional, and both are true in situations where the 'because' claim is false (e.g. two true but unrelated facts).",
-    related: ["mit24241-sl-syntax", "mit24241-sl-connectives-and-translation"],
+    related: ["mit24241-sl-syntax", "mit24241-sl-connectives-and-translation", "mit24241-slmeta-tf-completeness-dnf"],
   },
   {
     id: "mit24241-sl-syntax",
@@ -93,7 +93,7 @@ Example: in ∼(A ⊃ B) the main connective is ∼. In (A ∨ B) ⊃ (∼B ⊃ 
 **Why it matters**: because sentences are built up in stages, every claim "all sentences of SL have property X" can be proved by **induction on the number of connectives**. The base case covers atomic sentences, and the inductive step has one case per connective. The metatheory (truth-functional completeness, soundness, completeness) uses this over and over.`,
     pitfall:
       "Truth values belong to sentences only relative to a truth-value assignment (TVA). A sentence letter like A has no fixed truth value. Each TVA assigns T or F to every sentence letter, and the connectives' tables then fix the value of every compound.",
-    related: ["mit24241-sl-truth-functionality"],
+    related: ["mit24241-sl-truth-functionality", "mit24241-slmeta-induction-on-sentences"],
   },
   {
     id: "mit24241-sl-connectives-and-translation",
@@ -231,7 +231,7 @@ The premise is true only in the last row, and the conclusion is true there too. 
 To show an argument is **invalid**, one row with every premise true and the conclusion false is enough. That is a shortened truth table.`,
     pitfall:
       "Rows where some premise is false are irrelevant to validity. Only rows that make every premise true need checking. A conclusion that is false in other rows doesn't make the argument invalid.",
-    related: ["mit24241-sl-validity-soundness", "mit24241-sl-entailment-metatheorems"],
+    related: ["mit24241-sl-validity-soundness", "mit24241-sl-entailment-metatheorems", "mit24241-slmeta-semantic-vs-syntactic"],
   },
   {
     id: "mit24241-sl-entailment-metatheorems",

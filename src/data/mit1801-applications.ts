@@ -106,7 +106,7 @@ That is tiny, but GPS engineers still calibrate for it. When the answer is "too 
 **Accuracy.** $\\ln 1.1 \\approx 0.1 - 0.005 = 0.095$ (true value $0.09531$), against $0.1$ from the linear approximation.
 
 **When to use it:** only when the linear approximation isn't enough, because the algebra grows fast. This is the $n = 2$ case of the Taylor polynomials in Unit 5.`,
-    related: ["mit1801-applications-linear-approximation", "mit1801-applications-quadratic-combining"],
+    related: ["mit1801-applications-linear-approximation", "mit1801-applications-quadratic-combining", "mit1801-series-taylor-formula"],
   },
 
   // --- Session 26: Using quadratic approximations ---
@@ -389,7 +389,7 @@ Your average speed lies between your minimum and maximum speeds. On a short inte
 **Bootstrapping** the same way gives $e^x > 1 + x + \\frac{x^2}{2} + \\frac{x^3}{3!}$, and so on. In the limit,
 $$e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\cdots,$$
 the Taylor series of Unit 5.`,
-    related: ["mit1801-applications-mean-value-theorem", "mit1801-applications-linear-approximation"],
+    related: ["mit1801-applications-mean-value-theorem", "mit1801-applications-linear-approximation", "mit1801-series-taylor-examples"],
   },
 
   // --- Session 37: Antiderivatives ---

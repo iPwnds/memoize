@@ -187,7 +187,7 @@ Its value, $\\sqrt\\pi$, came from Session 65.
 The point is to decide convergence **without** computing the integral.`,
     pitfall:
       "Comparing in the wrong direction. Being smaller than a divergent integral, or bigger than a convergent one, proves nothing.",
-    related: ["mit1801-improper-improper-integrals", "mit6120-analysis-asymptotic-definitions"],
+    related: ["mit1801-improper-improper-integrals", "mit6120-analysis-asymptotic-definitions", "mit1801-series-comparison-tests"],
   },
 
   // --- Session 93: Improper integrals with singularities ---

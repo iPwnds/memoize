@@ -2868,6 +2868,62 @@ export const MIT1801_LECTURES: CourseLecture[] = [
       "mit1801-improper-singularities",
     ],
   },
+  {
+    number: 94,
+    title: "Infinite Series",
+    cardIds: [
+      "mit1801-series-geometric-series",
+    ],
+  },
+  {
+    number: 95,
+    title: "Series Comparison",
+    cardIds: [
+      "mit1801-series-integral-test",
+      "mit1801-series-comparison-tests",
+    ],
+  },
+  {
+    number: 96,
+    title: "Stacking Blocks",
+    cardIds: [
+      "mit1801-series-stacking-blocks",
+    ],
+  },
+  {
+    number: 97,
+    title: "Power Series",
+    cardIds: [
+      "mit1801-series-power-series",
+    ],
+  },
+  {
+    number: 98,
+    title: "Taylor's Series",
+    cardIds: [
+      "mit1801-series-taylor-formula",
+    ],
+  },
+  {
+    number: 99,
+    title: "Taylor's Series, Continued",
+    cardIds: [
+      "mit1801-series-taylor-examples",
+    ],
+  },
+  {
+    number: 100,
+    title: "Operations on Power Series",
+    cardIds: [
+      "mit1801-series-operations",
+    ],
+  },
+  {
+    number: 101,
+    title: "Conclusion",
+    cardIds: [],
+    noCardContent: "Course finale: a pointer to 18.02 Multivariable Calculus, with no new content.",
+  },
 ];
 
 /**

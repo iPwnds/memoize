@@ -287,7 +287,7 @@ $D$ and $\\frac{d}{dx}$ are **operators**: they take a function to a function. $
 At $k = n$ the exponent is 0, giving $n(n-1)\\cdots 1 = n!$, a constant. $\\blacksquare$
 
 **Hence** $D^{n+1}x^n = 0$, the derivative of a constant. More generally, any polynomial of degree $n$ is killed by $D^{n+1}$. This fact powers Taylor's formula later in the course.`,
-    related: ["mit1801-differentiation-derivatives-from-definition", "mit6120-proofs-induction-axiom-sum"],
+    related: ["mit1801-differentiation-derivatives-from-definition", "mit6120-proofs-induction-axiom-sum", "mit1801-series-taylor-formula"],
   },
 
   // --- Session 13: Implicit differentiation (rational exponents) ---

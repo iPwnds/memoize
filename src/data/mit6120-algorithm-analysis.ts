@@ -128,7 +128,7 @@ the sum is a touch more than $\\tfrac23 n^{3/2}$.
 **Sharpening**: the bounds' gap is one term ($f(1)$ or $f(n)$). For $\\sum_{k \\geq 1} k^{-2}$ the plain bounds give only $[1, 2]$; summing the first 3 terms exactly and applying the bound to the tail from $k = 4$ narrows it to $\\left[\\tfrac{232}{144}, \\tfrac{241}{144}\\right] \\approx [1.611, 1.674]$. (The true value is $\\pi^2/6 \\approx 1.645$.)`,
     pitfall:
       "Using the increasing-f bounds on a decreasing f (or vice versa) silently swaps which side is the upper bound. Check monotonicity first.",
-    related: ["mit6120-analysis-harmonic-numbers", "mit6120-analysis-factorial-stirling"],
+    related: ["mit6120-analysis-harmonic-numbers", "mit6120-analysis-factorial-stirling", "mit1801-series-integral-test"],
   },
 
   // --- Lecture 6: Asymptotics ---
@@ -151,7 +151,7 @@ The error of approximating $H_n$ by $\\ln n$ is less than 1, which becomes negli
 $H_n$ shows up throughout CS: e.g. the expected number of comparisons in randomized quicksort is $\\sim 2n \\ln n$ via harmonic sums.`,
     pitfall:
       "Hₙ grows without bound but extremely slowly — an overhang of 22 yards needs about e¹³² blocks. 'Diverges' and 'grows usefully' are very different things.",
-    related: ["mit6120-analysis-integral-method", "mit6120-analysis-asymptotic-definitions", "sorting-quicksort-randomization"],
+    related: ["mit6120-analysis-integral-method", "mit6120-analysis-asymptotic-definitions", "sorting-quicksort-randomization", "mit1801-series-stacking-blocks"],
   },
   {
     id: "mit6120-analysis-factorial-stirling",

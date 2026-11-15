@@ -2358,6 +2358,38 @@ export const MIT6001_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Live lecture with no handout on OCW. It continues Lecture 13's graph search (see that lecture's search card); for BFS/DFS in depth see MIT 6.006's Graphs module.",
   },
+  {
+    number: 15,
+    title: "Environment Model",
+    cardIds: [
+      "mit6001-env-frames-name-define-set",
+      "mit6001-env-lambda-application-rules",
+      "mit6001-env-closures-local-state",
+    ],
+  },
+  {
+    number: 16,
+    title: "Object Oriented Programming I",
+    cardIds: [
+      "mit6001-env-message-passing-data",
+      "mit6001-env-operations-types-table",
+    ],
+  },
+  {
+    number: 17,
+    title: "Object Oriented Programming II",
+    cardIds: [
+      "mit6001-env-ask-self-oop",
+    ],
+  },
+  {
+    number: 18,
+    title: "Object Oriented Programming III",
+    cardIds: [
+      "mit6001-env-inheritance-delegation",
+      "mit6001-env-multiple-inheritance",
+    ],
+  },
 ];
 
 /**

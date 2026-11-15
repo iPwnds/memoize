@@ -2391,6 +2391,143 @@ export const MIT1801_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Exam 1 (Unit 1: Differentiation).",
   },
+  {
+    number: 23,
+    title: "Linear Approximation",
+    cardIds: [
+      "mit1801-applications-linear-approximation",
+    ],
+  },
+  {
+    number: 24,
+    title: "Examples of Linear Approximation",
+    cardIds: [
+      "mit1801-applications-combining-approximations",
+    ],
+  },
+  {
+    number: 25,
+    title: "Introduction to Quadratic Approximation",
+    cardIds: [
+      "mit1801-applications-quadratic-approximation",
+    ],
+  },
+  {
+    number: 26,
+    title: "Using Quadratic Approximations",
+    cardIds: [
+      "mit1801-applications-quadratic-combining",
+    ],
+  },
+  {
+    number: 27,
+    title: "Sketching Graphs I: Polynomials and Rational Functions",
+    cardIds: [
+      "mit1801-applications-curve-sketching-principles",
+    ],
+  },
+  {
+    number: 28,
+    title: "Sketching Graphs II: General Strategies",
+    cardIds: [
+      "mit1801-applications-curve-sketching-strategy",
+    ],
+  },
+  {
+    number: 29,
+    title: "Optimization Problems",
+    cardIds: [
+      "mit1801-applications-max-min-endpoints",
+    ],
+  },
+  {
+    number: 30,
+    title: "Optimization Problems II",
+    cardIds: [
+      "mit1801-applications-optimization-box",
+    ],
+  },
+  {
+    number: 31,
+    title: "Related Rates",
+    cardIds: [
+      "mit1801-applications-related-rates",
+    ],
+  },
+  {
+    number: 32,
+    title: "Ring on a String",
+    cardIds: [],
+    noCardContent: "A constrained max/min worked example (equal angles at the lowest point), summarized on the Session 30 card.",
+  },
+  {
+    number: 33,
+    title: "Newton's Method",
+    cardIds: [
+      "mit1801-applications-newtons-method",
+    ],
+  },
+  {
+    number: 34,
+    title: "Introduction to the Mean Value Theorem",
+    cardIds: [
+      "mit1801-applications-mean-value-theorem",
+      "mit1801-applications-mvt-consequences",
+    ],
+  },
+  {
+    number: 35,
+    title: "Using the Mean Value Theorem",
+    cardIds: [
+      "mit1801-applications-mvt-and-approximation",
+    ],
+  },
+  {
+    number: 36,
+    title: "Differentials",
+    cardIds: [],
+    noCardContent: "Differential notation dy = f′(x)dx and the (64.1)^(1/3) ≈ 4.002 example are on the Session 23 linear-approximation card.",
+  },
+  {
+    number: 37,
+    title: "Antiderivatives",
+    cardIds: [
+      "mit1801-applications-antiderivatives",
+    ],
+  },
+  {
+    number: 38,
+    title: "Integration by Substitution",
+    cardIds: [
+      "mit1801-applications-substitution",
+    ],
+  },
+  {
+    number: 39,
+    title: "Introduction to Differential Equations",
+    cardIds: [
+      "mit1801-applications-separation-of-variables",
+    ],
+  },
+  {
+    number: 40,
+    title: "Separation of Variables",
+    cardIds: [
+      "mit1801-applications-differential-equations-curves",
+    ],
+  },
+  {
+    number: 41,
+    title: "Review for Exam 2",
+    cardIds: [],
+    noCardContent: "Exam 2 review: a topic list (approximations, sketching, max/min, related rates, antiderivatives and separation of variables, the MVT) covered by the Unit 2 cards.",
+  },
+  {
+    number: 42,
+    title: "Materials for Exam 2",
+    cardIds: [],
+    noCardContent: "Exam 2 (Unit 2: Applications of Differentiation).",
+  },
 ];
 
 /**

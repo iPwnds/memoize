@@ -116,6 +116,7 @@ export const MODULES: ModuleMeta[] = [
   // MIT 18.01SC course track — see src/data/courses.ts for the session map.
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit1801-differentiation", title: "18.01: Differentiation", tier: 1, order: 1000, course: "mit1801" },
+  { slug: "mit1801-applications", title: "18.01: Applications of Differentiation", tier: 1, order: 1001, course: "mit1801" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

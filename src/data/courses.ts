@@ -147,6 +147,16 @@ export const COURSES: CourseMeta[] = [
       { label: "Sentential Logic: SL, SD and Their Metatheory", lectures: [1, 11] },
       { label: "Predicate Logic: PL, PD and Their Metatheory", lectures: [12, 25] },
     ],
+  },  {
+    id: "mit6042",
+    title: "MIT 6.042J — Mathematics for Computer Science (Logic & Infinite Sets)",
+    subtitle:
+      "Spring 2015 · Albert R. Meyer, Adam Chlipala · MIT OpenCourseWare (numbered by class session; only the sessions not already covered by the 6.1200J track: logical formulas and infinite sets)",
+    // The course's own unit structure (readings page): all three sessions
+    // carded here belong to Unit 1.
+    quizScopes: [
+      { label: "Unit 1: Proofs", lectures: [1, 11] },
+    ],
   },
 ];
 
@@ -2448,6 +2458,29 @@ export const MIT24241_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT6042_LECTURES: CourseLecture[] = [
+  {
+    number: 4,
+    title: "Logical Formulas: Propositional Logic, Equivalence and Validity, Normal Forms, SAT (MCS 3.1-3.5)",
+    cardIds: [
+      "mit6042-logic-validity-satisfiability",
+      "mit6042-logic-dnf-cnf-from-truth-table",
+      "mit6042-logic-equivalence-axioms",
+      "mit6042-logic-algebraic-dnf-conversion",
+      "mit6042-logic-axioms-complete",
+      "mit6042-logic-sat-problem",
+    ],
+  },
+  {
+    number: 5,
+    title: "Predicate Formulas (MCS 3.6)",
+    cardIds: [
+      "mit6042-logic-ambiguous-any",
+      "mit6042-logic-predicate-validity",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2465,4 +2498,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit1806: MIT1806_LECTURES,
   mit1805: MIT1805_LECTURES,
   mit24241: MIT24241_LECTURES,
+  mit6042: MIT6042_LECTURES,
 };

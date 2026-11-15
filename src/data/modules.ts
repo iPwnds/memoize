@@ -120,6 +120,10 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit24241-slmeta", title: "24.241: Metatheory of SL — Soundness, Completeness & Compactness", tier: 1, order: 1102, course: "mit24241" },
   { slug: "mit24241-pl", title: "24.241: Predicate Logic — Syntax, Translation & Formal Semantics", tier: 1, order: 1103, course: "mit24241" },
   { slug: "mit24241-pd", title: "24.241: Derivations in PD & Metatheory of Predicate Logic", tier: 1, order: 1104, course: "mit24241" },
+
+  // MIT 6.042J course track (logic & infinite sets only) — see src/data/courses.ts.
+  // Same placeholder-tier note as other lecture-numbered courses above.
+  { slug: "mit6042-logic", title: "6.042J: Logical Formulas — Normal Forms, Equivalence Axioms & SAT", tier: 1, order: 1110, course: "mit6042" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

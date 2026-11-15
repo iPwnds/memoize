@@ -161,7 +161,7 @@ In each case the derivation silently identified "some F" or "an arbitrary object
 **The converse fails.** From (∀y)(∃x)Hxy, ∀E gives (∃x)Hxa. To use it you open ∃E with assumption Hba (b fresh). To reach (∀y)Hby you'd need ∀I on a, but a appears only in Hba, which is the open ∃E assumption, so ∀I is blocked.
 
 Semantically, the converse is invalid. Take UD = {1, 2} and H = {⟨1, 1⟩, ⟨2, 2⟩}: for every y something bears H to it, but no single x bears H to everything. The rules' restrictions are exactly what stop a soundness violation here.`,
-    related: ["mit24241-pd-quantifier-rules", "mit24241-pl-scope-free-bound"],
+    related: ["mit24241-pd-quantifier-rules", "mit24241-pl-scope-free-bound", "mit6042-logic-predicate-validity"],
   },
   {
     id: "mit24241-pd-identity-rules",

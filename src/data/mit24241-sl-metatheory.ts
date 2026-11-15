@@ -145,7 +145,7 @@ The answer is (((A&∼B)&C) ∨ ((∼A&B)&C)) ∨ ((∼A&∼B)&C). Brute force c
 The output uses only ∼, & and ∨, so **{∼, &, ∨} is already TF-complete**. The output is in **disjunctive normal form**. Problem Set 5 shows by induction that each CS is true on exactly its own row, which completes the proof.
 
 **Why care**: if some truth-function were not expressible, truth tables and derivations couldn't handle English arguments that use the corresponding connective.`,
-    related: ["mit24241-slmeta-sheffer-and-incomplete-sets", "mit24241-sl-truth-functionality", "mit6004-logic-sum-of-products"],
+    related: ["mit24241-slmeta-sheffer-and-incomplete-sets", "mit24241-sl-truth-functionality", "mit6004-logic-sum-of-products", "mit6042-logic-dnf-cnf-from-truth-table"],
   },
   {
     id: "mit24241-slmeta-soundness-strategy",

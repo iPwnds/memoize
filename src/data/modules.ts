@@ -119,6 +119,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit24241-sd", title: "24.241: Natural Deduction in SD", tier: 1, order: 1101, course: "mit24241" },
   { slug: "mit24241-slmeta", title: "24.241: Metatheory of SL — Soundness, Completeness & Compactness", tier: 1, order: 1102, course: "mit24241" },
   { slug: "mit24241-pl", title: "24.241: Predicate Logic — Syntax, Translation & Formal Semantics", tier: 1, order: 1103, course: "mit24241" },
+  { slug: "mit24241-pd", title: "24.241: Derivations in PD & Metatheory of Predicate Logic", tier: 1, order: 1104, course: "mit24241" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

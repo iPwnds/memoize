@@ -110,7 +110,7 @@ Examples:
 The second entails the first, but not conversely. For a counter-interpretation, take UD = {1, 2} and L = {⟨1, 1⟩, ⟨2, 2⟩}: everyone loves someone (themselves), but no single object is loved by everyone. **Quantifier scope ambiguity** in English ("Everyone loves someone") is the problem of choosing between these readings.`,
     pitfall:
       "Substitution replaces only the free occurrences of the quantified variable, and it uses a constant. Replacing a variable bound by an inner quantifier changes the meaning.",
-    related: ["mit24241-pl-vocabulary-and-formulas"],
+    related: ["mit24241-pl-vocabulary-and-formulas", "mit24241-pd-exists-forall-swap"],
   },
   {
     id: "mit24241-pl-formula-or-sentence",
@@ -284,7 +284,7 @@ So the premises don't entail the conclusion.
 Standard first-order logic as taught in CS courses (KU Leuven included) makes the same two choices as PL: nonempty domains and total constant denotation.`,
     pitfall:
       "Inferences like (∀x)Fx ⊢ (∃x)Fx feel wrong if you picture an empty domain, and they fail in databases where a table can be empty. They are valid in FOL only because FOL rules empty domains out.",
-    related: ["mit24241-pl-quantificational-properties"],
+    related: ["mit24241-pl-quantificational-properties", "mit24241-pd-quantifier-rules"],
   },
 
   // --- Lecture 17: Formal PL/PLE semantics ---
@@ -316,7 +316,7 @@ Standard first-order logic as taught in CS courses (KU Leuven included) makes th
 **Why assignments are needed.** The quantifier clauses recurse into Q, which has x free. Q has no truth value of its own, so the recursion is over **satisfaction of formulas**, with d supplying values for free variables. For a sentence, which has no free variables, either every d satisfies it or none does. That is why truth can be defined as "satisfied by all d".`,
     pitfall:
       "Don't define (∀x)Q as true when every substitution instance Q(a/x) is true. That only works if every object has a name, and an interpretation can have objects no constant denotes. The d[u/x] clause quantifies over objects directly.",
-    related: ["mit24241-pl-satisfaction-worked-example", "mit24241-pl-quantificational-properties"],
+    related: ["mit24241-pl-satisfaction-worked-example", "mit24241-pl-quantificational-properties", "mit24241-pd-canonical-model-truth-lemma"],
   },
 
   // --- Lecture 18: Formal semantics continued; review ---

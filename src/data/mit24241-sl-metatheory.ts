@@ -260,7 +260,7 @@ Let $\\Gamma^* = \\bigcup_i \\Gamma_i$.
 Two facts carry the proof: **derivations are finite**, and **the sentences can be enumerated**. The PD version (Session 23) adds a third clause that puts witnesses for existential sentences into the set.`,
     pitfall:
       "'Consistent' here means consistent in SD, a syntactic notion. The point of the whole completeness proof is to show that this coincides with TF-consistency. Assuming that at this stage would be circular.",
-    related: ["mit24241-slmeta-completeness-roadmap", "mit24241-slmeta-truth-lemma", "mit24241-slmeta-compactness"],
+    related: ["mit24241-slmeta-completeness-roadmap", "mit24241-slmeta-truth-lemma", "mit24241-slmeta-compactness", "mit24241-pd-henkin-construction"],
   },
   {
     id: "mit24241-slmeta-truth-lemma",

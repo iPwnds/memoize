@@ -2391,6 +2391,61 @@ export const MIT24241_LECTURES: CourseLecture[] = [
       "mit24241-pl-evaluating-sentences",
     ],
   },
+  {
+    number: 19,
+    title: "Derivations in PD",
+    cardIds: [
+      "mit24241-pd-quantifier-rules",
+      "mit24241-pd-restriction-violations",
+      "mit24241-pd-exists-elim-example",
+    ],
+  },
+  {
+    number: 20,
+    title: "Derivations in PD+/PDE",
+    cardIds: [
+      "mit24241-pd-exists-forall-swap",
+      "mit24241-pd-identity-rules",
+    ],
+  },
+  {
+    number: 21,
+    title: "Derivations in PDE Continued; Preliminaries for Meta-Theory",
+    cardIds: [
+      "mit24241-pd-what-pd-can-prove",
+    ],
+  },
+  {
+    number: 22,
+    title: "Meta-Theory: Soundness of PD, PD+, PDE",
+    cardIds: [
+      "mit24241-pd-soundness-forall-elim",
+      "mit24241-pd-soundness-exists-elim",
+    ],
+  },
+  {
+    number: 23,
+    title: "Meta-Theory: Completeness of PD",
+    cardIds: [
+      "mit24241-pd-completeness-roadmap",
+      "mit24241-pd-even-subscripts",
+      "mit24241-pd-henkin-construction",
+    ],
+  },
+  {
+    number: 24,
+    title: "Meta-Theory: Completeness Continued; PD+; PDE",
+    cardIds: [
+      "mit24241-pd-canonical-model-truth-lemma",
+      "mit24241-pd-lowenheim-skolem-compactness",
+    ],
+  },
+  {
+    number: 25,
+    title: "Review",
+    cardIds: [],
+    noCardContent: "A review session with no new material. The final exam's questions are carded throughout the course (e.g. ∃E's restriction, identity derivations, Löwenheim–Skolem).",
+  },
 ];
 
 /**

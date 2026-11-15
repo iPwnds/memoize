@@ -386,6 +386,6 @@ So I* makes all of Γ* true, and Γ* is q-consistent (TLB 11.4.8). ∎`,
 **Compactness for PL**: Γ is q-consistent iff every finite subset is. The proof is word for word the SL proof with PD in place of SD. If Γ is q-inconsistent, then Γ ⊨ R & ∼R, so by completeness Γ ⊢ R & ∼R. A derivation uses finitely many premises Γ′. By soundness Γ′ ⊨ R & ∼R, so Γ′ is q-inconsistent.
 
 These theorems show limits of what first-order sentences can pin down. No set of PL sentences can force its UD to be uncountable. And by compactness, no set can say "the UD is finite": a set with arbitrarily large finite models also has an infinite one.`,
-    related: ["mit24241-pd-canonical-model-truth-lemma", "mit24241-slmeta-compactness", "mit24241-pd-even-subscripts"],
+    related: ["mit24241-pd-canonical-model-truth-lemma", "mit24241-slmeta-compactness", "mit24241-pd-even-subscripts", "mit6042-infinite-zfc-axioms"],
   },
 ];

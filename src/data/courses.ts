@@ -2479,6 +2479,23 @@ export const MIT6042_LECTURES: CourseLecture[] = [
       "mit6042-logic-predicate-validity",
     ],
   },
+  {
+    number: 11,
+    title: "Infinite Sets (MCS Chapter 7)",
+    cardIds: [
+      "mit6042-infinite-surj-inj-bij",
+      "mit6042-infinite-schroder-bernstein",
+      "mit6042-infinite-adding-one-element",
+      "mit6042-infinite-countable-sets",
+      "mit6042-infinite-cantor-theorem",
+      "mit6042-infinite-diagonal-argument",
+      "mit6042-infinite-reals-uncountable",
+      "mit6042-infinite-larger-infinities-ch",
+      "mit6042-infinite-halting-problem",
+      "mit6042-infinite-russell-paradox",
+      "mit6042-infinite-zfc-axioms",
+    ],
+  },
 ];
 
 /**

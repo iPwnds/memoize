@@ -124,6 +124,7 @@ export const MODULES: ModuleMeta[] = [
   // MIT 6.042J course track (logic & infinite sets only) — see src/data/courses.ts.
   // Same placeholder-tier note as other lecture-numbered courses above.
   { slug: "mit6042-logic", title: "6.042J: Logical Formulas — Normal Forms, Equivalence Axioms & SAT", tier: 1, order: 1110, course: "mit6042" },
+  { slug: "mit6042-infinite", title: "6.042J: Infinite Sets — Cardinality, Diagonalization & ZFC", tier: 1, order: 1111, course: "mit6042" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

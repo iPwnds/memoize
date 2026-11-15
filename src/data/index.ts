@@ -78,6 +78,7 @@ import { mit1801DifferentiationCards } from "./mit1801-differentiation";
 import { mit1801ApplicationsCards } from "./mit1801-applications";
 import { mit1801IntegrationCards } from "./mit1801-integration";
 import { mit1801TechniquesCards } from "./mit1801-techniques";
+import { mit1801ImproperCards } from "./mit1801-improper";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -160,6 +161,7 @@ export const ALL_CARDS: Card[] = [
   ...mit1801ApplicationsCards,
   ...mit1801IntegrationCards,
   ...mit1801TechniquesCards,
+  ...mit1801ImproperCards,
 ];
 
 export * from "./types";

@@ -119,6 +119,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit1801-applications", title: "18.01: Applications of Differentiation", tier: 1, order: 1001, course: "mit1801" },
   { slug: "mit1801-integration", title: "18.01: The Definite Integral & its Applications", tier: 1, order: 1002, course: "mit1801" },
   { slug: "mit1801-techniques", title: "18.01: Techniques of Integration", tier: 1, order: 1003, course: "mit1801" },
+  { slug: "mit1801-improper", title: "18.01: L'Hôpital's Rule & Improper Integrals", tier: 1, order: 1004, course: "mit1801" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

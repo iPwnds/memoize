@@ -2819,6 +2819,55 @@ export const MIT1801_LECTURES: CourseLecture[] = [
     cardIds: [],
     noCardContent: "Exam 4 (Unit 4: Techniques of Integration).",
   },
+  {
+    number: 87,
+    title: "L'Hospital's Rule",
+    cardIds: [
+      "mit1801-improper-lhopital-rule",
+    ],
+  },
+  {
+    number: 88,
+    title: "Examples of L'Hospital's Rule",
+    cardIds: [
+      "mit1801-improper-lhopital-examples",
+    ],
+  },
+  {
+    number: 89,
+    title: "L'Hospital's Rule and Rates of Growth",
+    cardIds: [
+      "mit1801-improper-rates-of-growth",
+    ],
+  },
+  {
+    number: 90,
+    title: "Advanced Examples of L'Hospital's Rule",
+    cardIds: [
+      "mit1801-improper-indeterminate-powers",
+    ],
+  },
+  {
+    number: 91,
+    title: "Improper Integrals",
+    cardIds: [
+      "mit1801-improper-improper-integrals",
+    ],
+  },
+  {
+    number: 92,
+    title: "Integral Comparison",
+    cardIds: [
+      "mit1801-improper-limit-comparison",
+    ],
+  },
+  {
+    number: 93,
+    title: "Improper Integrals with Singularities",
+    cardIds: [
+      "mit1801-improper-singularities",
+    ],
+  },
 ];
 
 /**

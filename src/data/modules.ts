@@ -139,6 +139,14 @@ export const MODULES: ModuleMeta[] = [
   // MIT 6.042J course track (logic & infinite sets only) — see src/data/courses.ts.
   { slug: "mit6042-logic", title: "6.042J: Logical Formulas — Normal Forms, Equivalence Axioms & SAT", tier: 1, order: 1110, course: "mit6042" },
   { slug: "mit6042-infinite", title: "6.042J: Infinite Sets — Cardinality, Diagonalization & ZFC", tier: 1, order: 1111, course: "mit6042" },
+
+  // MIT 18.01SC course track — see src/data/courses.ts for the session map.
+  { slug: "mit1801-differentiation", title: "18.01: Differentiation", tier: 1, order: 1000, course: "mit1801" },
+  { slug: "mit1801-applications", title: "18.01: Applications of Differentiation", tier: 1, order: 1001, course: "mit1801" },
+  { slug: "mit1801-integration", title: "18.01: The Definite Integral & its Applications", tier: 1, order: 1002, course: "mit1801" },
+  { slug: "mit1801-techniques", title: "18.01: Techniques of Integration", tier: 1, order: 1003, course: "mit1801" },
+  { slug: "mit1801-improper", title: "18.01: L'Hôpital's Rule & Improper Integrals", tier: 1, order: 1004, course: "mit1801" },
+  { slug: "mit1801-series", title: "18.01: Infinite Series & Taylor Series", tier: 1, order: 1005, course: "mit1801" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

@@ -185,6 +185,20 @@ export const COURSES: CourseMeta[] = [
       { label: "Unit 1: Proofs", lectures: [1, 11] },
     ],
   },
+  {
+    id: "mit1801",
+    title: "MIT 18.01 — Single Variable Calculus",
+    subtitle:
+      "18.01SC Fall 2010 · David Jerison · MIT OpenCourseWare (numbered by OCW Scholar session)",
+    // The course's own five units, each closed by an exam (Unit 5 by the final).
+    quizScopes: [
+      { label: "Unit 1: Differentiation", lectures: [1, 22] },
+      { label: "Unit 2: Applications of Differentiation", lectures: [23, 42] },
+      { label: "Unit 3: The Definite Integral and its Applications", lectures: [43, 67] },
+      { label: "Unit 4: Techniques of Integration", lectures: [68, 86] },
+      { label: "Unit 5: Exploring the Infinite", lectures: [87, 101] },
+    ],
+  },
 ];
 
 export const MIT6006_LECTURES: CourseLecture[] = [
@@ -2964,6 +2978,693 @@ export const MIT6042_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT1801_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Introduction to Derivatives",
+    cardIds: [
+      "mit1801-differentiation-derivative-definition",
+    ],
+  },
+  {
+    number: 2,
+    title: "Examples of Derivatives",
+    cardIds: [
+      "mit1801-differentiation-derivatives-from-definition",
+    ],
+  },
+  {
+    number: 3,
+    title: "Derivative as Rate of Change",
+    cardIds: [],
+    noCardContent: "Folded into the Session 1 card: average vs instantaneous rate of change and the pumpkin-drop example.",
+  },
+  {
+    number: 4,
+    title: "Limits and Continuity",
+    cardIds: [
+      "mit1801-differentiation-limits-continuity",
+    ],
+  },
+  {
+    number: 5,
+    title: "Discontinuity",
+    cardIds: [
+      "mit1801-differentiation-discontinuities",
+      "mit1801-differentiation-differentiable-implies-continuous",
+    ],
+  },
+  {
+    number: 6,
+    title: "Calculating Derivatives",
+    cardIds: [],
+    noCardContent: "The sum and constant-multiple rules are proved on the Session 9 product-rule card.",
+  },
+  {
+    number: 7,
+    title: "Derivatives of Sine and Cosine",
+    cardIds: [
+      "mit1801-differentiation-sin-cos-derivatives",
+    ],
+  },
+  {
+    number: 8,
+    title: "Limits of Sine and Cosine",
+    cardIds: [
+      "mit1801-differentiation-trig-limits",
+    ],
+  },
+  {
+    number: 9,
+    title: "Product Rule",
+    cardIds: [
+      "mit1801-differentiation-product-rule",
+    ],
+  },
+  {
+    number: 10,
+    title: "Quotient Rule",
+    cardIds: [
+      "mit1801-differentiation-quotient-rule",
+    ],
+  },
+  {
+    number: 11,
+    title: "Chain Rule",
+    cardIds: [
+      "mit1801-differentiation-chain-rule",
+    ],
+  },
+  {
+    number: 12,
+    title: "Higher Derivatives",
+    cardIds: [
+      "mit1801-differentiation-higher-derivatives",
+    ],
+  },
+  {
+    number: 13,
+    title: "Implicit Differentiation",
+    cardIds: [
+      "mit1801-differentiation-rational-exponents",
+    ],
+  },
+  {
+    number: 14,
+    title: "Examples of Implicit Differentiation",
+    cardIds: [
+      "mit1801-differentiation-implicit-differentiation",
+    ],
+  },
+  {
+    number: 15,
+    title: "Implicit Differentiation and Inverse Functions",
+    cardIds: [
+      "mit1801-differentiation-inverse-functions",
+    ],
+  },
+  {
+    number: 16,
+    title: "The Derivative of a^x",
+    cardIds: [
+      "mit1801-differentiation-exponential-m-of-a",
+    ],
+  },
+  {
+    number: 17,
+    title: "The Exponential Function, its Derivative, and its Inverse",
+    cardIds: [
+      "mit1801-differentiation-e-and-ln",
+    ],
+  },
+  {
+    number: 18,
+    title: "Derivatives of Other Exponential Functions",
+    cardIds: [
+      "mit1801-differentiation-logarithmic-differentiation",
+    ],
+  },
+  {
+    number: 19,
+    title: "An Interesting Limit Involving e",
+    cardIds: [
+      "mit1801-differentiation-e-as-limit",
+    ],
+  },
+  {
+    number: 20,
+    title: "Hyperbolic Trig Functions",
+    cardIds: [
+      "mit1801-differentiation-hyperbolic-functions",
+    ],
+  },
+  {
+    number: 21,
+    title: "Review for Exam 1",
+    cardIds: [],
+    noCardContent: "Exam 1 review. Its formula list, the chain rule revisited (rates multiply), sec x and the quotient rule via (uv⁻¹)′ are folded into the Unit 1 cards.",
+  },
+  {
+    number: 22,
+    title: "Materials for Exam 1",
+    cardIds: [],
+    noCardContent: "Exam 1 (Unit 1: Differentiation).",
+  },
+  {
+    number: 23,
+    title: "Linear Approximation",
+    cardIds: [
+      "mit1801-applications-linear-approximation",
+    ],
+  },
+  {
+    number: 24,
+    title: "Examples of Linear Approximation",
+    cardIds: [
+      "mit1801-applications-combining-approximations",
+    ],
+  },
+  {
+    number: 25,
+    title: "Introduction to Quadratic Approximation",
+    cardIds: [
+      "mit1801-applications-quadratic-approximation",
+    ],
+  },
+  {
+    number: 26,
+    title: "Using Quadratic Approximations",
+    cardIds: [
+      "mit1801-applications-quadratic-combining",
+    ],
+  },
+  {
+    number: 27,
+    title: "Sketching Graphs I: Polynomials and Rational Functions",
+    cardIds: [
+      "mit1801-applications-curve-sketching-principles",
+    ],
+  },
+  {
+    number: 28,
+    title: "Sketching Graphs II: General Strategies",
+    cardIds: [
+      "mit1801-applications-curve-sketching-strategy",
+    ],
+  },
+  {
+    number: 29,
+    title: "Optimization Problems",
+    cardIds: [
+      "mit1801-applications-max-min-endpoints",
+    ],
+  },
+  {
+    number: 30,
+    title: "Optimization Problems II",
+    cardIds: [
+      "mit1801-applications-optimization-box",
+    ],
+  },
+  {
+    number: 31,
+    title: "Related Rates",
+    cardIds: [
+      "mit1801-applications-related-rates",
+    ],
+  },
+  {
+    number: 32,
+    title: "Ring on a String",
+    cardIds: [],
+    noCardContent: "A constrained max/min worked example (equal angles at the lowest point), summarized on the Session 30 card.",
+  },
+  {
+    number: 33,
+    title: "Newton's Method",
+    cardIds: [
+      "mit1801-applications-newtons-method",
+    ],
+  },
+  {
+    number: 34,
+    title: "Introduction to the Mean Value Theorem",
+    cardIds: [
+      "mit1801-applications-mean-value-theorem",
+      "mit1801-applications-mvt-consequences",
+    ],
+  },
+  {
+    number: 35,
+    title: "Using the Mean Value Theorem",
+    cardIds: [
+      "mit1801-applications-mvt-and-approximation",
+    ],
+  },
+  {
+    number: 36,
+    title: "Differentials",
+    cardIds: [],
+    noCardContent: "Differential notation dy = f′(x)dx and the (64.1)^(1/3) ≈ 4.002 example are on the Session 23 linear-approximation card.",
+  },
+  {
+    number: 37,
+    title: "Antiderivatives",
+    cardIds: [
+      "mit1801-applications-antiderivatives",
+    ],
+  },
+  {
+    number: 38,
+    title: "Integration by Substitution",
+    cardIds: [
+      "mit1801-applications-substitution",
+    ],
+  },
+  {
+    number: 39,
+    title: "Introduction to Differential Equations",
+    cardIds: [
+      "mit1801-applications-separation-of-variables",
+    ],
+  },
+  {
+    number: 40,
+    title: "Separation of Variables",
+    cardIds: [
+      "mit1801-applications-differential-equations-curves",
+    ],
+  },
+  {
+    number: 41,
+    title: "Review for Exam 2",
+    cardIds: [],
+    noCardContent: "Exam 2 review: a topic list (approximations, sketching, max/min, related rates, antiderivatives and separation of variables, the MVT) covered by the Unit 2 cards.",
+  },
+  {
+    number: 42,
+    title: "Materials for Exam 2",
+    cardIds: [],
+    noCardContent: "Exam 2 (Unit 2: Applications of Differentiation).",
+  },
+  {
+    number: 43,
+    title: "Definite Integrals",
+    cardIds: [],
+    noCardContent: "The definite integral as area under a curve (divide into rectangles, add, take the limit) is on the Session 46 Riemann-sum card.",
+  },
+  {
+    number: 44,
+    title: "Adding Areas of Rectangles",
+    cardIds: [
+      "mit1801-integration-integral-of-x-squared",
+    ],
+  },
+  {
+    number: 45,
+    title: "Some Easy Integrals",
+    cardIds: [],
+    noCardContent: "∫₀ᵇ x dx = b²/2 and ∫₀ᵇ 1 dx = b by geometry, noted on the Session 44 card.",
+  },
+  {
+    number: 46,
+    title: "Riemann Sums",
+    cardIds: [
+      "mit1801-integration-riemann-sums",
+    ],
+  },
+  {
+    number: 47,
+    title: "Introduction of the Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-ftc1",
+    ],
+  },
+  {
+    number: 48,
+    title: "The Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-properties",
+    ],
+  },
+  {
+    number: 49,
+    title: "Applications of the Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-estimation-substitution",
+    ],
+  },
+  {
+    number: 50,
+    title: "Combining the Fundamental Theorem and the Mean Value Theorem",
+    cardIds: [
+      "mit1801-integration-ftc-mvt",
+    ],
+  },
+  {
+    number: 51,
+    title: "The Second Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-ftc2",
+    ],
+  },
+  {
+    number: 52,
+    title: "Proving the Fundamental Theorem of Calculus",
+    cardIds: [
+      "mit1801-integration-ftc-proofs",
+    ],
+  },
+  {
+    number: 53,
+    title: "New Functions from Old",
+    cardIds: [],
+    noCardContent: "ln x = ∫₁ˣ dt/t and the bell-curve area ∫₀ˣ e^(−t²) dt as functions defined by integrals; see the Session 54 and 55 cards.",
+  },
+  {
+    number: 54,
+    title: "The Second Fundamental Theorem and ln x",
+    cardIds: [
+      "mit1801-integration-ln-as-integral",
+    ],
+  },
+  {
+    number: 55,
+    title: "Creating New Functions Using the Second Fundamental Theorem",
+    cardIds: [
+      "mit1801-integration-new-functions",
+    ],
+  },
+  {
+    number: 56,
+    title: "Geometric Interpretation of Definite Integrals",
+    cardIds: [
+      "mit1801-integration-area-between-curves",
+    ],
+  },
+  {
+    number: 57,
+    title: "How to Calculate Volumes",
+    cardIds: [
+      "mit1801-integration-volumes",
+    ],
+  },
+  {
+    number: 58,
+    title: "Volume of a Sphere (Revolving About the x-Axis)",
+    cardIds: [],
+    noCardContent: "Worked disk-method example (the ball of radius a, and its caps), on the Session 57 volumes card.",
+  },
+  {
+    number: 59,
+    title: "Volume of a Paraboloid (Revolving About the y-Axis)",
+    cardIds: [],
+    noCardContent: "Worked shell-method example (the cauldron, πa²/2, and the units warning), on the Session 57 volumes card.",
+  },
+  {
+    number: 60,
+    title: "Integrals and Averages",
+    cardIds: [
+      "mit1801-integration-average-value",
+    ],
+  },
+  {
+    number: 61,
+    title: "Integrals and Weighted Averages",
+    cardIds: [],
+    noCardContent: "Weighted averages and the boiling-cauldron example (average temperature 80°) are on the Session 62 card.",
+  },
+  {
+    number: 62,
+    title: "Integrals and Probability",
+    cardIds: [
+      "mit1801-integration-weighted-averages-probability",
+    ],
+  },
+  {
+    number: 63,
+    title: "Numerical Integration",
+    cardIds: [
+      "mit1801-integration-numerical-integration",
+    ],
+  },
+  {
+    number: 64,
+    title: "Numerical Integration, Continued",
+    cardIds: [],
+    noCardContent: "The trapezoid/Simpson estimates of ln 2 and the f ≡ 1 self-check are on the Session 63 card.",
+  },
+  {
+    number: 65,
+    title: "Bell Curve Conclusion",
+    cardIds: [
+      "mit1801-integration-gaussian-integral",
+    ],
+  },
+  {
+    number: 66,
+    title: "Review for Exam 3",
+    cardIds: [],
+    noCardContent: "Exam 3 review: definite integrals, numerical rules (upper/lower vs left/right sums), areas and volumes (disks vs shells vs washers), cumulative sums, and sketching ∫ₐˣ f, all covered by the Unit 3 cards.",
+  },
+  {
+    number: 67,
+    title: "Materials for Exam 3",
+    cardIds: [],
+    noCardContent: "Exam 3 (Unit 3: The Definite Integral and its Applications).",
+  },
+  {
+    number: 68,
+    title: "Integral of sin^n(x) cos^m(x): Odd Exponents",
+    cardIds: [
+      "mit1801-techniques-trig-powers",
+    ],
+  },
+  {
+    number: 69,
+    title: "Integral of sin^n(x) cos^m(x): Even Exponents",
+    cardIds: [],
+    noCardContent: "Even powers via the half-angle formulas (∫cos²x, ∫sin²x cos²x), on the Session 68 card.",
+  },
+  {
+    number: 70,
+    title: "Preview of Trig Substitution and Polar Coordinates",
+    cardIds: [],
+    noCardContent: "The circle-tab area ∫√(a² − y²) dy via y = a sin θ, on the Session 72 trig-substitution card.",
+  },
+  {
+    number: 71,
+    title: "Integrals Involving Secant, Cosecant and Cotangent",
+    cardIds: [
+      "mit1801-techniques-tan-sec-integrals",
+    ],
+  },
+  {
+    number: 72,
+    title: "Trig Substitution",
+    cardIds: [
+      "mit1801-techniques-trig-substitution",
+    ],
+  },
+  {
+    number: 73,
+    title: "Completing the Square",
+    cardIds: [],
+    noCardContent: "∫dx/√(x² + 4x) by completing the square and u = 2 sec θ, on the Session 72 card.",
+  },
+  {
+    number: 74,
+    title: "Integration by Partial Fractions",
+    cardIds: [
+      "mit1801-techniques-partial-fractions",
+    ],
+  },
+  {
+    number: 75,
+    title: "Advanced Partial Fractions",
+    cardIds: [
+      "mit1801-techniques-partial-fractions-general",
+    ],
+  },
+  {
+    number: 76,
+    title: "Integration by Parts",
+    cardIds: [
+      "mit1801-techniques-integration-by-parts",
+    ],
+  },
+  {
+    number: 77,
+    title: "Volume of a Wine Glass",
+    cardIds: [],
+    noCardContent: "The eˣ wine glass, π(e − 2) by disks and by shells, worked on the Session 76 integration-by-parts card.",
+  },
+  {
+    number: 78,
+    title: "Computing the Length of a Curve",
+    cardIds: [
+      "mit1801-techniques-arc-length",
+    ],
+  },
+  {
+    number: 79,
+    title: "Surface Area",
+    cardIds: [
+      "mit1801-techniques-surface-area",
+    ],
+  },
+  {
+    number: 80,
+    title: "Parametric Curves",
+    cardIds: [
+      "mit1801-techniques-parametric-curves",
+    ],
+  },
+  {
+    number: 81,
+    title: "Examples Using Parametrized Curves",
+    cardIds: [],
+    noCardContent: "The ellipse (2 sin t, cos t), its non-elementary perimeter and its surface of revolution, on the Session 80 card.",
+  },
+  {
+    number: 82,
+    title: "Polar Coordinates",
+    cardIds: [
+      "mit1801-techniques-polar-coordinates",
+    ],
+  },
+  {
+    number: 83,
+    title: "Polar Coordinates, Continued",
+    cardIds: [
+      "mit1801-techniques-polar-area",
+    ],
+  },
+  {
+    number: 84,
+    title: "Polar Coordinates and Graphing",
+    cardIds: [],
+    noCardContent: "Graphs of r = 2a cos θ over a full turn and the rose r = sin 2θ (negative r), on the Session 82 and 83 cards.",
+  },
+  {
+    number: 85,
+    title: "Review for Exam 4",
+    cardIds: [],
+    noCardContent: "Exam 4 review: setting up integrals, partial-fraction set-ups and ∫x arctan x dx (on the Session 76 card).",
+  },
+  {
+    number: 86,
+    title: "Materials for Exam 4",
+    cardIds: [],
+    noCardContent: "Exam 4 (Unit 4: Techniques of Integration).",
+  },
+  {
+    number: 87,
+    title: "L'Hospital's Rule",
+    cardIds: [
+      "mit1801-improper-lhopital-rule",
+    ],
+  },
+  {
+    number: 88,
+    title: "Examples of L'Hospital's Rule",
+    cardIds: [
+      "mit1801-improper-lhopital-examples",
+    ],
+  },
+  {
+    number: 89,
+    title: "L'Hospital's Rule and Rates of Growth",
+    cardIds: [
+      "mit1801-improper-rates-of-growth",
+    ],
+  },
+  {
+    number: 90,
+    title: "Advanced Examples of L'Hospital's Rule",
+    cardIds: [
+      "mit1801-improper-indeterminate-powers",
+    ],
+  },
+  {
+    number: 91,
+    title: "Improper Integrals",
+    cardIds: [
+      "mit1801-improper-improper-integrals",
+    ],
+  },
+  {
+    number: 92,
+    title: "Integral Comparison",
+    cardIds: [
+      "mit1801-improper-limit-comparison",
+    ],
+  },
+  {
+    number: 93,
+    title: "Improper Integrals with Singularities",
+    cardIds: [
+      "mit1801-improper-singularities",
+    ],
+  },
+  {
+    number: 94,
+    title: "Infinite Series",
+    cardIds: [
+      "mit1801-series-geometric-series",
+    ],
+  },
+  {
+    number: 95,
+    title: "Series Comparison",
+    cardIds: [
+      "mit1801-series-integral-test",
+      "mit1801-series-comparison-tests",
+    ],
+  },
+  {
+    number: 96,
+    title: "Stacking Blocks",
+    cardIds: [
+      "mit1801-series-stacking-blocks",
+    ],
+  },
+  {
+    number: 97,
+    title: "Power Series",
+    cardIds: [
+      "mit1801-series-power-series",
+    ],
+  },
+  {
+    number: 98,
+    title: "Taylor's Series",
+    cardIds: [
+      "mit1801-series-taylor-formula",
+    ],
+  },
+  {
+    number: 99,
+    title: "Taylor's Series, Continued",
+    cardIds: [
+      "mit1801-series-taylor-examples",
+    ],
+  },
+  {
+    number: 100,
+    title: "Operations on Power Series",
+    cardIds: [
+      "mit1801-series-operations",
+    ],
+  },
+  {
+    number: 101,
+    title: "Conclusion",
+    cardIds: [],
+    noCardContent: "Course finale: a pointer to 18.02 Multivariable Calculus, with no new content.",
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2984,4 +3685,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6001: MIT6001_LECTURES,
   mit24241: MIT24241_LECTURES,
   mit6042: MIT6042_LECTURES,
+  mit1801: MIT1801_LECTURES,
 };

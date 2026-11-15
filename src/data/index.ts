@@ -93,6 +93,12 @@ import { mit24241PredicateLogicCards } from "./mit24241-predicate-logic";
 import { mit24241PdMetatheoryCards } from "./mit24241-pd-metatheory";
 import { mit6042LogicalFormulasCards } from "./mit6042-logical-formulas";
 import { mit6042InfiniteSetsCards } from "./mit6042-infinite-sets";
+import { mit1801DifferentiationCards } from "./mit1801-differentiation";
+import { mit1801ApplicationsCards } from "./mit1801-applications";
+import { mit1801IntegrationCards } from "./mit1801-integration";
+import { mit1801TechniquesCards } from "./mit1801-techniques";
+import { mit1801ImproperCards } from "./mit1801-improper";
+import { mit1801SeriesCards } from "./mit1801-series";
 
 // Add each module's card array here as it's written. This is the single
 // aggregation point the app reads from.
@@ -190,6 +196,12 @@ export const ALL_CARDS: Card[] = [
   ...mit24241PdMetatheoryCards,
   ...mit6042LogicalFormulasCards,
   ...mit6042InfiniteSetsCards,
+  ...mit1801DifferentiationCards,
+  ...mit1801ApplicationsCards,
+  ...mit1801IntegrationCards,
+  ...mit1801TechniquesCards,
+  ...mit1801ImproperCards,
+  ...mit1801SeriesCards,
 ];
 
 export * from "./types";

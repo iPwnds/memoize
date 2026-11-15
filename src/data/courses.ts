@@ -2417,6 +2417,19 @@ export const MIT6001_LECTURES: CourseLecture[] = [
       "mit6001-eval-lazy-evaluator-thunks",
       "mit6001-eval-streams",
       "mit6001-eval-infinite-streams",
+      // Logic programming (SICP §4.3-4.4): no 2005 lecture covers it; mapped
+      // here as the next "variation on a Scheme" after §4.2, built on §3.5's
+      // streams. See the header of src/data/mit6001-logic-programming.ts.
+      "mit6001-logic-relations-not-functions",
+      "mit6001-logic-amb-backtracking",
+      "mit6001-logic-query-language-basics",
+      "mit6001-logic-compound-queries-rules",
+      "mit6001-logic-pattern-matching-frames",
+      "mit6001-logic-unification",
+      "mit6001-logic-unify-implementation",
+      "mit6001-logic-applying-rules",
+      "mit6001-logic-logic-vs-programs",
+      "mit6001-logic-negation-as-failure",
     ],
   },
   {

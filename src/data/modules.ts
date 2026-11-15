@@ -121,6 +121,7 @@ export const MODULES: ModuleMeta[] = [
   { slug: "mit6001-env", title: "6.001: Environment Model & Object-Oriented Programming", tier: 1, order: 1303, course: "mit6001" },
   { slug: "mit6001-eval", title: "6.001: Interpreters, the Metacircular Evaluator & Lazy Evaluation", tier: 1, order: 1304, course: "mit6001" },
   { slug: "mit6001-conc", title: "6.001: Concurrency, Universal Machines & Computability", tier: 1, order: 1305, course: "mit6001" },
+  { slug: "mit6001-logic", title: "6.001: Logic Programming & Nondeterministic Search", tier: 1, order: 1306, course: "mit6001" },
 ];
 
 export const moduleBySlug = (slug: string): ModuleMeta | undefined =>

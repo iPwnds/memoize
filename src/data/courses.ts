@@ -136,6 +136,17 @@ export const COURSES: CourseMeta[] = [
       { label: "Statistics I: Bayesian Inference", lectures: [10, 16] },
       { label: "Statistics II: Frequentist Inference", lectures: [17, 26] },
     ],
+  },  {
+    id: "mit24241",
+    title: "MIT 24.241 — Logic I",
+    subtitle:
+      "Fall 2009 · Ephraim Glick (TA Damien Rochford) · MIT OpenCourseWare (numbered by lecture session; cards sourced from the OCW slides, handouts, problem-set answers and quizzes)",
+    // The course's own two-part arc (Session 10 slides, "course structure"):
+    // sentential logic + its metatheory, then predicate logic + its metatheory.
+    quizScopes: [
+      { label: "Sentential Logic: SL, SD and Their Metatheory", lectures: [1, 11] },
+      { label: "Predicate Logic: PL, PD and Their Metatheory", lectures: [12, 25] },
+    ],
   },
 ];
 
@@ -2225,6 +2236,38 @@ export const MIT1805_LECTURES: CourseLecture[] = [
   },
 ];
 
+export const MIT24241_LECTURES: CourseLecture[] = [
+  {
+    number: 1,
+    title: "Basic Notions of Logic; Arguments; the Connectives",
+    cardIds: ["mit24241-sl-validity-soundness"],
+  },
+  {
+    number: 2,
+    title: "Truth-Functionality; SL Syntax and Semantics; Translation",
+    cardIds: ["mit24241-sl-truth-functionality", "mit24241-sl-syntax", "mit24241-sl-connectives-and-translation"],
+  },
+  {
+    number: 3,
+    title: "Translation Continued; Problems with Conditionals; Truth-Tables",
+    cardIds: ["mit24241-sl-conditional-laws"],
+  },
+  {
+    number: 4,
+    title: "Truth-Tables and Logical Properties of Compound Sentences",
+    cardIds: ["mit24241-sl-truth-table-computation", "mit24241-sl-tf-properties"],
+  },
+  {
+    number: 5,
+    title: "Entailment and Validity with Truth-Tables",
+    cardIds: [
+      "mit24241-sl-tf-entailment-validity",
+      "mit24241-sl-entailment-metatheorems",
+      "mit24241-sl-explosion-and-fallacies",
+    ],
+  },
+];
+
 /**
  * Single source of truth mapping a course id to its lecture map. Every
  * entry in `COURSES` must have a corresponding entry here — enforced by
@@ -2241,4 +2284,5 @@ export const COURSE_LECTURE_MAPS: Record<string, CourseLecture[]> = {
   mit6120: MIT6120_LECTURES,
   mit1806: MIT1806_LECTURES,
   mit1805: MIT1805_LECTURES,
+  mit24241: MIT24241_LECTURES,
 };

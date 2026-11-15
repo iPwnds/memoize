@@ -2330,8 +2330,35 @@ export const MIT18335_LECTURES: CourseLecture[] = [
     title: "Matrix Operations, Caches, and Blocking",
     cardIds: [
       "mit18335-qr-householder-qr-algorithm",
+      "mit18335-lu-flops-are-not-enough",
+      "mit18335-lu-blocked-matrix-multiply",
     ],
     problemSet: "Problem Set 3",
+  },
+  {
+    number: 12,
+    title: "Cache-Oblivious Algorithms and Spatial Locality",
+    cardIds: [
+      "mit18335-lu-cache-oblivious-matmul",
+      "mit18335-lu-spatial-locality",
+    ],
+  },
+  {
+    number: 13,
+    title: "LU Factorization and Partial Pivoting",
+    cardIds: [
+      "mit18335-lu-lu-factorization-solve",
+      "mit18335-lu-partial-pivoting",
+      "mit18335-lu-growth-factor-stability",
+    ],
+  },
+  {
+    number: 14,
+    title: "Cholesky Factorization and Other Specialized Solvers; Eigenproblems and Schur Factorizations",
+    cardIds: [
+      "mit18335-lu-cholesky",
+      "mit18335-lu-structured-solvers",
+    ],
   },
 ];
 

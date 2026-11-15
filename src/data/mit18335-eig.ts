@@ -145,7 +145,7 @@ $$\\lVert v^{(k)} - (\\pm q_J)\\rVert = O\\!\\left(\\left|\\tfrac{\\mu - \\lambd
 with $\\lambda_K$ the second-closest. Each step **solves** $(A - \\mu I)w = v^{(k-1)}$ (factor once, then reuse the factorization); it never forms the inverse.`,
     pitfall:
       "When μ is very close to the target eigenvalue, A − μI is nearly singular and the solve has a huge error. That's harmless: the error lies almost entirely along the target eigenvector, exactly the direction we want, and normalization removes the size.",
-    related: ["mit18335-eig-rayleigh-quotient-iteration", "mit18335-eig-qr-algorithm-simultaneous-iteration", "mit18335-errors-newton-quadratic-convergence"],
+    related: ["mit18335-eig-rayleigh-quotient-iteration", "mit18335-eig-qr-algorithm-simultaneous-iteration", "mit18335-errors-newton-quadratic-convergence", "mit18335-krylov-krylov-arnoldi"],
   },
   {
     id: "mit18335-eig-rayleigh-quotient-iteration",

@@ -2384,6 +2384,62 @@ export const MIT18335_LECTURES: CourseLecture[] = [
     title: "Shifted QR and Rayleigh Quotients",
     cardIds: [
       "mit18335-eig-shifted-qr-algorithm",
+      "mit18335-krylov-iterative-methods-overview",
+    ],
+  },
+  {
+    number: 18,
+    title: "Krylov Methods and the Arnoldi Algorithm",
+    cardIds: [
+      "mit18335-krylov-krylov-arnoldi",
+      "mit18335-krylov-rayleigh-ritz-lanczos",
+    ],
+  },
+  {
+    number: 19,
+    title: "Arnoldi and Lanczos with Restarting",
+    cardIds: [
+      "mit18335-krylov-restarting",
+    ],
+  },
+  {
+    number: 20,
+    title: "The GMRES Algorithm and Convergence of GMRES and Arnoldi",
+    cardIds: [
+      "mit18335-krylov-gmres",
+      "mit18335-krylov-gmres-convergence",
+    ],
+    problemSet: "Problem Set 4",
+  },
+  {
+    number: 21,
+    title: "Preconditioning Techniques; the Conjugate-Gradient Method",
+    cardIds: [
+      "mit18335-krylov-preconditioning",
+      "mit18335-krylov-steepest-descent",
+      "mit18335-krylov-conjugate-gradient",
+    ],
+  },
+  {
+    number: 22,
+    title: "Convergence of Conjugate Gradient",
+    cardIds: [
+      "mit18335-krylov-cg-convergence",
+    ],
+  },
+  {
+    number: 23,
+    title: "Biconjugate Gradient Algorithms",
+    cardIds: [
+      "mit18335-krylov-pcg-bicg",
+      "mit18335-krylov-choosing-a-solver",
+    ],
+  },
+  {
+    number: 24,
+    title: "Sparse-Direct Solvers",
+    cardIds: [
+      "mit18335-krylov-sparse-direct",
     ],
   },
 ];

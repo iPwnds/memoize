@@ -69,7 +69,7 @@ So each $(v_i; \\pm u_i)$ is an eigenvector with eigenvalue $\\pm\\sigma_i$. The
 $$\\begin{pmatrix}0 & A^*\\\\ A & 0\\end{pmatrix} = Q\\begin{pmatrix}\\Sigma & \\\\ & -\\Sigma\\end{pmatrix}Q^*, \\qquad Q = \\frac{1}{\\sqrt 2}\\begin{pmatrix}V & V\\\\ U & -U\\end{pmatrix}. \\;\\blacksquare$$
 
 **Why it's useful:** it turns an SVD question into a **Hermitian eigenproblem**, without squaring anything. Everything known about Hermitian eigenvalues (real, orthogonal eigenvectors, min–max, stable algorithms) transfers to singular values, and the condition number is *not* squared as it would be with $A^*A$. The same block structure reappears in Lec 23, where biCG is derived as CG on a matrix of this form.`,
-    related: ["mit18335-qr-svd-norms-conditioning", "mit18335-errors-two-norm-rayleigh-quotient"],
+    related: ["mit18335-qr-svd-norms-conditioning", "mit18335-errors-two-norm-rayleigh-quotient", "mit18335-krylov-pcg-bicg"],
   },
 
   // --- Lecture 8: Linear regression and the generalized SVD ---

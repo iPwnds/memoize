@@ -255,6 +255,6 @@ Positive definiteness guarantees the square root's argument is positive, and the
 LAPACK provides specialized routines for each of these special cases; you should pick the most specific one that applies.
 
 **Sparsity:** exploiting it is typically only worthwhile when the matrix is much bigger than about $1000\\times1000$. Below that, dense LAPACK is simpler and fast enough. Sparse-direct methods (Lec 24) and Krylov iterations (Lec 18–23) take over for the big problems.`,
-    related: ["mit18335-lu-cholesky", "mit18335-lu-lu-factorization-solve"],
+    related: ["mit18335-lu-cholesky", "mit18335-lu-lu-factorization-solve", "mit18335-krylov-sparse-direct", "mit18335-krylov-iterative-methods-overview"],
   },
 ];

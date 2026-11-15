@@ -303,7 +303,7 @@ So $A^*$ makes every member of Γ* true, and Γ* is TF-consistent (TLB 6.4.8). �
 **Why it's surprising**: the definition of TF-consistency for infinite Γ talks about a single TVA handling infinitely many sentences at once, and nothing in that definition is finite. Finiteness comes in from the proof side, through derivations. That is why the result counts as "a cool result of completeness".
 
 Note that completeness is needed for **infinite** Γ here. The course's completeness proof never assumes Γ is finite, and the Lindenbaum construction works for any Γ.`,
-    related: ["mit24241-slmeta-maximal-consistent-construction", "mit24241-slmeta-completeness-roadmap", "mit24241-slmeta-two-completeness-notions"],
+    related: ["mit24241-slmeta-maximal-consistent-construction", "mit24241-slmeta-completeness-roadmap", "mit24241-slmeta-two-completeness-notions", "mit24241-pl-why-predicate-logic"],
   },
   {
     id: "mit24241-slmeta-two-completeness-notions",

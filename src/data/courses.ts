@@ -2334,11 +2334,61 @@ export const MIT24241_LECTURES: CourseLecture[] = [
     ],
   },
   {
+    number: 12,
+    title: "Introduction to Predicate Logic: Quantifiers, Variables, Constants, Predicates, Universe of Discourse",
+    cardIds: [
+      "mit24241-pl-why-predicate-logic",
+      "mit24241-pl-vocabulary-and-formulas",
+    ],
+  },
+  {
     number: 13,
     title: "Open Sentences; Free vs. Bound Variables; Scope; Multiply Quantified Sentences; Definite Descriptions; Properties of Relations",
     cardIds: [
       "mit24241-slmeta-compactness",
       "mit24241-slmeta-two-completeness-notions",
+      "mit24241-pl-scope-free-bound",
+      "mit24241-pl-formula-or-sentence",
+      "mit24241-pl-relation-properties-countermodel",
+    ],
+  },
+  {
+    number: 14,
+    title: "Identity; Functions; Translation to and from Predicate Logic (PL)",
+    cardIds: [
+      "mit24241-pl-identity-and-counting",
+    ],
+  },
+  {
+    number: 15,
+    title: "Translation to and from PL/PLE; “Most”; Donkey Sentences",
+    cardIds: [
+      "mit24241-pl-translation-patterns",
+      "mit24241-pl-prenex-restriction",
+    ],
+  },
+  {
+    number: 16,
+    title: "Informal PL/PLE Semantics: Interpretations, Quantificational Truth, Consistency, Equivalence, Validity",
+    cardIds: [
+      "mit24241-pl-quantificational-properties",
+      "mit24241-pl-nonempty-domain",
+    ],
+  },
+  {
+    number: 17,
+    title: "Formal PL/PLE Semantics: Extensions, Interpretations, Variable Assignments, Satisfaction, Truth",
+    cardIds: [
+      "mit24241-pl-formal-semantics",
+    ],
+  },
+  {
+    number: 18,
+    title: "Formal PL/PLE Semantics Continued; Review",
+    cardIds: [
+      "mit24241-pl-satisfaction-worked-example",
+      "mit24241-pl-q-true-proof",
+      "mit24241-pl-evaluating-sentences",
     ],
   },
 ];
